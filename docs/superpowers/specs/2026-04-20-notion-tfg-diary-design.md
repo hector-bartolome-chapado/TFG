@@ -10,14 +10,17 @@ Crear un espacio en Notion que funcione como diario academico-operativo del TFG 
 
 ## Alcance
 
-La solucion cubre:
+La solucion cubre en su fase inicial:
 
 - una pagina contenedora principal del TFG en Notion;
 - una base de datos `Diario TFG` con una entrada por sesion;
-- una base de datos `Fuentes TFG` con una entrada por documento o recurso consultado;
 - vistas orientadas a seguimiento, cronologia, memoria y bloqueos;
 - una forma consistente de actualizar el diario con ayuda del asistente;
 - preparacion del espacio para compartirlo con el profesor.
+
+La solucion deja prevista para una fase posterior:
+
+- una base de datos `Fuentes TFG` con una entrada por documento o recurso consultado cuando el corpus y las fuentes reales esten disponibles.
 
 La solucion no cubre:
 
@@ -74,7 +77,7 @@ Contenido recomendado dentro de cada pagina de sesion:
 - siguiente paso;
 - notas para la memoria.
 
-### 3. Base de datos `Fuentes TFG`
+### 3. Base de datos `Fuentes TFG` (fase posterior)
 
 Habra una fila por documento o recurso consultado.
 
@@ -89,7 +92,7 @@ Propiedades previstas:
 - `Usada en memoria`: checkbox.
 - `Sesiones relacionadas`: relacion con `Diario TFG`.
 
-Esta base permitira responder despues a preguntas como que documentos sustentan una decision, que fuentes se usaron para un bloque concreto o que referencias acabaron siendo utiles en la memoria.
+Esta base se activara cuando existan fuentes reales suficientemente estables. Permitira responder despues a preguntas como que documentos sustentan una decision, que fuentes se usaron para un bloque concreto o que referencias acabaron siendo utiles en la memoria.
 
 ## Vistas
 
@@ -101,7 +104,7 @@ Esta base permitira responder despues a preguntas como que documentos sustentan 
 - `Para la memoria`: filtrada para entradas con contenido util en `Aporte a memoria`.
 - `Bloqueos y problemas`: filtrada por `Estado = Bloqueado` o sesiones con problemas relevantes.
 
-### Vistas para `Fuentes TFG`
+### Vistas para `Fuentes TFG` (fase posterior)
 
 - `Todas las fuentes`: vista general.
 - `PDFs`: filtrada por `Tipo de fuente = PDF`.
@@ -114,8 +117,8 @@ Esta base permitira responder despues a preguntas como que documentos sustentan 
 
 1. El alumno trabaja en una sesion del TFG.
 2. El asistente redacta o actualiza la entrada correspondiente en `Diario TFG`.
-3. Si durante la sesion se consultan documentos nuevos, el asistente crea o actualiza registros en `Fuentes TFG`.
-4. Se enlazan las fuentes con la sesion correspondiente.
+3. Mientras no exista la base de fuentes, las referencias relevantes se anotan de forma ligera dentro de la propia sesion.
+4. Cuando la base `Fuentes TFG` exista, se migraran o enlazaran esas referencias de forma estructurada.
 5. La entrada queda lista para revision del profesor.
 
 ### Flujo de tutorias
@@ -194,11 +197,16 @@ Mitigacion:
 Una vez aprobado este diseno:
 
 1. crear pagina contenedora del TFG en Notion;
-2. crear base `Fuentes TFG`;
-3. crear base `Diario TFG`;
-4. ajustar propiedades, vistas y relaciones;
-5. dejar una primera entrada de ejemplo;
-6. indicar el paso manual para invitar al profesor por email con permiso de comentario.
+2. crear base `Diario TFG`;
+3. ajustar propiedades y vistas;
+4. dejar una primera entrada de ejemplo;
+5. indicar el paso manual para invitar al profesor por email con permiso de comentario.
+
+Fase posterior, cuando existan fuentes reales:
+
+1. crear base `Fuentes TFG`;
+2. anadir relaciones entre `Diario TFG` y `Fuentes TFG`;
+3. migrar o normalizar referencias ya registradas dentro de las sesiones.
 
 ## Criterio de exito
 
@@ -206,6 +214,6 @@ La solucion se considerara correcta si:
 
 - existe una pagina principal clara para el TFG;
 - el diario permite registrar sesiones reales con valor para la memoria;
-- las fuentes PDF y demas referencias quedan trazables;
+- las fuentes PDF y demas referencias tienen un camino claro de incorporacion posterior sin bloquear el arranque del diario;
 - el profesor puede revisar la evolucion del trabajo mediante comentarios;
 - el mantenimiento diario resulta suficientemente ligero como para sostenerse durante el TFG.
