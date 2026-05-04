@@ -1,11 +1,14 @@
-node_modules/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+
+PDF SIN LIMPIAR/
+*.docx
+*.pdf
+!PDF LIMPIO/**/*.md
+!PDF LIMPIO/**/*.json
+!PDF LIMPIO/**/*.jsonl
+
+docs/superpowers/
+
 .DS_Store
 Thumbs.db
-*.tmp
-*.temp
-*.log
-

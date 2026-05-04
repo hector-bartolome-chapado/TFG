@@ -1,52 +1,76 @@
-# TFG
+# TFG RAG financiero-fiscal
 
-Esta carpeta agrupa todo el trabajo relacionado con el TFG dentro de `WORKSPACE ANTIGRAVITY`.
+Repositorio tecnico del TFG orientado a un pipeline RAG sobre documentacion publica economico-fiscal del Estado espanol.
+
+## Objetivo
+
+El proyecto estudia como limpiar, estructurar, fragmentar y enriquecer documentacion oficial para construir un corpus util para retrieval y evaluacion posterior. El foco actual del repositorio esta en:
+
+- limpieza determinista de PDFs y hojas de calculo
+- generacion de artefactos intermedios inspeccionables
+- chunking estructural
+- enriquecimiento selectivo con `llamus.cs.us.es`
+
+## Estructura
+
+```text
+TFG/
+├─ PDF LIMPIO/
+│  ├─ markdown/
+│  ├─ json/
+│  ├─ blocks/
+│  ├─ chunks/
+│  └─ chunks_enriched/
+├─ scripts/
+├─ tests/
+└─ docs/
+```
+
+## Que contiene el repositorio
+
+- `PDF LIMPIO/`: salidas procesadas del corpus listas para inspeccion, chunking y retrieval.
+- `scripts/`: utilidades del pipeline de limpieza y enriquecimiento.
+- `tests/`: verificacion automatica del extractor y del pipeline.
+- `docs/`: documentacion tecnica del flujo actual.
+
+## Que no contiene
+
+- `PDF SIN LIMPIAR/`: fuentes originales brutas.
+- materiales de escritura no tecnica del TFG.
+- adjuntos pesados o duplicados sin valor para el pipeline.
 
 ## Estado actual
 
-Durante esta conversacion se ha creado y dejado organizado:
+Documentos piloto ya procesados:
 
-- `vector-rag-benchmark/`
-  Proyecto base del TFG.
-- `vector-rag-benchmark/docs/anteproyecto_tfg.md`
-  Borrador del anteproyecto en Markdown.
-- `vector-rag-benchmark/docs/Anteproyecto_TFG_Vector_RAG.docx`
-  Version Word del anteproyecto, con formato visual mas cuidado.
-- `vector-rag-benchmark/scripts/generate_anteproyecto_docx.js`
-  Script para regenerar el documento Word.
-- `vector-rag-benchmark/package.json`
-  Dependencias para generar el `.docx`.
-- `references/`
-  Fuentes extraidas del paper `TFG RAG_ Diferenciación y Evaluación Avanzada.docx`.
-- `scripts/extract_docx_sources.py`
-  Script para volver a extraer referencias desde un `.docx`.
+- `AEAT_informe_anual_2024`
+- `01 Presupuestos Generales del Estado Consolidados 2023`
+- `C.G.E. 2023`
 
-## Uso previsto
+Artefactos ya generados:
 
-Esta carpeta `TFG/` sera el punto de entrada para:
+- `markdown`
+- `json`
+- `blocks.jsonl`
+- `chunks.jsonl`
+- `chunks_enriched.jsonl` para el piloto AEAT
 
-- el anteproyecto;
-- futuras versiones del documento para el profesor;
-- bibliografia, notas y material de investigacion;
-- prototipos y pruebas tecnicas;
-- la implementacion del proyecto cuando la validemos con el profesor.
+## Verificacion
 
-## Referencias extraidas
+Tests disponibles:
 
-Dentro de `references/` se han generado:
+- `tests/test_clean_aeat_pdf.py`
+- `tests/test_corpus_pipeline.py`
 
-- `paper_sources.md`
-- `paper_sources.json`
-- `paper_sources.csv`
+Ejecucion:
 
-Estas referencias proceden del documento:
+```powershell
+python -m unittest tests.test_clean_aeat_pdf
+python -m unittest tests.test_corpus_pipeline
+```
 
-- `C:\Users\BARTO\Downloads\TFG RAG_ Diferenciación y Evaluación Avanzada.docx`
+## Siguiente fase
 
-## Siguiente paso recomendado
-
-Esperar feedback del profesor sobre el anteproyecto y, a partir de ahi, decidir si:
-
-1. se ajusta el enfoque;
-2. se acota mas el alcance;
-3. se empieza la memoria y el desarrollo tecnico.
+- generar embeddings con `mxbai-embed-large:v1`
+- decidir vector store baseline
+- definir metricas iniciales de retrieval y fidelidad
