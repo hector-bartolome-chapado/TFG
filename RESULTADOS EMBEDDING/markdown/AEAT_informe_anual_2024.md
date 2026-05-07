@@ -1,84 +1,54 @@
 # AEAT_informe_anual_2024
 
-## INFORME ANUAL (página 1)
-
-- Tipo: title
+## Página 1
 
 INFORME ANUAL
 DE RECAUDACIÓN
 TRIBUTARIA
 
-## INFORME ANUAL (página 1)
-
-- Tipo: title
-
 2024
 
-## INFORME ANUAL DE (página 3)
+## Página 2
 
-- Tipo: title
+_Página vacía_
+
+## Página 3
 
 INFORME ANUAL DE
 
-## INFORME ANUAL DE (página 3)
-
-- Tipo: title
-
 RECAUDACIÓN TRIBUTARIA
-
-## INFORME ANUAL DE (página 3)
-
-- Tipo: title
 
 AÑO 2024
 
-## INFORME ANUAL DE (página 3)
-
-- Tipo: title
-
 Servicio de Estudios Tributarios y Estadísticas
 
-## ÍNDICE (página 5)
+## Página 4
 
-- Tipo: index
+_Página vacía_
+
+## Página 5
 
 ÍNDICE
 
-## ÍNDICE (página 5)
-
-- Tipo: index
-
 Página
-
-## ÍNDICE (página 5)
-
-- Tipo: index
 
 Presentación ........................................................................................................................
 5
 Resumen ..............................................................................................................................
 7
 
-## ÍNDICE (página 5)
-
-- Tipo: index
-
-1. Los ingresos tributarios en 2024 ....................................................................................
+1.   Los ingresos tributarios en 2024 ....................................................................................
 8
-2. El Impuesto sobre la Renta de las Personas Físicas .......................................................
+2.   El Impuesto sobre la Renta de las Personas Físicas .......................................................
 20
-3. El Impuesto sobre Sociedades .......................................................................................
+3.   El Impuesto sobre Sociedades .......................................................................................
 26
-4. El Impuesto sobre el Valor Añadido ...............................................................................
+4.   El Impuesto sobre el Valor Añadido ...............................................................................
 29
-5. Los Impuestos Especiales ..............................................................................................
+5.   Los Impuestos Especiales ..............................................................................................
 33
-6. Otros Impuestos ............................................................................................................
+6.   Otros Impuestos ............................................................................................................
 38
-
-## ÍNDICE (página 5)
-
-- Tipo: index
 
 NOTA INFORMATIVA 1:
 LA EVOLUCIÓN DE LAS PRINCIPALES PARTIDAS DEL IRPF EN EL PERIODO 1995-2023 ....
@@ -112,23 +82,18 @@ LOS ARANCELES EN LOS INGRESOS TRIBUTARIOS ......................................
 NOTAS EXPLICATIVAS Y FUENTES .......................................................................................
 75
 
-## Presentación (página 7)
+## Página 6
 
-- Tipo: title
+_Página vacía_
 
+## Página 7
+
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 5
 Presentación
-
-## Presentación (página 7)
-
-- Tipo: content
 
 El objetivo del Informe Anual de Recaudación Tributaria es ofrecer información sobre el nivel y la evolución anual de los
 ingresos tributarios que gestiona la Agencia Tributaria (AEAT) por cuenta del Estado, las CC.AA. y las CC.LL. del
 Territorio de Régimen Fiscal Común.
-
-## Presentación (página 7)
-
-- Tipo: content
 
 El comportamiento de las series recaudatorias no siempre es fácil de entender. Sus fuertes variaciones contrastan con la
 evolución más parsimoniosa que muestran variables de síntesis como pueden ser el PIB o el consumo. Hay, no obstante,
@@ -136,48 +101,24 @@ razones para que se produzcan estas discrepancias; las modificaciones normativas
 impuestos o el impacto diferencial que tiene la evolución económica sobre las distintas bases imponibles son algunas de
 ellas.
 
-## Presentación (página 7)
-
-- Tipo: content
-
 Por ello, para comprender adecuadamente el comportamiento de la recaudación y su relación con los flujos económicos,
 el Informe Anual de Recaudación Tributaria utiliza un método de análisis que no solo considera los ingresos
 tributarios en términos de caja, sino que también los relaciona con los impuestos devengados. Estos
 últimos se obtienen por agregación de las declaraciones y se vinculan con los tipos efectivos y las bases
 que declaran los contribuyentes. Así, el esquema de explicación en cada figura tributaria se organiza en tres niveles:
 
-## Presentación (página 7)
-
-- Tipo: content
-
 (1) Análisis de la evolución de la base imponible y del tipo medio efectivo, nivel en el que la fuente básica de
 información son las estadísticas anuales disponibles en la web de la AEAT.
-
-## Presentación (página 7)
-
-- Tipo: content
 
 (2) Análisis de la evolución de los impuestos devengados, elaborados a partir de las declaraciones-autoliquidaciones
 periódicas presentadas por los contribuyentes en cumplimiento de sus obligaciones fiscales.
 
-## Presentación (página 7)
-
-- Tipo: content
-
 (3) Análisis de la recaudación en términos de caja, detallando los elementos que hayan podido influir en un
 comportamiento distinto de los ingresos con respecto a las obligaciones generadas.
-
-## Presentación (página 7)
-
-- Tipo: content
 
 El esquema utilizado cubre todo el proceso de pago de los impuestos: desde que se produce el hecho imponible que genera
 la obligación para el contribuyente hasta que finalmente se liquida e ingresa el impuesto. Es preciso señalar que, en general,
 la información sobre bases imponibles e impuestos devengados de los dos últimos años tiene carácter provisional.
-
-## Presentación (página 7)
-
-- Tipo: content
 
 Este método de análisis es posible gracias al sistema informativo del que dispone la Agencia Tributaria, que permite
 elaborar para cada impuesto series agregadas anuales y trimestrales de bases imponibles, impuestos devengados, tipos
@@ -196,19 +137,11 @@ Agencia
 Tributaria
 (https://sede.agenciatributaria.gob.es/Sede/estadisticas.html).
 
-## Presentación (página 7)
-
-- Tipo: content
-
 Por otra parte, esta misma estructura conceptual es la que sirve de apoyo a la previsión presupuestaria de los ingresos
 tributarios. Su estimación se elabora tomando como referencia el escenario económico previsto para el año siguiente.
 Los crecimientos de las bases imponibles se ajustan de manera que se adapten a los perfiles de evolución que proyecta
 el escenario. A partir de las bases imponibles y de hipótesis sobre el comportamiento de los tipos efectivos, se obtienen
 los impuestos devengados que, llevados al período del ingreso, dan lugar a la recaudación de caja esperada.
-
-## Presentación (página 7)
-
-- Tipo: table
 
 El informe incluye un texto breve con los principales hechos que caracterizaron la evolución de los ingresos en 2024 y
 con enlaces a un fichero externo que contiene las series de datos desde 1995. Junto a este fichero de cuadros se ponen
@@ -217,28 +150,19 @@ con las series de derechos reconocidos desde 2004. Además, algunos de los cuadr
 incluyen información más detallada que se pueden encontrar en la web y, como es habitual en los informes mensuales,
 otro fichero recoge las principales novedades normativas y las series de tipos legales de los distintos impuestos.
 
-## Presentación (página 7)
-
-- Tipo: title
-
 EL DIRECTOR DEL SERVICIO DE ESTUDIOS TRIBUTARIOS Y ESTADÍSTICAS
 
-## Resumen (página 9)
+## Página 8
 
-- Tipo: title
+_Página vacía_
 
+## Página 9
+
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 7
 Resumen
-
-## Resumen (página 9)
-
-- Tipo: content
 
 Los ingresos tributarios en 2024 alcanzaron la cifra de 294.734 millones de euros, lo que supuso un
 crecimiento del 8,4% con respecto al año 2023.
-
-## Resumen (página 9)
-
-- Tipo: table
 
 El aumento de los ingresos tuvo como fundamento principal el comportamiento de las bases, que
 crecieron un 6,9%. Si solo se tienen en cuenta las rentas y el gasto final sujeto a IVA, el crecimiento se eleva
@@ -252,10 +176,6 @@ directos, que aumentaron un 9% (a pesar de que los cambios normativos supusieron
 incremento del 7,5%), beneficiados por el progresivo fin de las medidas sobre los productos energéticos y
 alimenticios vigentes en años anteriores.
 
-## Resumen (página 9)
-
-- Tipo: table
-
 El contexto económico se caracterizó por la tendencia alcista de la actividad desde comienzo de año.
 El crecimiento en volumen del PIB en 2024 fue del 3,2%, con tasas intertrimestrales promedio superiores al 0,8%.
 En términos interanuales el año 2023 se cerró con crecimientos en el entorno del 2,2% y en 2024 las tasas fueron
@@ -268,10 +188,6 @@ consecuencia del fin de las tensiones inflacionistas de los años previos. Así,
 moderó de forma considerable pasando del 9,1% del año 2023 al 6,2% en 2024. No obstante, en el caso de la
 demanda interior, que es una variable más relacionada con los ingresos que el PIB nominal, el incremento,
 también del 6,2%, fue similar al que se registró en 2023.
-
-## Resumen (página 9)
-
-- Tipo: table
 
 En 2024 se cerraron las diferencias entre el comportamiento de los ingresos por impuestos directos
 e indirectos que distinguieron el año anterior. El incremento de los impuestos directos (capítulo I) fue del
@@ -295,23 +211,14 @@ aumento de los ingresos habría sido tan solo del 1,7%. Las dos figuras principa
 Hidrocarburos y el Impuesto sobre Labores del Tabaco, crecieron por encima de esa cifra; en concreto, un 2,1%
 el primero y un 3,2% el segundo.
 
-## 1. LOS INGRESOS TRIBUTARIOS EN 2024 (página 10)
+## Página 10
 
-- Tipo: content
-
-1. LOS INGRESOS TRIBUTARIOS EN 2024
-
-## 1. LOS INGRESOS TRIBUTARIOS EN 2024 (página 10)
-
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 8
+1.  LOS INGRESOS TRIBUTARIOS EN 2024
 
 Los ingresos tributarios se elevaron hasta los
 294.734 millones de euros, un 8,4% por
 encima de la recaudación registrada en 2023.
-
-## 1. LOS INGRESOS TRIBUTARIOS EN 2024 (página 10)
-
-- Tipo: table
 
 En 2024 volvieron a concurrir los dos elementos que
 caracterizaron la evolución de los ingresos en 2023;
@@ -331,10 +238,6 @@ Impuesto sobre Sociedades (10,8%). En el caso del
 IVA, el gasto sujeto se moderó con respecto a 2023,
 sobre todo por la menor presión inflacionaria, pero
 aun así experimentó un aumento del 5,7%.
-
-## 1. LOS INGRESOS TRIBUTARIOS EN 2024 (página 10)
-
-- Tipo: table
 
 En cuanto al segundo elemento, los cambios
 normativos y de gestión, minoraron la recaudación
@@ -356,10 +259,9 @@ sobre la Electricidad; solo estas últimas medidas
 supusieron unos ingresos adicionales de 2.120
 millones.
 
-## En 2024 la actividad económica mostró una tendencia (página 11)
+## Página 11
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 9
 En 2024 la actividad económica mostró una tendencia
 alcista desde los primeros compases del año. Así se
 fue observando en los principales indicadores, tanto
@@ -383,10 +285,6 @@ comportamiento negativo, se recuperaron en la
 segunda mitad del año, pero no fue suficiente para
 compensar el mayor crecimiento de las importaciones
 con respecto a 2023.
-
-## En 2024 la actividad económica mostró una tendencia (página 11)
-
-- Tipo: table
 
 En términos nominales la situación fue muy distinta
 como
@@ -412,10 +310,6 @@ otra de las macromagnitudes contables más indicada
 que el PIB nominal para el seguimiento de los
 ingresos, se desaceleró tanto como este (Gráfico 1.2).
 
-## En 2024 la actividad económica mostró una tendencia (página 11)
-
-- Tipo: content
-
 En lo que se refiere a los indicadores de carácter fiscal,
 todos ellos dieron una señal alcista inequívoca,
 además con la novedad, a partir de mitad de año, de
@@ -426,9 +320,9 @@ tiempo real de la actividad, siguieron una tendencia
 creciente desde el mínimo de enero. En los Gráficos
 1.3 y 1.4 se puede comprobar: en el primero con
 
-## datos diarios en media móvil de 28 días comparando la (página 12)
+## Página 12
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 10
 
 datos diarios en media móvil de 28 días comparando la
 evolución en 2023 y 2024, y en el segundo en periodo
@@ -440,10 +334,6 @@ exportaciones, que venían de números rojos en
 prácticamente todo el año 2023, se recuperaron desde
 febrero y cerraron el año con un crecimiento
 ligeramente superior al 2%.
-
-## datos diarios en media móvil de 28 días comparando la (página 12)
-
-- Tipo: table
 
 La mejora que se produjo en las ventas a lo largo de
 2024 también se pudo seguir en tiempo real con el
@@ -481,10 +371,6 @@ las ventas iba en ascenso. Incluso tras el impacto de la
 dana a finales de octubre, las ventas pudieron
 remontar rápidamente.
 
-## datos diarios en media móvil de 28 días comparando la (página 12)
-
-- Tipo: table
-
 Todo lo dicho anteriormente se resume en el Gráfico
 1.7 que muestra la evolución trimestral de las ventas
 totales de las Grandes Empresas y pymes, el
@@ -497,10 +383,9 @@ año 2023. Estos indicios se confirmaron rápidamente
 en los inicios de 2024 hasta consolidarse en una
 trayectoria ascendente en el resto del año.
 
-## En lo que se refiere a los precios, en términos (página 13)
+## Página 13
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 11
 En lo que se refiere a los precios, en términos
 anuales se puede decir que en 2024 siguieron
 relajándose las tensiones inflacionistas que se
@@ -510,10 +395,6 @@ ocurrido en el transcurso del año, se puede matizar
 algo esa afirmación dado que la recuperación de los
 precios de la energía hizo que a finales de año se
 originara un cierto repunte de los precios.
-
-## En lo que se refiere a los precios, en términos (página 13)
-
-- Tipo: table
 
 En el Gráfico 1.8 se pueden ver ambos aspectos con la
 evolución en 2023 y 2024 de los precios de consumo
@@ -542,10 +423,6 @@ embargo, lo que se observa es una progresiva
 reducción de las tasas negativas hasta volver a crecer
 en los dos últimos meses de 2024.
 
-## En lo que se refiere a los precios, en términos (página 13)
-
-- Tipo: content
-
 El perfil de ambos indicadores está determinado, como
 se ha señalado y a similitud de los últimos años, por la
 evolución de los precios de la energía. En el Gráfico
@@ -557,10 +434,6 @@ de la producción industrial. Por su parte, el Gráfico
 muestra el origen del repunte de los precios en el final
 del año.
 
-## En lo que se refiere a los precios, en términos (página 13)
-
-- Tipo: content
-
 En el empleo el año 2024 se caracterizó, en
 general, por una suave moderación del crecimiento
 que se manifiesta con más o menos intensidad en
@@ -571,9 +444,9 @@ tiempo completo de la Contabilidad Nacional. Como
 se ve en el caso de los afiliados, en los tres primeros
 trimestres se prolongó la suave tendencia a la
 
-## moderación que venía de 2023. Solo en el último (página 14)
+## Página 14
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 12
 
 moderación que venía de 2023. Solo en el último
 trimestre se vio una pequeña mejora. En los datos
@@ -592,10 +465,6 @@ de
 los
 documentos fiscales, aunque no es exactamente
 igual si se considera el empleo equivalente.
-
-## moderación que venía de 2023. Solo en el último (página 14)
-
-- Tipo: table
 
 Finalmente hay que hacer mención a la generación del
 valor añadido en el proceso de producción y su reparto
@@ -626,10 +495,9 @@ del covid. En las empresas personales, en cambio, se
 mantiene una tendencia creciente prácticamente en
 los últimos nueve años.
 
-## La base imponible agregada de los principales (página 15)
+## Página 15
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 13
 La base imponible agregada de los principales
 impuestos creció un 6,9% en 2024, superando en
 seis décimas la tasa alcanzada en 2023 (Cuadro
@@ -646,10 +514,6 @@ continuidad de la moderación de los precios iniciada
 en 2023, tras las fuertes tensiones sufridas un año
 antes.
 
-## La base imponible agregada de los principales (página 15)
-
-- Tipo: content
-
 Tras la revisión de la demanda interior, indicador
 macroeconómico nominal más relacionado con la
 evolución de la base imponible agregada, el perfil de
@@ -660,10 +524,6 @@ indicador, como muestra el Gráfico 1.16 que recoge
 el comportamiento de ambos agregados en los
 últimos veinticinco años, tomando como base el año
 2000.
-
-## La base imponible agregada de los principales (página 15)
-
-- Tipo: table
 
 Prácticamente todo el mayor aumento de la base
 imponible agregada se debe al incremento de las
@@ -687,17 +547,12 @@ frente al -13,9% anterior), por la menor caída de los
 precios de los productos asociados al petróleo y de
 la electricidad.
 
-## La base imponible agregada de los principales (página 15)
-
-- Tipo: title
-
 El perfil de la base imponible agregada estuvo
 condicionado por la temprana celebración de la
 
-## Semana (página 16)
+## Página 16
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 14
 Semana
 Santa
 en
@@ -713,10 +568,6 @@ trimestre de 2023. Entre julio y diciembre, en
 cambio, el crecimiento de las bases alcanzó el 7,7%,
 con mejoras en todos sus componentes (Gráfico
 1.17).
-
-## Semana (página 16)
-
-- Tipo: table
 
 Se estima que el tipo medio efectivo sobre la
 renta y el gasto creció un 2,4% en 2024, hasta el
@@ -739,10 +590,6 @@ y de la recuperación de los tipos en el IVA de la
 electricidad, gas y alimentos y en el Impuesto
 Especial sobre la Electricidad.
 
-## Semana (página 16)
-
-- Tipo: table
-
 Los impuestos devengados crecieron en 2024 un
 10,1% (Cuadro 1.4), seis décimas por encima del
 aumento alcanzado por la suma de los principales
@@ -755,10 +602,6 @@ impuestos devengados se sitúa en el 10,2%. El
 crecimiento de los impuestos devengados se debió al
 aumento del 6,9% de las bases y a la subida de un
 2,4% del tipo medio.
-
-## Semana (página 16)
-
-- Tipo: table
 
 El incremento de los ingresos tributarios fue
 inferior al de los impuestos devengados, un 8,4%.
@@ -774,10 +617,9 @@ gestión que en 2024 supusieron una pérdida de
 ingresos valorada en 2.008 millones (en el Cuadro
 1.5 se puede encontrar el detalle).
 
-## Analizando la evolución de bases e ingresos por (página 17)
+## Página 17
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 15
 Analizando la evolución de bases e ingresos por
 figuras, en el IRPF las rentas brutas de los
 hogares aumentaron en 2024 un 8,5%, tasa muy
@@ -794,10 +636,6 @@ rentas de capital (22,6%, Gráfico 1.20), gracias al
 empuje recibido de las rentas de capital mobiliario y
 de las ganancias patrimoniales.
 
-## Analizando la evolución de bases e ingresos por (página 17)
-
-- Tipo: content
-
 El IRPF devengado creció un 11,1% en 2024,
 resultado del aumento de las rentas brutas de los
 hogares en un 8,5% y del tipo en un 2,4% (Gráficos
@@ -806,10 +644,6 @@ efectivo se produjo como resultado de las subidas
 del salario y la pensión medios, a pesar de los
 cambios normativos que redujeron el tipo en las
 rentas más bajas.
-
-## Analizando la evolución de bases e ingresos por (página 17)
-
-- Tipo: table
 
 Efectivamente los cambios normativos tuvieron un
 notable impacto en el IRPF en 2024: redujeron la
@@ -846,10 +680,6 @@ paliar los efectos de la dana, casi todos ellos por el
 aplazamiento del segundo plazo de la campaña de la
 renta hasta febrero de 2025.
 
-## Analizando la evolución de bases e ingresos por (página 17)
-
-- Tipo: content
-
 En consecuencia, los ingresos en el IRPF crecieron
 un 7,6%, tasa que se elevaría hasta el 10,2% si se
 descuenta el impacto negativo de los cambios
@@ -858,9 +688,9 @@ crecimiento de la renta de los hogares del 8,5% y la
 subida del tipo efectivo derivada del incremento de
 salarios y pensiones.
 
-## En (página 18)
+## Página 18
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 16
 
 En
 el
@@ -893,10 +723,6 @@ importe de estos ajustes en los grupos consolidados,
 favoreciendo un progresivo acercamiento de la base
 imponible a estos beneficios (Cuadro 8.5).
 
-## En (página 18)
-
-- Tipo: content
-
 El Impuesto sobre Sociedades devengado
 creció aproximadamente lo mismo que la base
 consolidada, un 10,4%. La diferencia es la pequeña
@@ -914,10 +740,6 @@ alta
 variabilidad de sus beneficios en función de la
 situación de los mercados, pero sin apenas impacto
 en el impuesto devengado (Gráficos 1.24 y 1.25).
-
-## En (página 18)
-
-- Tipo: table
 
 Los ingresos por el Impuesto sobre Sociedades
 aumentaron un 11,5% (Cuadro 3.1), alcanzando los
@@ -940,10 +762,9 @@ sociedades. En 2023 esa medida tuvo un impacto
 positivo que en 2024 se tornó negativo, efecto que
 se acentuó porque los importes no deducidos en
 
-## 2023 se pueden restar, a partes iguales, en los diez (página 19)
+## Página 19
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 17
 2023 se pueden restar, a partes iguales, en los diez
 ejercicios siguientes. El impacto negativo de ambos
 elementos se vio ligeramente compensado en la
@@ -968,10 +789,6 @@ las
 devoluciones extraordinarias respecto a las del año
 2023 y por la existencia de ingresos extraordinarios.
 
-## 2023 se pueden restar, a partes iguales, en los diez (página 19)
-
-- Tipo: table
-
 En lo que se refiere al IVA, el gasto final sujeto a
 IVA creció un 5,7% en 2024, 1,7 puntos por debajo
 del aumento de un año antes (Gráfico 1.26, Cuadro
@@ -983,10 +800,6 @@ en los consumos de las Administraciones Públicas.
 Por el contrario, el gasto en compra de vivienda de
 los hogares fue ligeramente superior al del año
 anterior (Gráfico 1.27).
-
-## 2023 se pueden restar, a partes iguales, en los diez (página 19)
-
-- Tipo: table
 
 Un rasgo destacado del ejercicio 2024 fue el
 escalonado incremento de tipos que se produjo con
@@ -1010,10 +823,6 @@ compensada la ralentización del gasto sujeto con la
 recuperación del tipo (Gráficos 1.28 y 1.29). El IVA
 devengado neto experimentó un aumento similar.
 
-## 2023 se pueden restar, a partes iguales, en los diez (página 19)
-
-- Tipo: table
-
 Los ingresos por IVA crecieron un 7,9% en 2024
 (1,6% anterior), prácticamente igual que el IVA
 devengado, aunque los efectos de la subida de los
@@ -1022,10 +831,9 @@ devengo. El retorno progresivo al 21% en los tipos
 aplicados sobre la electricidad y el gas natural supuso
 mayores ingresos (1.159 millones).
 
-## Sin embargo, la aproximación al tipo del 4% desde (página 20)
+## Página 20
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 18
 Sin embargo, la aproximación al tipo del 4% desde
 el 0% en los productos básicos de alimentación y al
 10% desde el 5% en pastas y aceites (con la
@@ -1048,10 +856,6 @@ iniciado en 2023 (parte de ellos recuperados en
 2024) y de otras medidas que estuvieron vigentes en
 periodos anteriores y no en 2024.
 
-## Sin embargo, la aproximación al tipo del 4% desde (página 20)
-
-- Tipo: content
-
 El valor de los consumos sujetos a los
 Impuestos Especiales volvió a reducirse, aunque
 con menos intensidad que en 2023 (-6,3% frente al
@@ -1066,20 +870,12 @@ contribuyó a frenar el descenso del valor agregado.
 La aportación de los consumos ligados al alcohol,
 por el contrario, fue negativa.
 
-## Sin embargo, la aproximación al tipo del 4% desde (página 20)
-
-- Tipo: content
-
 En 2024 los ingresos por Impuestos Especiales
 crecieron un 6,6%. Sin los ingresos derivados de los
 cambios normativos (1.009 millones del Impuesto
 sobre la Electricidad y del Impuesto sobre Envases
 de Plástico No Reutilizables), el aumento habría sido
 tan solo del 1,7%.
-
-## Sin embargo, la aproximación al tipo del 4% desde (página 20)
-
-- Tipo: table
 
 La principal figura de este grupo de impuestos, el
 Impuesto sobre Hidrocarburos (Cuadro 5.5), creció
@@ -1103,10 +899,6 @@ recaudación histórica, muy superior al máximo de
 2012 (1.507 millones) con un consumo muy inferior
 al de entonces.
 
-## Sin embargo, la aproximación al tipo del 4% desde (página 20)
-
-- Tipo: content
-
 En los impuestos sobre el alcohol los ingresos
 crecieron un escaso 1% (-7,2% en 2023). En el
 Impuesto sobre Alcohol y bebidas derivadas, que
@@ -1115,10 +907,6 @@ aumento fue aún menor, de un 0,8% (Cuadro 5.2),
 mientras que en el Impuesto sobre la Cerveza el
 incremento fue del 1,4% (Cuadro 5.3) y consolida la
 tendencia creciente en el nivel de sus ingresos.
-
-## Sin embargo, la aproximación al tipo del 4% desde (página 20)
-
-- Tipo: table
 
 En el segundo año del Impuesto sobre Envases de
 Plástico No Reutilizables los ingresos alcanzaron los
@@ -1133,10 +921,6 @@ declaraciones (la primera se presentó en febrero), el
 resultado es una recaudación muy parecida en los
 dos años (646 millones desde febrero de 2024 y 645
 en 2023).
-
-## Sin embargo, la aproximación al tipo del 4% desde (página 20)
-
-- Tipo: table
 
 En cuanto al resto de figuras, en el Impuesto
 sobre la Renta de No Residentes (Cuadro 6.1) la
@@ -1153,10 +937,6 @@ comportamiento
 muy
 positivo en 2024.
 
-## Sin embargo, la aproximación al tipo del 4% desde (página 20)
-
-- Tipo: content
-
 El ingreso del resto de los tributos del capítulo I
 aumentó un 28,5% gracias a la recuperación parcial
 del Impuesto sobre el Valor de la Producción
@@ -1166,10 +946,9 @@ escasa recaudación del Impuesto temporal de
 Solidaridad de las Grandes Fortunas. Respecto
 a lo primero, el impuesto estuvo suspendido desde
 
-## mediados de 2021 dentro de las medidas para paliar (página 21)
+## Página 21
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 19
 mediados de 2021 dentro de las medidas para paliar
 los efectos de las subidas de precios de la
 electricidad. En 2024 se recuperó, aunque de
@@ -1181,10 +960,6 @@ en algunas CC.AA., de forma que la mayor parte de
 los ingresos que en 2023 había generado este
 impuesto, configurado como complementario del
 otro, fueron a parar a la caja de esas CC.AA.
-
-## mediados de 2021 dentro de las medidas para paliar (página 21)
-
-- Tipo: table
 
 En el resto del capítulo II cabe destacar el fuerte
 incremento en el Impuesto sobre Primas de
@@ -1202,20 +977,12 @@ Digitales (en este caso también cuentan los ajustes
 forales, aunque, incluso con eso, el aumento fue casi
 del 24%).
 
-## mediados de 2021 dentro de las medidas para paliar (página 21)
-
-- Tipo: content
-
 En el capítulo III de Tasas y otros ingresos
 (Cuadro 1.6 y Cuadro 6.6) la recaudación creció un
 8,4%, lo que supuso 156 millones más que en 2023.
 De ellos, 65 corresponden a las tasas, casi la mitad
 procedente exclusivamente de la Tasa sobre el
 Dominio Público Radioeléctrico.
-
-## mediados de 2021 dentro de las medidas para paliar (página 21)
-
-- Tipo: table
 
 Por último, en los que se refiere a la comparación de
 los ingresos tributarios y los ingresos presupuestados,
@@ -1226,16 +993,11 @@ las previsiones presupuestarias y las desviaciones para
 el periodo 1995-2023 se encuentran, respectivamente,
 en los Cuadro 7.9 y 1.7.
 
-## 2. EL IMPUESTO SOBRE LA RENTA DE LAS (página 22)
+## Página 22
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 20
 2. EL IMPUESTO SOBRE LA RENTA DE LAS
 PERSONAS FÍSICAS
-
-## 2. EL IMPUESTO SOBRE LA RENTA DE LAS (página 22)
-
-- Tipo: table
 
 Los ingresos por el IRPF alcanzaron los 129.408
 millones en 2024, un 7,6% más que el año anterior.
@@ -1258,10 +1020,6 @@ recuperación de los ingresos por intereses de
 cuentas bancarias que más que duplicaron el nivel
 alcanzado un año antes.
 
-## 2. EL IMPUESTO SOBRE LA RENTA DE LAS (página 22)
-
-- Tipo: content
-
 Las rentas brutas de los hogares crecieron un
 8,5% en 2024, superando en más de un punto la
 tasa del año anterior (Cuadro 2.1), y enlazando ya
@@ -1272,10 +1030,6 @@ ganancias patrimoniales y de las rentas de la
 empresa, mientras que las rentas del trabajo y las
 rentas por arrendamientos se desaceleraron en
 relación al año anterior.
-
-## 2. EL IMPUESTO SOBRE LA RENTA DE LAS (página 22)
-
-- Tipo: table
 
 Las rentas del trabajo, principal componente de las
 rentas de los hogares, crecieron un 7,0% en 2024,
@@ -1294,10 +1048,9 @@ alrededor del 10% en el primer semestre y del 8,7%
 en el segundo. El año se cerró con un incremento
 del 9,3%. En las pymes la masa salarial creció un
 
-## 4,8%, tasa similar a la de 2023, con un perfil estable (página 23)
+## Página 23
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 21
 4,8%, tasa similar a la de 2023, con un perfil estable
 en torno al 5% de enero a septiembre, y
 desacelerándose hasta el 4,3% en el último
@@ -1308,10 +1061,6 @@ ralentización en la creación de empleo y, en el
 último tramo del año, la moderación de las subidas
 salariales (Gráfico 2.1).
 
-## 4,8%, tasa similar a la de 2023, con un perfil estable (página 23)
-
-- Tipo: content
-
 La masa de salarios del sector público, por el
 contrario, creció más que en 2023, un 5,8% frente al
 5,1% anterior, gracias a un aumento del empleo del
@@ -1320,10 +1069,6 @@ nuevo incremento de las rentas medias (3,6%),
 impulsado por la subida adicional del 0,5% en los
 salarios que se produjo en el mes de julio (Gráfico
 2.2).
-
-## 4,8%, tasa similar a la de 2023, con un perfil estable (página 23)
-
-- Tipo: table
 
 La masa de pensiones públicas creció un 7%, por
 debajo del 9,2% de un año antes, por el descenso
@@ -1347,10 +1092,6 @@ en el periodo 1995-2010, año a partir del cual fueron
 perdiendo importancia, de forma que en 2024
 suponían el 3,3% de la masa de pensiones.
 
-## 4,8%, tasa similar a la de 2023, con un perfil estable (página 23)
-
-- Tipo: content
-
 En el Gráfico 2.4 se comparan las evoluciones del
 salario y pensiones medias y de los precios de
 consumo (IPC) desde 2010. Se observa que, así
@@ -1371,9 +1112,9 @@ incrementos en las pensiones más bajas y el mayor
 nivel de las nuevas pensiones que se dan de alta en
 el sistema frente a las que ya estaban en el mismo.
 
-## Por último, las prestaciones por desempleo volvieron (página 24)
+## Página 24
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 22
 
 Por último, las prestaciones por desempleo volvieron
 a aumentar en 2024, superando la tasa alcanzada en
@@ -1382,10 +1123,6 @@ incremento de la prestación media, que aumentó un
 3,4%, mientras que el número de desempleados
 mantuvo una tasa del 1%, similar a la registrada un
 año antes.
-
-## Por último, las prestaciones por desempleo volvieron (página 24)
-
-- Tipo: table
 
 Se estima que el conjunto de las rentas de capital de
 los hogares creció un 22,6% en 2024, frente al 3,2%
@@ -1423,10 +1160,6 @@ total de las rentas de capital mobiliario de los
 hogares, porcentaje que se redujo hasta un 70% en
 2024, al ganar mayor importancia los intereses.
 
-## Por último, las prestaciones por desempleo volvieron (página 24)
-
-- Tipo: table
-
 También para las ganancias patrimoniales se espera
 un fuerte avance, superior al 22%. Este crecimiento
 se debe, de una parte, al dinamismo de las
@@ -1440,16 +1173,11 @@ incremento del 17%. Estas ganancias están ligadas,
 fundamentalmente, a las ventas de inmuebles y a la
 evolución de la cotización de las acciones, en ambos
 
-## casos con mejores resultados en 2024 que en 2023 (página 25)
+## Página 25
 
-- Tipo: title
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 23
 casos con mejores resultados en 2024 que en 2023
 (Gráfico 2.8).
-
-## casos con mejores resultados en 2024 que en 2023 (página 25)
-
-- Tipo: content
 
 Por su parte, las rentas derivadas del arrendamiento
 de inmuebles crecieron un 6,5%, tasa que refleja
@@ -1457,20 +1185,12 @@ también el buen tono de estas rentas, si bien se
 sitúa más de un punto por debajo del ritmo
 registrado en 2023.
 
-## casos con mejores resultados en 2024 que en 2023 (página 25)
-
-- Tipo: table
-
 Para finalizar, se estima que las rentas de las
 empresas personales crecieron un 9% en 2024
 superando en casi cuatro puntos el 5,1% observado
-en 2023 (Cuadro 2.8), con un perfil de mejora a
+en 2023  (Cuadro 2.8), con un perfil de mejora a
 medida que avanzaba el año, pasando del 7,6% del
 primer trimestre al 10,5% del último.
-
-## casos con mejores resultados en 2024 que en 2023 (página 25)
-
-- Tipo: content
 
 El tipo efectivo sobre las rentas brutas de los
 hogares aumentó un 2,4% (0,6% en 2023, Cuadro
@@ -1482,10 +1202,6 @@ pensiones medias, y hubiera sido mayor de no
 haberse producido la rebaja de tipos a las rentas
 más bajas.
 
-## casos con mejores resultados en 2024 que en 2023 (página 25)
-
-- Tipo: table
-
 El IRPF devengado creció un 11,1% en 2024,
 encadenando cuatro años de crecimientos elevados.
 Entre 2021 y 2024, la tasa media de incremento
@@ -1495,10 +1211,6 @@ anual. Sin la cuota diferencial, el IRPF devengado se
 incrementó un 10,5% en 2024, resultado del
 aumento de las bases del 8,5% y del tipo efectivo
 del 1,9% (Cuadro 2.1).
-
-## casos con mejores resultados en 2024 que en 2023 (página 25)
-
-- Tipo: table
 
 Los ingresos en el IRPF aumentaron un 7,6%
 (9,9% en 2023), tres puntos y medio por debajo de
@@ -1518,9 +1230,9 @@ anual aumentaron un 10%, tasa más próxima a la
 de los impuestos devengados sin incluir la cuota
 diferencial (10,5%).
 
-## Los (página 26)
+## Página 26
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 24
 
 Los
 ingresos
@@ -1535,10 +1247,6 @@ el mayor tipo medio (Cuadro 2.3 y Gráfico 2.10). El
 aumento es inferior al de 2023, consecuencia, como
 ya se ha visto, del menor dinamismo mostrado por
 las rentas del trabajo.
-
-## Los (página 26)
-
-- Tipo: table
 
 El crecimiento de los ingresos por retenciones del
 trabajo y actividades económicas en el sector
@@ -1560,10 +1268,6 @@ suman los ingresos perdidos por este motivo, los
 crecimientos en ambos tipos de empresa hubiesen
 sido más parecidos, en las Grandes Empresas del
 10,6% y en las pymes del 9%.
-
-## Los (página 26)
-
-- Tipo: table
 
 En las AA.PP. los ingresos por retenciones del
 trabajo crecieron un 9,7%, casi tres puntos menos
@@ -1603,10 +1307,9 @@ más del 8% (cerca del 6% por la masa de salarios y
 el resto por la subida del tipo efectivo), ligeramente
 por encima de lo que sucedió en 2023.
 
-## De nuevo en 2024 volvieron a crecer con mucho (página 27)
+## Página 27
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 25
 De nuevo en 2024 volvieron a crecer con mucho
 vigor las retenciones por rentas de capital mobiliario.
 Lo hicieron un 40,8% después del 26,7% del año
@@ -1629,10 +1332,6 @@ arrendamientos
 (fundamentalmente de locales) aumentaron en 2024
 un 5,8% (6,7% en 2023).
 
-## De nuevo en 2024 volvieron a crecer con mucho (página 27)
-
-- Tipo: table
-
 En lo que se refiere a los beneficios de las empresas
 personales, los pagos fraccionados crecieron en
 2024 un 9,5%, tasa casi dos puntos inferior a la del
@@ -1641,10 +1340,6 @@ explica por la evolución creciente que han mostrado
 estos pagos y el desplazamiento a la caja de febrero
 de 2025 del pago correspondiente al devengo del
 cuarto trimestre de 2024.
-
-## De nuevo en 2024 volvieron a crecer con mucho (página 27)
-
-- Tipo: table
 
 Los ingresos asociados al resultado de la declaración
 anual se redujeron un 1,5%, mientras que las
@@ -1686,10 +1381,6 @@ de Valencia, medida incluida dentro del resto de
 actuaciones dirigidas a paliar los efectos de la dana
 (Cuadro 1.5).
 
-## De nuevo en 2024 volvieron a crecer con mucho (página 27)
-
-- Tipo: table
-
 Por último, hay que señalar que en 2022 se rompió
 de nuevo el que solía ser el patrón habitual de la
 liquidación anual de la Asignación a la Iglesia
@@ -1703,15 +1394,11 @@ fueron unos 230 millones inferiores a las realizadas
 un año antes y estuvieron unos 160 millones por
 debajo de las pagadas en 2024.
 
-## 3. EL IMPUESTO SOBRE SOCIEDADES (página 28)
+## Página 28
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 26
 
 3. EL IMPUESTO SOBRE SOCIEDADES
-
-## 3. EL IMPUESTO SOBRE SOCIEDADES (página 28)
-
-- Tipo: table
 
 En el Impuesto sobre Sociedades la recaudación
 creció un 11,5% hasta los 39.096 millones (Cuadro
@@ -1734,10 +1421,6 @@ fraccionados indica que estos aumentaron por
 encima del 12% (casi el 15% en las Grandes
 Empresas no pertenecientes a grupos y algo más del
 11% en estos últimos; Cuadro 3.2).
-
-## 3. EL IMPUESTO SOBRE SOCIEDADES (página 28)
-
-- Tipo: table
 
 Consecuencia del aumento de los beneficios fue el
 crecimiento del 11,1% en los pagos fraccionados, el
@@ -1764,10 +1447,6 @@ devolución de cantidades de ejercicios pasados. Por
 último, se realizaron devoluciones de la campaña de
 2023 más rápido que en años anteriores.
 
-## 3. EL IMPUESTO SOBRE SOCIEDADES (página 28)
-
-- Tipo: table
-
 La base imponible consolidada del Impuesto
 sobre Sociedades creció un 10,8%, enlazando así
 cuatro años de incrementos notables (11,4% en
@@ -1777,10 +1456,9 @@ sociedades con tipos cero ni uno (Cuadro 3.1 y
 Gráfico 3.1). En los últimos cuatro años se ha ido
 produciendo un progresivo acercamiento de la base
 
-## imponible (página 29)
+## Página 29
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 27
 imponible
 a
 estos
@@ -1803,10 +1481,6 @@ entonces (Gráfico 1.23). La evolución detallada del
 impuesto desde 1995 se puede analizar con el
 Cuadro 8.5.
 
-## imponible (página 29)
-
-- Tipo: content
-
 El tipo efectivo sobre la base imponible se redujo
 ligeramente en 2024 (-0,4%) tras caer un 1,5% en
 2023 (Gráfico 3.5). El tipo sobre los beneficios
@@ -1823,10 +1497,6 @@ las reacciones de los mercados financieros. Este
 hecho tiene mucha repercusión sobre la variación de
 los beneficios (Gráfico 3.2), pero apenas afectan al
 impuesto dada su escasa o nula tributación.
-
-## imponible (página 29)
-
-- Tipo: table
 
 El Impuesto sobre Sociedades devengado
 aumentó un 10,4% en 2024 (13,2% sin cuota
@@ -1850,9 +1520,9 @@ comportamiento de las que tributaron según su
 de las sociedades que declararon según los
 beneficios del ejercicio crecieron un 4,7%.
 
-## El Gráfico 3.4 ilustra la relación entre pagos y cuota (página 30)
+## Página 30
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 28
 
 El Gráfico 3.4 ilustra la relación entre pagos y cuota
 diferencial hasta completar el conjunto del impuesto
@@ -1868,10 +1538,6 @@ ejercicio y, en consecuencia, que se incremente el
 importe de la cuota diferencial negativa (Cuadro
 3.3).
 
-## El Gráfico 3.4 ilustra la relación entre pagos y cuota (página 30)
-
-- Tipo: content
-
 Los ingresos en términos de caja crecieron un
 11,5% (Cuadro 3.1), impulsados por los buenos
 resultados de los pagos fraccionados, las retenciones
@@ -1879,10 +1545,6 @@ de capital mobiliario y las retenciones sobre los
 fondos de inversión. También se incrementaron las
 retenciones sobre arrendamientos, si bien a un ritmo
 menor del alcanzado los años previos.
-
-## El Gráfico 3.4 ilustra la relación entre pagos y cuota (página 30)
-
-- Tipo: table
 
 El resultado neto de la declaración anual asociada a
 la liquidación del ejercicio 2023 restó ingresos a la
@@ -1900,24 +1562,16 @@ realización de las devoluciones de la campaña de
 2023 (declaraciones presentadas a partir de finales
 de julio de 2024, y que se incrementaron un 18,6%).
 
-## 4. EL IMPUESTO SOBRE EL VALOR AÑADIDO (página 31)
+## Página 31
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 29
 
 4. EL IMPUESTO SOBRE EL VALOR AÑADIDO
-
-## 4. EL IMPUESTO SOBRE EL VALOR AÑADIDO (página 31)
-
-- Tipo: content
 
 Los ingresos por el IVA crecieron en 2024 un
 7,9%, hasta los 90.541 millones. (Cuadro 4.1 y
 Cuadro 1.5). El gasto final sujeto a IVA, la base del
 impuesto, cerró el año con un crecimiento del 5,7%
-
-## 4. EL IMPUESTO SOBRE EL VALOR AÑADIDO (página 31)
-
-- Tipo: table
 
 La diferencia entre una y otra cifra se explica porque
 el año 2024 se caracterizó por el fin de las sucesivas
@@ -1936,10 +1590,6 @@ originales empezó en octubre con lo que solo hubo
 un mes en caja en el que se registrara un aumento
 de los ingresos por ese motivo.
 
-## 4. EL IMPUESTO SOBRE EL VALOR AÑADIDO (página 31)
-
-- Tipo: table
-
 En 2024 el gasto final sujeto a IVA creció un
 5,7%, 1,7 puntos menos que en 2023 (Cuadro 4.1).
 La ralentización del gasto nominal se debió tanto al
@@ -1956,10 +1606,6 @@ fecha de celebración de la Semana Santa en 2023 y
 2024) a una tasa del 7,6% en los últimos tres meses
 (Gráfico 4.2).
 
-## 4. EL IMPUESTO SOBRE EL VALOR AÑADIDO (página 31)
-
-- Tipo: table
-
 El Gráfico 4.3 muestra la incidencia del ciclo
 inflacionario iniciado en 2021 sobre el gasto sujeto a
 IVA. Tomando como base el año 2015, se puede
@@ -1972,10 +1618,9 @@ distanciando de la del gasto en volumen. Mientras
 que en 2024 el primero supera en más del 63% el
 importe alcanzado en 2015, el gasto en volumen ha
 
-## crecido en el mismo periodo un 33,2%. No obstante, (página 32)
+## Página 32
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 30
 crecido en el mismo periodo un 33,2%. No obstante,
 este fuerte impacto en el gasto corriente no se
 traslada a los ingresos ya que, por una parte,
@@ -1989,10 +1634,6 @@ impacto sobre los ingresos quedó reducido o,
 incluso, como es el caso de la alimentación básica,
 anulado.
 
-## crecido en el mismo periodo un 33,2%. No obstante, (página 32)
-
-- Tipo: content
-
 Desde el punto de vista de los componentes, el
 gasto corriente y de capital de las Administraciones
 Públicas fue el que registró una desaceleración más
@@ -2001,10 +1642,6 @@ intensa en el año (5,9% en 2024 frente a 9,4% de
 al 7,2%), en tanto que el gasto en compra en
 vivienda mantuvo el ritmo del año anterior (algo
 superior al 7%; Gráfico 4.4 y Cuadro 4.1).
-
-## crecido en el mismo periodo un 33,2%. No obstante, (página 32)
-
-- Tipo: table
 
 Se estima que el tipo efectivo del IVA aumentó un
 1,4% (Gráfico 4.5 y Cuadro 4.1) como consecuencia
@@ -2031,9 +1668,9 @@ recaudación (el devengo de octubre se contabilizó en
 la caja de diciembre y los de noviembre y diciembre
 en los dos primeros meses de 2025).
 
-## El Cuadro 8.7 recoge la descomposición del gasto (página 33)
+## Página 33
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 31
 
 El Cuadro 8.7 recoge la descomposición del gasto
 sujeto por tipos. El peso del gasto a tipo general
@@ -2060,10 +1697,6 @@ gasto a tipo general ha estado por debajo del nivel
 anterior al seguir tributando el consumo de
 electricidad y gas a tipos inferiores al 21%.
 
-## El Cuadro 8.7 recoge la descomposición del gasto (página 33)
-
-- Tipo: content
-
 El IVA devengado aumentó un 7,3%, en torno a
 un punto y medio más que el gasto sujeto (Cuadro
 4.1), por el incremento del tipo medio derivado de
@@ -2073,18 +1706,10 @@ tasa similar se espera para el IVA devengado neto
 variación del saldo que las empresas dejan a
 compensar de un año a otro).
 
-## El Cuadro 8.7 recoge la descomposición del gasto (página 33)
-
-- Tipo: content
-
 Los ingresos en términos de caja crecieron un 7,9%,
 con un aumento de los ingresos brutos del 5,2% y un
 descenso de las devoluciones realizadas del 0,8%
 (Cuadro 4.2).
-
-## El Cuadro 8.7 recoge la descomposición del gasto (página 33)
-
-- Tipo: content
 
 En lo que respecta a los ingresos brutos, el incremento
 de la recaudación procedente de las autoliquidaciones
@@ -2098,29 +1723,20 @@ sujeto y a la mayor incidencia de la subida de tipos. El
 mayor crecimiento en los últimos devengos de 2024 se
 vio en la caja de 2025, no en la de 2024.
 
-## El Cuadro 8.7 recoge la descomposición del gasto (página 33)
-
-- Tipo: content
-
 Por tipo de contribuyente, el crecimiento del IVA bruto
 en caja fue mayor en las declaraciones trimestrales,
 que aumentaron un 6%, dos puntos por encima de la
 tasa alcanzada por las declaraciones mensuales. Hay
 que recordar, no obstante, que las subidas de tipos
 
-## (antes bajadas) también distorsionan el desglose entre (página 34)
+## Página 34
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 32
 (antes bajadas) también distorsionan el desglose entre
 Grandes Empresas (que, al tener declaraciones
 mensuales, son las que primero notan el impacto) y
 las pymes (que generalmente notan el impacto más
 tarde y en el IVA soportado).
-
-## (antes bajadas) también distorsionan el desglose entre (página 34)
-
-- Tipo: content
 
 La diferencia entre el aumento de los ingresos brutos
 totales y los ingresos por autoliquidaciones se debe al
@@ -2133,10 +1749,6 @@ los
 mayores
 aplazamientos
 solicitados en 2023.
-
-## (antes bajadas) también distorsionan el desglose entre (página 34)
-
-- Tipo: table
 
 Las devoluciones realizadas de IVA cayeron un 0,8%
 en 2024. Las devoluciones mensuales se redujeron en
@@ -2161,10 +1773,6 @@ devoluciones
 realizadas y pesó más, como es habitual, la primera
 parte del año.
 
-## (antes bajadas) también distorsionan el desglose entre (página 34)
-
-- Tipo: content
-
 En el caso de las devoluciones anuales, volvieron a
 aumentar por cuarto año consecutivo, un 6,6% en
 2024, como consecuencia del incremento de las
@@ -2177,10 +1785,6 @@ ejercicio
 cuales, además, se realizó un porcentaje superior al
 del año anterior.
 
-## (antes bajadas) también distorsionan el desglose entre (página 34)
-
-- Tipo: content
-
 Por
 último,
 también
@@ -2190,15 +1794,10 @@ devoluciones
 vinculadas a los ajustes forales (-2,9%, incluyendo las
 devoluciones asociadas a la importación).
 
-## 5. LOS IMPUESTOS ESPECIALES (página 35)
+## Página 35
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 33
 5. LOS IMPUESTOS ESPECIALES
-
-## 5. LOS IMPUESTOS ESPECIALES (página 35)
-
-- Tipo: table
 
 Los
 ingresos
@@ -2225,10 +1824,6 @@ gracias al mayor consumo, mientras que el aumento
 de los segundos se situó en el 3,2% debido al
 aumento de precios y consumos.
 
-## 5. LOS IMPUESTOS ESPECIALES (página 35)
-
-- Tipo: content
-
 El valor de los consumos sujetos a Impuestos
 Especiales se mantuvo en una senda decreciente,
 si bien la caída (-6,3%) fue inferior a la del año
@@ -2238,10 +1833,6 @@ consumos en los componentes que más peso tienen
 en el agregado (gasolinas, gasóleos y electricidad),
 que se produjo por la fuerte reducción de sus
 precios y a pesar de los mayores consumos.
-
-## 5. LOS IMPUESTOS ESPECIALES (página 35)
-
-- Tipo: content
 
 En 2024 se incrementó el consumo (Cuadro 5.1) de
 gasolinas, gasóleos y biocarburantes (3,0%) y, en
@@ -2254,10 +1845,6 @@ subidas de tipos. Por otro lado, disminuyeron los
 consumos de alcohol (-2,6%) y cerveza (-0,7%), en
 un contexto de precios crecientes.
 
-## 5. LOS IMPUESTOS ESPECIALES (página 35)
-
-- Tipo: content
-
 Los precios energéticos mantuvieron en 2024 la
 tendencia decreciente iniciada el año anterior. Así, el
 precio medio de gasolinas y gasóleos se redujo un
@@ -2266,10 +1853,9 @@ caída superior a la registrada por el precio del barril
 de petróleo en euros, que disminuyó un 2,2% (al
 contrario de lo ocurrido en 2023, cuando el descenso
 
-## de los precios de gasolinas y gasóleos fue muy (página 36)
+## Página 36
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 34
 de los precios de gasolinas y gasóleos fue muy
 inferior al del barril de petróleo en euros). En la
 electricidad la caída del precio de venta al público
@@ -2280,10 +1866,6 @@ mediados de 2021 y hasta finales de 2022 ha tenido
 como consecuencia que el precio de la electricidad
 siga estando muy por encima de los niveles que se
 observaban en 2019 y en los años previos.
-
-## de los precios de gasolinas y gasóleos fue muy (página 36)
-
-- Tipo: content
 
 Los precios de las bebidas alcohólicas registraron un
 leve
@@ -2310,10 +1892,6 @@ impuestos) como del resto de labores (9,2% el
 precio medio de venta al público y 11,3% antes de
 impuestos).
 
-## de los precios de gasolinas y gasóleos fue muy (página 36)
-
-- Tipo: content
-
 En lo que se refiere a los tipos efectivos, cabe
 señalar que el único cambio normativo en 2024 fue la
 vuelta progresiva del tipo del Impuesto Especial sobre
@@ -2339,9 +1917,9 @@ cervezas con mayor graduación mientras se reducía el
 de las demás, con caídas mayores en las de menor
 graduación.
 
-## Los (página 37)
+## Página 37
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 35
 
 Los
 Impuestos
@@ -2361,10 +1939,6 @@ Impuesto Especial sobre las Labores del Tabaco, que
 registra un crecimiento muy elevado respecto al
 mismo mes del año anterior, se ingresó en 2025.
 
-## Los (página 37)
-
-- Tipo: content
-
 Los ingresos en el Impuesto sobre Hidrocarburos
 aumentaron un 2,1% (Cuadro 5.5), tras el 0,6% del
 año previo. El crecimiento es prácticamente el
@@ -2380,10 +1954,6 @@ productos principales, con aumentos del entorno del
 en el gasóleo de automoción. La progresiva
 reducción del parque de vehículos de gasóleo está
 detrás de esta evolución dispar de los consumos.
-
-## Los (página 37)
-
-- Tipo: table
 
 En el Impuesto sobre Labores del Tabaco la
 recaudación aumentó un 3,2% (Cuadro 5.6) hasta
@@ -2408,10 +1978,6 @@ un 0,8%, concentrándose todo el incremento en el
 último trimestre por el proceso de acaparamiento
 previo que suele acompañar a las subidas de tipos.
 
-## Los (página 37)
-
-- Tipo: table
-
 Los ingresos en el Impuesto sobre la Electricidad se
 elevaron hasta los 1.112 millones de euros (Cuadro
 5.7) después de dos años con unas cifras residuales
@@ -2420,18 +1986,13 @@ recuperando progresivamente (pasando primero del
 0,5% al 2,5% en los devengos del primer trimestre, al
 3,8% en los del segundo y al 5,11% en la segunda
 
-## mitad del año). Este retorno a la normalidad, junto con (página 38)
+## Página 38
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 36
 mitad del año). Este retorno a la normalidad, junto con
 el leve aumento del consumo, permitió que la
 recaudación se situase en un nivel no muy alejado de
 los registrados antes del covid y de la crisis de precios.
-
-## mitad del año). Este retorno a la normalidad, junto con (página 38)
-
-- Tipo: content
 
 En 2024 los ingresos en el Impuesto sobre el Alcohol y
 Bebidas Derivadas y en el Impuesto sobre la Cerveza
@@ -2441,10 +2002,6 @@ caso como en el otro, lo ingresos se vieron favorecidos
 por los ajustes entre caja y devengo pues los
 consumos en 2024 se redujeron en ambos productos
 en un marco de precios crecientes.
-
-## mitad del año). Este retorno a la normalidad, junto con (página 38)
-
-- Tipo: table
 
 En el segundo año del Impuesto sobre Envases de
 Plástico No Reutilizables los ingresos alcanzaron los
@@ -2463,15 +2020,15 @@ se presentó en febrero), el resultado es una
 recaudación muy parecida en los dos años (646
 millones desde febrero de 2024 y 645 en 2023).
 
-## 6. OTROS IMPUESTOS (página 40)
+## Página 39
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 37
+
+## Página 40
+
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 38
 
 6. OTROS IMPUESTOS
-
-## 6. OTROS IMPUESTOS (página 40)
-
-- Tipo: table
 
 La recaudación generada por otras figuras distintas
 de las principales alcanzó los 13.560 millones en
@@ -2484,10 +2041,6 @@ sobre las Primas de Seguros, fueron contrarrestadas
 en parte por la caída de ingresos asociada al
 Impuesto Temporal de Solidaridad sobre las Grandes
 Fortunas.
-
-## 6. OTROS IMPUESTOS (página 40)
-
-- Tipo: table
 
 Los ingresos en el Impuesto sobre la Renta de
 los No Residentes (Cuadro 6.1) aumentaron un
@@ -2505,10 +2058,6 @@ aportación de la recaudación de la declaración anual
 fue negativa, al reducirse los ingresos brutos en casi
 un 12%.
 
-## 6. OTROS IMPUESTOS (página 40)
-
-- Tipo: table
-
 Otro grupo de impuestos que contribuyeron de
 forma positiva al aumento de la recaudación fue el
 de los impuestos medioambientales (Cuadro
@@ -2524,10 +2073,6 @@ retorno no fue completo hasta el tercer trimestre (en
 el primer trimestre se recuperó un 25% y un 50%
 en el segundo).
 
-## 6. OTROS IMPUESTOS (página 40)
-
-- Tipo: content
-
 Los otros ingresos del Capítulo I se contrajeron un
 60,3%, por la escasa recaudación del Impuesto
 temporal de Solidaridad de las Grandes Fortunas. La
@@ -2535,10 +2080,9 @@ disminución de estos ingresos se debió a los cambios
 normativos que afectaron al Impuesto sobre el
 Patrimonio en algunas CC.AA., de forma que la mayor
 
-## parte de los ingresos que en 2023 había generado (página 41)
+## Página 41
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024 Página 39
 parte de los ingresos que en 2023 había generado
 este impuesto, configurado como complementario del
 otro, fueron a parar a la caja de esas CC.AA. En el
@@ -2547,10 +2091,6 @@ Impuesto sobre Transmisiones Patrimoniales por
 obligación real en Ceuta y Melilla y el Impuesto sobre
 Sucesiones y Donaciones, la recaudación aumentó un
 14,7%.
-
-## parte de los ingresos que en 2023 había generado (página 41)
-
-- Tipo: table
 
 En el Capítulo II los ingresos por el Impuesto
 sobre Primas de Seguros, una de las figuras con
@@ -2580,10 +2120,6 @@ Servicios Digitales, en 2022 el importe de los ajustes
 forales fue de 11 millones y en 2023 se realizó el
 último ajuste por un importe de 5 millones.
 
-## parte de los ingresos que en 2023 había generado (página 41)
-
-- Tipo: content
-
 Los ingresos del Capítulo III ascendieron un
 8,4%, superando por primera vez desde 2015 los
 2.000 millones (Cuadro 1.6 y Cuadro 6.6). En las
@@ -2595,17 +2131,12 @@ crecieron un 8,7%, con evoluciones positivas en sus
 principales componentes (recargos, intereses y
 sanciones).
 
-## NOTA INFORMATIVA 1: (página 42)
+## Página 42
 
-- Tipo: note
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 40
 NOTA INFORMATIVA 1:
 LA EVOLUCIÓN DE LAS PRINCIPALES PARTIDAS DEL IRPF EN EL PERIODO
 1995-2023
-
-## NOTA INFORMATIVA 1: (página 42)
-
-- Tipo: content
 
 El Cuadro 8.2 del Informe Anual de Recaudación Tributaria recoge la evolución de las principales partidas de la
 Estadística de los declarantes del IRPF, publicación disponible en la web de la Agencia Tributaria. Desde la
@@ -2613,17 +2144,12 @@ edición de 2022 el cuadro se amplió, intentando completar la información exis
 un apartado de rentas brutas, acercando de esta forma el análisis al que se hace con el conjunto de rentas de
 los hogares. El objetivo de esta nota es hacer un breve recorrido por las cifras más relevantes de ese cuadro.
 
-## NOTA INFORMATIVA 1: (página 42)
-
-- Tipo: content
-
 En el conjunto de Gráficos 1 se presenta la evolución de las rentas brutas declaradas y de los pesos que cada
 tipo de renta ha representado sobre el total en el periodo analizado.
 
-## El principal componente de las rentas brutas, las rentas del trabajo, representaba el 83% del total en 2023. (página 43)
+## Página 43
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 41
 El principal componente de las rentas brutas, las rentas del trabajo, representaba el 83% del total en 2023.
 Estas rentas, con la salvedad del periodo 2005 a 2007 en el que las ganancias patrimoniales alcanzaron
 máximos por el auge de los valores financieros e inmobiliarios, han tenido un peso creciente sobre el total de las
@@ -2641,20 +2167,12 @@ pandemia. Cabe destacar el papel cada vez más relevante de las rentas de capita
 mejora de tipos de interés y dividendos, frenando así la senda de paulatina reducción que mostraban desde
 2011.
 
-## El principal componente de las rentas brutas, las rentas del trabajo, representaba el 83% del total en 2023. (página 43)
-
-- Tipo: content
-
 Los Gráficos 2 y 3 presentan el proceso de liquidación del impuesto desde las rentas brutas hasta la base
 liquidable. Se observa el notable crecimiento de los rendimientos netos en 2006, por el impulso de las rentas
 asociadas a las ganancias patrimoniales, así como el deterioro que sufrieron estos rendimientos en el periodo
 asociado a la crisis de 2008 y su posterior recuperación. También es patente la caída de 2020 y que en 2021 ya
 se había superado el nivel previo a la pandemia (gracias al aporte de las rentas del trabajo y de las ganancias
 patrimoniales).
-
-## El principal componente de las rentas brutas, las rentas del trabajo, representaba el 83% del total en 2023. (página 43)
-
-- Tipo: table
 
 Se aprecia así mismo la incidencia que han tenido las sucesivas reformas en la evolución de la base liquidable y
 de la cuota íntegra. En 2003 y 2007, entre otras medidas, se redujeron los tramos de la tarifa y el tipo marginal
@@ -2665,31 +2183,18 @@ de las reducciones en el tramo autonómico del impuesto vigentes desde dicho eje
 sentencia favorable a los mutualistas que conllevó unos menores rendimientos percibidos como pensiones en la
 declaración de 2023, reduciendo los ingresos y aumentando las devoluciones.
 
-## El principal componente de las rentas brutas, las rentas del trabajo, representaba el 83% del total en 2023. (página 43)
-
-- Tipo: content
-
 A partir de la reforma de 2007 el peso de los mínimos personales y familiares sobre el total de las rentas brutas,
 que se había ido reduciendo, volvió a repuntar, y fue ganando importancia de forma paulatina hasta 2015,
 
-## ejercicio a partir del cual volvió a perder peso (Gráfico 4). (página 44)
+## Página 44
 
-- Tipo: title
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 42
 ejercicio a partir del cual volvió a perder peso (Gráfico 4).
-
-## ejercicio a partir del cual volvió a perder peso (Gráfico 4). (página 44)
-
-- Tipo: content
 
 Las sucesivas reformas del impuesto (1999, 2003, 2007, 2015), así como otras medidas (por ejemplo, la
 deducción de 400 euros de 2008 y 2009 o el gravamen especial entre 2012 y 2014 o las reducciones en el
 tramo autonómico) o la propia coyuntura económica, se ven especialmente bien reflejadas en la evolución del
 tipo medio sobre el total de las rentas brutas (Gráfico 5).
-
-## ejercicio a partir del cual volvió a perder peso (Gráfico 4). (página 44)
-
-- Tipo: table
 
 Las reformas de 1999 y 2003 supusieron una importante bajada en el tipo medio sobre las rentas, aunque en
 los años posteriores la no actualización de los parámetros del impuesto fuera erosionando esas bajadas iniciales
@@ -2701,16 +2206,11 @@ aumentaban la tributación de las rentas más altas desde el ejercicio 2021 (tan
 como en la del ahorro), así como la limitación del importe de las aportaciones y contribuciones a sistemas de
 previsión social, unidas a la positiva evolución de las rentas brutas, explican este incremento.
 
-## ejercicio a partir del cual volvió a perder peso (Gráfico 4). (página 44)
-
-- Tipo: content
-
 Por último, resulta interesante observar la evolución de la cuota diferencial. Como se ve en el conjunto de
 
-## Gráficos 6, desde 1995 hasta 2015, la cuota tenía un importe negativo, con la excepción de la del ejercicio 2006. (página 45)
+## Página 45
 
-- Tipo: table
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 43
 Gráficos 6, desde 1995 hasta 2015, la cuota tenía un importe negativo, con la excepción de la del ejercicio 2006.
 Sin embargo, a partir de 2016 ha pasado a tener un importe positivo, con un claro repunte en el máximo del
 ejercicio 2021. La positiva evolución de las rentas no sujetas a retención y que son declaradas en la liquidación
@@ -2719,17 +2219,12 @@ del arrendamiento de viviendas) están detrás de este cambio de tendencia. Por 
 desde 2015 tienen las deducciones por maternidad y familiares hace que el importe del resultado de la
 declaración se aleje cada vez más de la cuota diferencial.
 
-## NOTA INFORMATIVA 2: (página 46)
+## Página 46
 
-- Tipo: note
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 44
 NOTA INFORMATIVA 2:
 LA EVOLUCIÓN DEL SALARIO MEDIO EN LAS FUENTES TRIBUTARIAS: UNA
 PERSPECTIVA MÁS
-
-## NOTA INFORMATIVA 2: (página 46)
-
-- Tipo: content
 
 La Agencia Tributaria obtiene la información sobre los salarios de la declaración anual informativa de las
 retenciones sobre rendimientos del trabajo y de actividades económicas (el denominado modelo 190). La
@@ -2737,18 +2232,10 @@ información es exhaustiva (están obligados a su presentación todos los emplea
 son los que se incorporan a los datos fiscales de la campaña de renta de cada contribuyente), de manera
 que es la mejor fuente posible para el estudio del mercado de trabajo y los salarios.
 
-## NOTA INFORMATIVA 2: (página 46)
-
-- Tipo: content
-
 En este sentido, en otros lugares se explica cómo se explotan estos datos y cómo se integran en otras
-estadísticas (véase, por ejemplo, Empleo y salarios en las estadísticas de la Agencia Tributaria), y las
+estadísticas (véase, por  ejemplo, Empleo y salarios en las estadísticas de la Agencia Tributaria), y las
 ventajas que otorga el detalle con el que cuenta la información (¿Dónde se ve el salario mínimo en las
 estadísticas tributarias?).
-
-## NOTA INFORMATIVA 2: (página 46)
-
-- Tipo: table
 
 Prácticamente la única limitación a la que se enfrenta la información del modelo 190 es la medición del
 empleo. En el modelo figuran todas las personas que han percibido salarios, pero no el tiempo en el que han
@@ -2762,10 +2249,6 @@ corregido por el tiempo de trabajo. En los gráficos siguientes se ve la diferen
 entre el enfoque habitual solo con los datos del modelo 190 y el corregido con la información del tiempo de
 trabajo de Seguridad Social.
 
-## NOTA INFORMATIVA 2: (página 46)
-
-- Tipo: content
-
 El problema es que esta corrección solo está disponible desde 2019. Como solución para tener una serie más
 larga, en el Cuadro 2.2 del Informe Anual de Recaudación Tributaria (IART) se hace una aproximación
 similar, aunque agregada. Se estima un nivel de empleo asalariado, basado principalmente en las cifras de
@@ -2773,9 +2256,9 @@ afiliación a la Seguridad Social, que permite tener en cuenta el empleo medio d
 de personas que han pasado por el mercado laboral en un año como sucede en el modelo 190. El resultado
 es el que se muestra en el siguiente gráfico.
 
-## En el gráfico se compara la evolución del salario medio obtenido directamente del modelo 190 y la versión (página 47)
+## Página 47
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 45
 
 En el gráfico se compara la evolución del salario medio obtenido directamente del modelo 190 y la versión
 del salario medio que figura en el IART, y se acompañan de la estimación del salario medio que publica el
@@ -2784,10 +2267,6 @@ en el primer gráfico, la diferencia entre una versión y otra del modelo 190 es
 comparan con la trayectoria de los precios, hasta el punto de que con una estimación la capacidad de
 compra de los salarios es prácticamente la misma que en 2010, mientras que en el otro, al igual que ocurre
 con los datos del INE, la pérdida de poder adquisitivo es considerable.
-
-## En el gráfico se compara la evolución del salario medio obtenido directamente del modelo 190 y la versión (página 47)
-
-- Tipo: content
 
 Este enfoque tiene la limitación de que se realiza a nivel agregado. Se podría desagregar por actividades o
 por cualquier otra variable. Sin embargo, ahí se choca con la dificultad de encajar series de origen distinto
@@ -2802,16 +2281,15 @@ resulta un indicador del coste del trabajo en términos reales para la empresa, 
 capacidad de compra de los salarios que es que el que se obtiene al dividir por el IPC. El gráfico final
 muestra ese ejercicio.
 
-## NOTA INFORMATIVA 3: (página 49)
+## Página 48
 
-- Tipo: note
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 46
 
+## Página 49
+
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 47
 NOTA INFORMATIVA 3:
 EL CRECIENTE PESO DE LAS PENSIONES EN LAS RETENCIONES
-
-## NOTA INFORMATIVA 3: (página 49)
-
-- Tipo: content
 
 La evolución de las pensiones y su impacto en las retenciones del trabajo y actividades económicas, el
 principal componente de los ingresos en el IRPF, es un tema recurrente en los comentarios a la recaudación
@@ -2823,44 +2301,28 @@ como se verá al final de esta nota, el impuesto final pagado por las personas q
 depende de las otras rentas que tenga y, por lo tanto, su peso en el impuesto no es el mismo que el que se
 deriva de las retenciones practicadas.
 
-## NOTA INFORMATIVA 3: (página 49)
-
-- Tipo: content
-
 Toda la información relativa a las pensiones se puede encontrar en los Cuadros 2.2 y 2.3 del Informe Anual
 de Recaudación Tributaria y su seguimiento trimestral se recoge en el fichero de Series históricas de bases,
 tipos e impuestos devengados que acompaña a los informes mensuales. Un análisis más detallado se hace
 en la estadística Mercado de trabajo y pensiones en las fuentes tributarias, en la que se puede ver, por
 ejemplo, que alrededor de dos tercios de las personas que reciben pensión tienen retención cero.
 
-## NOTA INFORMATIVA 3: (página 49)
-
-- Tipo: content
-
 En los gráficos siguientes se muestran los pesos que tienen la masa de pensiones y sus retenciones sobre el
 total del IRPF, en el primero, y sobre las rentas del trabajo y actividades económicas sujetas a retención, en
 el segundo.
 
-## La conclusión es que la masa de pensiones se ha mantenido en los últimos años alrededor del 20,7% del (página 50)
+## Página 50
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 48
 
 La conclusión es que la masa de pensiones se ha mantenido en los últimos años alrededor del 20,7% del
 total de la renta bruta de los hogares y del 22,5% de las rentas del trabajo y actividades económicas sujetas
 a retención. El peso de las retenciones ligadas a esa masa de pensiones, en cambio, ha ido creciendo
 paulatinamente y de forma más intensa desde 2022.
 
-## La conclusión es que la masa de pensiones se ha mantenido en los últimos años alrededor del 20,7% del (página 50)
-
-- Tipo: content
-
 El mantenimiento del peso en rentas al mismo tiempo que una importancia creciente de las retenciones en el
 impuesto y en las retenciones del trabajo es lo mismo que decir que el tipo medio de retención sobre las
 pensiones crece. En el siguiente gráfico figura la evolución de ese tipo y su tasa de variación anual.
-
-## La conclusión es que la masa de pensiones se ha mantenido en los últimos años alrededor del 20,7% del (página 50)
-
-- Tipo: content
 
 Como se aprecia en el gráfico, la tendencia creciente se ha acentuado en los tres últimos años. El
 crecimiento del tipo tiene que ver con la no actualización de los parámetros del impuesto, pero también con
@@ -2868,9 +2330,9 @@ el aumento de la pensión media. El incremento de la pensión media se presenta 
 con la revalorización anual de la pensión contributiva (incluido, en su caso, el ajuste por la desviación de los
 precios).
 
-## Habitualmente se piensa que lo que sube la pensión media es la subida anual anunciada para la pensión (página 51)
+## Página 51
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 49
 
 Habitualmente se piensa que lo que sube la pensión media es la subida anual anunciada para la pensión
 contributiva (zona naranja en el gráfico), pero no es así. La pensión media (zona roja) sube más por dos
@@ -2880,16 +2342,8 @@ más alta que los que ya están en el sistema y de los que salen del mismo. El g
 continuación refleja ese diferencial entre las altas y las bajas en el sistema en el caso de las pensiones de la
 Seguridad Social.
 
-## Habitualmente se piensa que lo que sube la pensión media es la subida anual anunciada para la pensión (página 51)
-
-- Tipo: content
-
 Como se ve, aunque la tendencia es decreciente, todavía las nuevas pensiones son casi un 20% superiores a
 las pensiones que salen del sistema.
-
-## Habitualmente se piensa que lo que sube la pensión media es la subida anual anunciada para la pensión (página 51)
-
-- Tipo: table
 
 Hay que insistir en que el incremento de la pensión media es un cálculo agregado. La mayor parte de las
 pensiones individuales se acompasan al aumento de la revalorización anual. Esto supone que, por ejemplo,
@@ -2898,53 +2352,32 @@ una persona que entró al sistema en el año 2010, hasta 2024 vio aumentar su pe
 2015 tendrá una pensión un 24,6% más alta que al comienzo (por encima del 23,5% que subieron los
 precios en ese periodo). Ni la primera disfruta de un aumento de su pensión del 63% que es lo que creció la
 
-## pensión media desde 2010 hasta 2024, ni la segunda tiene una pensión un 43% más alta que es el (página 52)
+## Página 52
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 50
 pensión media desde 2010 hasta 2024, ni la segunda tiene una pensión un 43% más alta que es el
 incremento observado entre 2015 y 2024.
-
-## pensión media desde 2010 hasta 2024, ni la segunda tiene una pensión un 43% más alta que es el (página 52)
-
-- Tipo: content
 
 Conviene señalar también que en toda la explicación anterior no se ha tenido en cuenta el impacto de la
 sentencia que obliga a devolver parte del impuesto pagado a las personas que en algún momento de su vida
 laboral cotizaron a través de mutualidades. Como se puede ver en el informe anual, esto supuso en el
 ejercicio 2023, liquidado en 2024, la minoración del impuesto en unos 1.000 millones de euros.
 
-## pensión media desde 2010 hasta 2024, ni la segunda tiene una pensión un 43% más alta que es el (página 52)
-
-- Tipo: content
-
 Por último, y volviendo al comienzo de la nota, el análisis se ha centrado en el peso de las pensiones y sus
 retenciones, no en lo que significa el impuesto personal de las personas que perciben pensiones. Para
 hacerse una idea de esa diferencia, valgan los siguientes datos referidos al año 2022 (el ejercicio anterior a
 que se incorporara en el IRPF el ajuste de los mutualistas):
-
-## pensión media desde 2010 hasta 2024, ni la segunda tiene una pensión un 43% más alta que es el (página 52)
-
-- Tipo: table
 
 -
 El total de retenciones por pensiones públicas fue de 14.317 millones procedentes de una masa de
 pensiones de 159.743 millones (Cuadro 2.3 del Informe Anual de Recaudación Tributaria) y
 correspondientes a 9,85 millones de personas.
 
-## pensión media desde 2010 hasta 2024, ni la segunda tiene una pensión un 43% más alta que es el (página 52)
-
-- Tipo: content
-
 -
 De esas personas, 6,3 millones (64% del total) presentaron declaración anual y a ellas les correspondían
 pensiones por un importe de 108.536 millones (74%) y unas retenciones de 13.566 millones (94%); la
 diferencia entre rentas y retenciones se entiende si se recuerda lo dicho al inicio: la mayoría de las
 pensiones tienen retención igual a 0.
-
-## pensión media desde 2010 hasta 2024, ni la segunda tiene una pensión un 43% más alta que es el (página 52)
-
-- Tipo: content
 
 -
 Las personas que declaran tienen otras rentas: por un lado, tienen rentas vinculadas al trabajo y a las
@@ -2953,33 +2386,20 @@ trabajando parte del año por cuenta propia o ajena), y, por otro, tienen rentas
 imputadas o por el arrendamiento de inmuebles) o rentas del ahorro. Las primeras supusieron alrededor
 de 34.000 millones adicionales a la pensión, las segundas 25.000 millones.
 
-## pensión media desde 2010 hasta 2024, ni la segunda tiene una pensión un 43% más alta que es el (página 52)
-
-- Tipo: content
-
 Las personas que percibieron pensiones públicas e hicieron la declaración anual acabaron teniendo una
 cuota de 27.000 millones, una cifra superior a las retenciones que soportaron.
 
-## NOTA INFORMATIVA 4: (página 53)
+## Página 53
 
-- Tipo: note
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 51
 NOTA INFORMATIVA 4:
 UNA PERSPECTIVA TERRITORIAL DE LAS DISTRIBUCIONES SALARIALES
-
-## NOTA INFORMATIVA 4: (página 53)
-
-- Tipo: content
 
 La estadística Mercado de Trabajo y Pensiones en las Fuentes Tributarias, publicada por la Agencia Estatal de
 Administración Tributaria1, tiene como fuente de información las declaraciones2 anuales que resumen las
 retenciones e ingresos a cuenta practicados por las empresas o entidades pagadoras de salarios, pensiones,
 prestaciones de desempleo y otras rentas. La presentación es obligatoria para todos los pagadores de salarios,
 con la excepción de los hogares que pagan salarios a empleados del hogar.
-
-## NOTA INFORMATIVA 4: (página 53)
-
-- Tipo: content
 
 La declaración anual de retenciones incluye unas hojas de resumen de las retenciones realizadas en el año (y
 cuyo importe debe coincidir con lo que mensual o trimestralmente se ingresó) y un listado individualizado con
@@ -2988,18 +2408,10 @@ del perceptor de la renta, se detalla la renta pagada, la retención practicada 
 del perceptor y de la relación contractual que permiten controlar si se han cumplido adecuadamente las
 obligaciones fiscales.
 
-## NOTA INFORMATIVA 4: (página 53)
-
-- Tipo: content
-
 A partir de ese listado de perceptores se pueden aislar los asalariados, que son el objeto de esta nota. En este
 contexto, son asalariados aquellos cuyas percepciones figuran en la declaración clasificadas como clave A
 (empleados por cuenta ajena), que es la que comprende todas aquellas percepciones, dinerarias o en especie,
 que han sido satisfechas por el declarante en concepto de rendimientos del trabajo.
-
-## NOTA INFORMATIVA 4: (página 53)
-
-- Tipo: content
 
 Una vez identificados los asalariados3, a cada uno de ellos se le asigna el salario recibido en el año. Dada la
 existencia de situaciones de pluriempleo y de la posibilidad de más de una relación laboral a lo largo del año, el
@@ -3007,18 +2419,10 @@ salario anual de cada asalariado es la suma de todas las percepciones salariales
 pagadas por una o más empresas o entidades. El salario se mide, en todo caso, en términos brutos, esto es,
 antes de realizar cualquier minoración a cargo del asalariado.
 
-## NOTA INFORMATIVA 4: (página 53)
-
-- Tipo: table
-
 Las distribuciones que se analizan en esta nota, que se publican junto con el Informe Anual de Recaudación
 Tributaria4, parten de esta información. Se trata de la distribución de los asalariados en 400 tramos definidos por
 el salario anual, en intervalos de 200 euros (excepto el último tramo que es abierto). El período analizado
 transcurre desde 2001 hasta 2021.
-
-## NOTA INFORMATIVA 4: (página 53)
-
-- Tipo: content
 
 Hay que señalar que las distribuciones resultantes de las declaraciones fiscales no tienen la forma que teórica o
 idealmente se presume. Por el contrario, muestran una forma característica con una cola inferior muy abultada.
@@ -3029,10 +2433,6 @@ se acumulan en la parte inferior de la distribución. Una consecuencia adicional
 en las fuentes fiscales resulta ser una enumeración del conjunto de personas que han recibido algún pago
 salarial en el año y no, como sucede en otras estadísticas, el número de asalariados que, en media, han estado
 
-## NOTA INFORMATIVA 4: (página 53)
-
-- Tipo: content
-
 1 La publicación completa desde 1999 se puede consultar en: Agencia Tributaria: Mercado de Trabajo y Pensiones en las
 Fuentes Tributarias .
 2 Declaración Resumen Anual de Retenciones e Ingresos a Cuenta sobre Rendimientos del Trabajo, de determinadas
@@ -3041,16 +2441,11 @@ actividades económicas, premios y determinadas imputaciones de renta, también 
 independencia de cuál sea la Administración (estatal o foral) en la que declare su empleador.
 4 Agencia Tributaria: Informes anuales de Recaudación Tributaria
 
-## trabajando en el año. Asimismo, el tramo final (abierto) destaca por esa característica de todos los demás, lo (página 54)
+## Página 54
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 52
 trabajando en el año. Asimismo, el tramo final (abierto) destaca por esa característica de todos los demás, lo
 que aconseja centrar el análisis en los restantes grupos.
-
-## trabajando en el año. Asimismo, el tramo final (abierto) destaca por esa característica de todos los demás, lo (página 54)
-
-- Tipo: content
 
 Una característica especialmente útil de esta estadística es la cobertura geográfica que ofrece, al estar
 desagregada para cada una de las 16 Comunidades y Ciudades Autónomas (CCyCC.AA.) de Régimen Fiscal
@@ -3059,58 +2454,29 @@ para un territorio específico o, para un mismo momento del tiempo, dicha distri
 En ambos casos, siempre con la elevada granularidad que proporcionan los 400 grupos vinculados a los tramos
 de renta.
 
-## trabajando en el año. Asimismo, el tramo final (abierto) destaca por esa característica de todos los demás, lo (página 54)
-
-- Tipo: content
-
 Así, a título de ejemplo, el siguiente gráfico muestra la evolución más reciente de la distribución5 de las Islas
 Baleares.
 
-## trabajando en el año. Asimismo, el tramo final (abierto) destaca por esa característica de todos los demás, lo (página 54)
-
-- Tipo: content
-
 Gráfico 1: Distribución de asalariados en las Islas Baleares
-
-## trabajando en el año. Asimismo, el tramo final (abierto) destaca por esa característica de todos los demás, lo (página 54)
-
-- Tipo: content
 
 Se aprecia la acusada bimodalidad de esta distribución, así como el dramático impacto que tuvo sobre la misma
 el shock provocado por el COVID, que la transformó en unimodal para el año 2020.
-
-## trabajando en el año. Asimismo, el tramo final (abierto) destaca por esa característica de todos los demás, lo (página 54)
-
-- Tipo: content
 
 De forma alternativa, se puede examinar la distribución para un año específico de las distintas CCyCC.AA. En el
 siguiente gráfico se muestran las correspondientes a 9 de ellas, agrupadas según su tamaño relativo, para el
 año 2019. Aunque este año no es el más reciente se considera más representativo desde una perspectiva
 estructural, ya que no está afectado por el COVID, como 2020, ni por la consiguiente recuperación, como 2021.
 
-## trabajando en el año. Asimismo, el tramo final (abierto) destaca por esa característica de todos los demás, lo (página 54)
-
-- Tipo: content
-
 5 Para facilitar el análisis, las distribuciones han sido modelizadas mediante una mixtura Gaussiana con dos componentes
 para cada uno de los años de la muestra.
 
-## Gráfico 2: Distribución de asalariados por tamaño de las CCyCC.AA, año 2019 (página 55)
+## Página 55
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 53
 Gráfico 2: Distribución de asalariados por tamaño de las CCyCC.AA, año 2019
-
-## Gráfico 2: Distribución de asalariados por tamaño de las CCyCC.AA, año 2019 (página 55)
-
-- Tipo: content
 
 En los gráficos q1 y q3 representan los cuartiles de todas las CCyCC.AA que cubren, respectivamente, el 25% y
 el 75% de su distribución por grupos de renta. Cada gráfico tiene una escala propia.
-
-## Gráfico 2: Distribución de asalariados por tamaño de las CCyCC.AA, año 2019 (página 55)
-
-- Tipo: content
 
 Estos gráficos permiten apreciar las notables diferencias de tamaño a nivel territorial, reflejo de la disparidad
 existente a nivel económico y demográfico. Estas diferencias producen, a nivel general, una pauta
@@ -3118,17 +2484,9 @@ marcadamente asimétrica, que se aprecia en la distancia de las CCyCC.AA más gr
 intercuartílico6, notablemente superior a la correspondiente a las CCyCC.AA más pequeñas. Finalmente, se
 aprecia cómo el perfil más frecuente es el bimodal.
 
-## Gráfico 2: Distribución de asalariados por tamaño de las CCyCC.AA, año 2019 (página 55)
-
-- Tipo: content
-
 Aunque el perfil dominante de las distribuciones de asalariados por CCyCC.AA. por grupos de renta es el
 bimodal, se puede realizar una agrupación más precisa atendiendo a su forma exacta. Para ello, se ha realizado
 un análisis de conglomerados, cuya estructura de aglomeración7 se muestra en el siguiente diagrama.
-
-## Gráfico 2: Distribución de asalariados por tamaño de las CCyCC.AA, año 2019 (página 55)
-
-- Tipo: content
 
 6 Este núcleo, contenido entre q1 y q3, abarca a la mitad de la distribución, pudiendo interpretarse como el grupo
 central.
@@ -3137,38 +2495,25 @@ heterogéneos entre ellos (método de Ward). Para evitar la distorsión que prod
 comentada, se trabaja con las distribuciones porcentuales. Las variables que caracterizan a las CCyCC.AA. son los 6
 parámetros asociados a su mixtura Gaussiana del año 2019.
 
-## Gráfico 3: Agrupación de las distribuciones de asalariados, año 2019 (página 56)
+## Página 56
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 54
 Gráfico 3: Agrupación de las distribuciones de asalariados, año 2019
-
-## Gráfico 3: Agrupación de las distribuciones de asalariados, año 2019 (página 56)
-
-- Tipo: content
 
 Atendiendo a la distancia de fusión a la que se van formando los grupos, se pueden considerar cuatro grupos,
 que aparecen sombreados en distinto color en el gráfico anterior. Considerando la comunidad que se encuentra
 en una posición central dentro de cada uno de ellos (Madrid, Canarias, Andalucía, Castilla y León)8 se obtiene el
 siguiente gráfico:
 
-## Gráfico 3: Agrupación de las distribuciones de asalariados, año 2019 (página 56)
-
-- Tipo: content
-
 8 Las distribuciones porcentuales de Andalucía y Extremadura son muy similares, por lo que se pueden utilizar
 indistintamente. Se ha optado por Castilla y León frente a Ceuta y Melilla por el mejor ajuste muestral que presenta la
 estimación de su mixtura Gaussiana.
 
-## Gráfico 4: Perfiles tipo de las distribuciones de asalariados, año 2019 (página 57)
+## Página 57
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 55
 
 Gráfico 4: Perfiles tipo de las distribuciones de asalariados, año 2019
-
-## Gráfico 4: Perfiles tipo de las distribuciones de asalariados, año 2019 (página 57)
-
-- Tipo: content
 
 Destacan, en primer lugar, las distribuciones de Andalucía y Canarias, la primera por su virtual unimodalidad y la
 segunda por la prominencia relativa del valor modal de su tramo central. De manera intermedia, las
@@ -3176,16 +2521,11 @@ distribuciones de Castilla y León y Madrid presentan también un perfil bimodal
 Canarias. Adicionalmente, el tramo central de la Madrid es el más uniforme de todas y el que más se extiende
 hacia los tramos de renta superiores.
 
-## NOTA INFORMATIVA 5: (página 58)
+## Página 58
 
-- Tipo: note
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 56
 NOTA INFORMATIVA 5:
 LA INFORMACIÓN FISCAL SOBRE EL ARRENDAMIENTO DE LOCALES
-
-## NOTA INFORMATIVA 5: (página 58)
-
-- Tipo: content
 
 En los últimos años ha aumentado significativamente la información que ofrece la Agencia Tributaria sobre
 los arrendamientos. Desde 2021, con la publicación de los datos del ejercicio 2019, se dispone de la
@@ -3193,10 +2533,6 @@ explotación estadística de la información sobre los arrendamientos de viviend
 del IRPF. Esos mismos datos son los que se utilizan para la elaboración del índice de precios del alquiler del
 que es responsable el Ministerio de Vivienda y Agenda Urbana que sirve, a su vez, para establecer los
 precios de referencia del alquiler.
-
-## NOTA INFORMATIVA 5: (página 58)
-
-- Tipo: content
 
 Todo lo anterior se centra en las viviendas, pero la información fiscal alcanza también al alquiler de locales.
 El modelo que aglutina esa información es el modelo 180 (con independencia de que esa misma
@@ -3206,10 +2542,6 @@ realizadas de todas aquellas personas físicas o jurídicas que paguen un alquil
 Recientemente se ha empezado a colaborar con el INE para ver sus posibilidades de explotación para
 nuevas estadísticas.
 
-## NOTA INFORMATIVA 5: (página 58)
-
-- Tipo: content
-
 El valor de la información del modelo 180 es mayor si se tiene en cuenta que, además de las rentas
 abonadas por el arrendamiento, también incluye la referencia catastral del inmueble alquilado, lo que
 permite realizar un cruce con la información procedente del catastro y obtener de esta forma datos
@@ -3217,87 +2549,60 @@ adicionales del inmueble como su localización y superficie. Combinando la infor
 con la superficie y situación del local, se puede construir un indicador del precio por metro cuadrado de los
 inmuebles arrendados con máximo detalle geográfico.
 
-## NOTA INFORMATIVA 5: (página 58)
-
-- Tipo: content
-
 Para dar una idea de la riqueza de este modelo, a continuación, se muestran algunos resultados. En el
 Gráfico 1, por ejemplo, se muestra la evolución del número de locales para los que se dispone de referencia
 catastral en el periodo 2015 a 2023.
 
-## NOTA INFORMATIVA 5: (página 58)
-
-- Tipo: content
-
 El Gráfico 2 ilustra la evolución de las rentas del alquiler en el periodo analizado, donde, como en el caso del
 número de locales, se aprecia la incidencia de la crisis del covid en 2020. Sin embargo, en el caso de las
 
-## rentas, ya en 2021 la tasa es positiva y en 2022 el nivel superaba el de 2019, lo que no sucedió con el (página 59)
+## Página 59
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 57
 rentas, ya en 2021 la tasa es positiva y en 2022 el nivel superaba el de 2019, lo que no sucedió con el
 número de locales.
-
-## rentas, ya en 2021 la tasa es positiva y en 2022 el nivel superaba el de 2019, lo que no sucedió con el (página 59)
-
-- Tipo: content
 
 La evolución de las rentas tiene un perfil muy similar en todas las provincias, si bien la intensidad de los
 cambios difiere de unas a otras. Esto se puede ver en el Gráfico 3 que presenta el comportamiento de esta
 variable en cuatro de las provincias con mayor peso sobre el total.
 
-## rentas, ya en 2021 la tasa es positiva y en 2022 el nivel superaba el de 2019, lo que no sucedió con el (página 59)
-
-- Tipo: content
-
 El Gráfico 4 muestra cómo ha ido cambiando la importancia en el total de las rentas y en el número de
 locales en el caso de las provincias más representativas.
 
-## Como era de esperar, Barcelona y Madrid ocupan los primeros puestos, aunque con una evolución (página 61)
+## Página 60
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 58
 
+## Página 61
+
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 59
 Como era de esperar, Barcelona y Madrid ocupan los primeros puestos, aunque con una evolución
 decreciente en ambos casos. En cambio, otras provincias como Valencia, Alicante, Málaga y Sevilla han ido
 ganando terreno. Destaca la especial incidencia que tuvo la crisis ocasionada por el covid en el caso de
 Baleares.
 
-## Como era de esperar, Barcelona y Madrid ocupan los primeros puestos, aunque con una evolución (página 61)
-
-- Tipo: content
-
 Como se ha dicho, a partir de la información del modelo 180 y de la información catastral, se puede
 construir un indicador de la evolución de la renta pagada por metro cuadrado. El Gráfico 5 recoge el
 comportamiento de la mediana de esta variable en el periodo analizado.
-
-## Como era de esperar, Barcelona y Madrid ocupan los primeros puestos, aunque con una evolución (página 61)
-
-- Tipo: table
 
 De nuevo se observa que el indicador del precio del alquiler mantenía una clara tendencia creciente,
 bruscamente interrumpida en 2020, año a partir del cual se inicia una notable recuperación. El pecio
 mediano en 2023 coincide con el que se hubiera alcanzado de haberse mantenido desde 2020 el incremento
 medio observado en el periodo 2018-2019 (1,5%).
 
-## Como era de esperar, Barcelona y Madrid ocupan los primeros puestos, aunque con una evolución (página 61)
-
-- Tipo: content
-
 Por último, el Gráfico 6 permite ver la evolución de este indicador para el total nacional (excluyendo los
 territorios forales) en comparación con las siete provincias donde el indicador es más elevado.
 
-## NOTA INFORMATIVA 6: (página 63)
+## Página 62
 
-- Tipo: note
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 60
 
+## Página 63
+
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 61
 NOTA INFORMATIVA 6:
 LA EVOLUCIÓN DE LOS ACTIVOS POR IMPUESTOS DIFERIDOS Y SU
 CONVERSIÓN EN CRÉDITOS EXIGIBLES
-
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: content
 
 En el Impuesto sobre Sociedades las empresas pueden generar créditos fiscales que les permiten reducir su
 carga fiscal futura. Uno de los elementos que puede dar lugar a estos créditos fiscales son los activos por
@@ -3308,50 +2613,26 @@ momentos en la recaudación del Impuesto sobre Sociedades, en esta nota se hace 
 situación, ofreciendo una panorámica general del marco normativo y presentando un análisis cuantitativo de los
 AID pendientes de aplicación.
 
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: content
-
 La normativa reguladora del Impuesto sobre Sociedades ha sido modificada9 en dos ocasiones con la finalidad
 de regular expresamente el derecho a la conversión en créditos exigibles de determinados AID, actualmente
 recogido en el artículo 130 de la Ley 27/2014, de 27 de noviembre. Así, podrán ser convertibles los AID
 correspondientes a:
-
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: content
 
 • Las dotaciones por deterioro de los créditos u otros activos derivadas de las posibles insolvencias de los
 deudores siempre que los deudores no estén vinculados con el contribuyente, no sean adeudados por
 entidades de derecho público, y su deducibilidad no se produzca por aplicación de lo dispuesto en el artículo
 13.1.a de la LIS.
 
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: content
-
 • Las dotaciones o aportaciones a sistemas de previsión social y, en su caso, prejubilación, según lo
 establecido en los apartados 1 y 2 del artículo 14 de la LIS.
 
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: content
-
 • Los activos por impuesto diferido derivados del derecho a compensar en ejercicios posteriores bases
 imponibles negativas, si estos provienen de integrar en la base imponible las dotaciones anteriores.
-
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: content
 
 Para que la citada conversión pueda tener lugar, debe darse alguna de las siguientes circunstancias: que el
 contribuyente registre pérdidas contables en sus cuentas anuales; o que la entidad sea objeto de liquidación o
 insolvencia judicialmente declarada. Y debe solicitarse al presentar la autoliquidación del Impuesto sobre
 Sociedades correspondiente al período impositivo en que se hayan cumplido los requisitos pertinentes.
-
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: table
 
 La conversión de los anteriores AID en créditos exigibles determina, según lo regulado en el artículo 130.4 de la
 LIS, que que el contribuyente pueda optar por solicitar su abono a la Administración Tributaria o por compensar
@@ -3360,34 +2641,21 @@ a partir del momento de la conversión. Además, el artículo 130.5 establece qu
 mencionados podrán canjearse por valores de Deuda Pública, una vez transcurrido el plazo de 18 años,
 computado desde el último día del período impositivo en que se produzca el registro contable de tales activos.
 
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: content
-
 Este marco normativo vigente entró en vigor el 1 de enero de 2016, pero incorpora a través de la Disposición
 Transitoria 33ª un régimen especial aplicable a los AID generados en periodos fiscales anteriores a 2016, que
-
-## NOTA INFORMATIVA 6: (página 63)
-
-- Tipo: table
 
 9 Estas modificaciones se realizaron, en primer lugar, a través del Real Decreto-ley 14/2013, de 29 de noviembre, de
 medidas urgentes para la adaptación del derecho español a la normativa de la Unión Europea en materia de supervisión
 y solvencia de entidades financieras, y, en segundo lugar, a través de la Ley 48/2015, de 29 de octubre, de
 Presupuestos Generales del Estado para el año 2016.
 
-## establece determinadas particularidades respecto a la cuantía que se puede convertir y los requisitos para su (página 64)
+## Página 64
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 62
 establece determinadas particularidades respecto a la cuantía que se puede convertir y los requisitos para su
 conversión. De esta manera, en lo relativo a la cuantía que se puede convertir, el análisis de la normativa nos
 permite diferenciar tres situaciones, en función del ejercicio en que se hayan generado los AID que se quieran
 convertir:
-
-## establece determinadas particularidades respecto a la cuantía que se puede convertir y los requisitos para su (página 64)
-
-- Tipo: table
 
 • Activos generados a partir de 2016. La conversión se producirá por un importe igual a la cuota líquida
 positiva correspondiente al período impositivo de generación de los activos a convertir. En caso de que el
@@ -3397,10 +2665,6 @@ en períodos impositivos anteriores o en los dos posteriores. Por tanto, el exce
 diferido que se hayan generado en un periodo impositivo en relación con la cuota líquida positiva del
 Impuesto sobre Sociedades del mismo periodo, generados a partir del 1 de enero de 2016, no tendrán el
 derecho de conversión previsto en el artículo 130.
-
-## establece determinadas particularidades respecto a la cuantía que se puede convertir y los requisitos para su (página 64)
-
-- Tipo: table
 
 • Activos generados entre 2008 y 2015. Los activos generados en este periodo tendrán derecho a la
 conversión cualquiera que hubiera sido el importe de la cuota líquida positiva del período impositivo de su
@@ -3415,25 +2679,13 @@ aplicar un tipo del 1,5% a la diferencia entre el importe de los activos por imp
 2008 y 2015 y la suma de las cuotas líquidas positivas del Impuesto sobre Sociedades correspondientes a los
 períodos impositivos de esos años.
 
-## establece determinadas particularidades respecto a la cuantía que se puede convertir y los requisitos para su (página 64)
-
-- Tipo: content
-
 • Activos generados hasta 2007. Estos activos tendrán derecho a la conversión en crédito exigible ante la
 administración tributaria con independencia del importe de la cuota líquida positiva del período impositivo en
 que se generaron y sin tener que satisfacer ninguna condición adicional.
 
-## establece determinadas particularidades respecto a la cuantía que se puede convertir y los requisitos para su (página 64)
-
-- Tipo: content
-
 Desde el ejercicio 2016 las empresas deben proporcionar en su declaración anual del Impuesto sobre
 Sociedades información muy completa sobre los AID pendientes de aplicación y sobre aquellos cuya conversión
 se solicita. Esta información es la que permite realizar un análisis detallado de los AID vigentes.
-
-## establece determinadas particularidades respecto a la cuantía que se puede convertir y los requisitos para su (página 64)
-
-- Tipo: content
 
 El Gráfico 1 muestra los saldos de AID pendientes de aplicación al final de cada ejercicio, que alcanzan
 volúmenes significativamente elevados, de cerca de 45.000 millones de euros en 2021. La evolución de estos
@@ -3442,9 +2694,9 @@ ello, se ve cómo en determinados ejercicios los AID pendientes de aplicación g
 2016 aumentan, lo que no se debe a la generación de nuevos AID, sino a que empresas que no habían
 declarado antes sus AID pendientes de periodos pasados, comienzan a hacerlo.
 
-## También se puede observar que los AID pendientes de aplicación correspondientes al periodo 2008-2015 son los (página 65)
+## Página 65
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 63
 
 También se puede observar que los AID pendientes de aplicación correspondientes al periodo 2008-2015 son los
 más elevados, lo que se explica por los efectos de la crisis económico-financiera en el comienzo de ese periodo.
@@ -3454,18 +2706,10 @@ gráfico también muestra la trayectoria de los saldos sujetos al pago de dicha 
 por las empresas en el modelo 22110. La fuerte discrepancia que se observa en los primeros años se debe, como
 se ha señalado, a los problemas de cumplimentación en los modelos 200 y 220.
 
-## También se puede observar que los AID pendientes de aplicación correspondientes al periodo 2008-2015 son los (página 65)
-
-- Tipo: content
-
 En lo concerniente a los AID pendientes de aplicación generados a partir de 2016, y tal y como se ha explicado
 con anterioridad, solo podrán ser convertibles los importes que igualen la cuota líquida positiva. El Gráfico 3
 presenta su evolución por categorías, pudiéndose comprobar cómo la mayor parte no tiene derecho de
 conversión en créditos exigibles. Así, a finales del ejercicio 2023, el 45% de los mismos tenía derecho de
-
-## También se puede observar que los AID pendientes de aplicación correspondientes al periodo 2008-2015 son los (página 65)
-
-- Tipo: table
 
 10 En el modelo 221 se declaran los saldos de los AID pendientes de aplicación al inicio del periodo. Por tanto, para que
 la información sea homogénea con la información que se usa de los modelos 200 y 220 correspondiente al final del
@@ -3473,15 +2717,10 @@ periodo, para cada ejercicio se toman los saldos declarados en el modelo 221 del
 los saldos finales del ejercicio anterior. Es por ello que no se incorpora dato para 2023, al no haberse presentado todavía
 el modelo correspondiente.
 
-## conversión. (página 66)
+## Página 66
 
-- Tipo: title
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 64
 conversión.
-
-## conversión. (página 66)
-
-- Tipo: content
 
 Un último elemento que resulta de interés son las solicitudes de conversión de los AID en créditos exigibles,
 importes recogidos en el Gráfico 4. Como se puede observar, las solicitudes se concentraron en los dos primeros
@@ -3491,9 +2730,9 @@ en 2016; 3,11% en 2017 y 2,6% en 2019). Como se puede observar, se han pagado ca
 debiéndose las diferencias entre las cuantías cuya conversión se solicitó y las efectivamente pagadas en los
 primeros ejercicios, a que algunas solicitudes fueron consideradas improcedentes por la AEAT.
 
-## En el gráfico anterior los importes pagados están asignados al año al que corresponde la declaración del IS en el (página 67)
+## Página 67
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 65
 
 En el gráfico anterior los importes pagados están asignados al año al que corresponde la declaración del IS en el
 que se solicita la conversión de los correspondientes AID. En el Gráfico 5 esos pagos se imputan al año en el
@@ -3502,33 +2741,20 @@ recaudación del Impuesto sobre Sociedades. Como se menciona en los informes de 
 ocasiones dicho impacto es significativo, distorsionando la relación entre los ingresos y la evolución de los
 beneficios en el año11.
 
-## En el gráfico anterior los importes pagados están asignados al año al que corresponde la declaración del IS en el (página 67)
-
-- Tipo: content
-
 Por último, hay que señalar que la existencia de estos AID con derecho a conversión no genera solo mermas en
 los ingresos. Como se ha visto, los contribuyentes que tienen derecho a la conversión por los AID generados
 entre 2008 y 2015 tienen que ingresar una prestación patrimonial que tiene carácter no tributario (esta es la
 razón de que no se incluya en los informes de recaudación de la AEAT). El Gráfico 6 contiene los ingresos
 obtenidos por esta figura desde 2017, primer año en el que se recaudó.
 
-## En el gráfico anterior los importes pagados están asignados al año al que corresponde la declaración del IS en el (página 67)
-
-- Tipo: content
-
 11 Este impacto de la conversión de AID sobre la recaudación del Impuesto sobre Sociedades se refiere exclusivamente a
 la perspectiva de caja. El tratamiento de estos pagos en la Contabilidad Nacional es distinto.
 
-## NOTA INFORMATIVA 7: (página 68)
+## Página 68
 
-- Tipo: note
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 66
 NOTA INFORMATIVA 7:
 ELABORACIÓN DE UN DEFLACTOR PARA LA RECAUDACIÓN DEL IVA
-
-## NOTA INFORMATIVA 7: (página 68)
-
-- Tipo: content
 
 En un contexto de aumentos significativos de los precios es habitual asociar los incrementos en la recaudación
 con esas subidas. Pero es preciso señalar que no existe una relación directa entre ambas variaciones, menos
@@ -3539,27 +2765,15 @@ conjunto. En esta nota se verá que esa apreciación solo es válida en situacio
 precios son pequeñas, parejas entre los distintos bienes y existen tipos estables. En caso contrario, es preciso
 elaborar un deflactor distinto del IPC.
 
-## NOTA INFORMATIVA 7: (página 68)
-
-- Tipo: content
-
 Para ver de forma sencilla estas últimas afirmaciones se van a presentar dos ejemplos simples. En el primero,
 cuyo detalle se muestra en el cuadro siguiente, se supone que tenemos un bien que en el año T tiene una gran
 subida de precios respecto al año anterior. El consumo es el mismo en ambos periodos. En el cuadro se
 compara la situación manteniéndose el tipo y con cambio de tipo.
 
-## NOTA INFORMATIVA 7: (página 68)
-
-- Tipo: content
-
 En la parte superior del cuadro figura el caso en el que hay estabilidad normativa. En tal situación sí que se
 podría atribuir todo el aumento de la recaudación a la subida de los precios. Véase, en cambio, el segundo caso,
 cuando el aumento de los precios se acompaña de una rebaja del tipo aplicable. En esa situación se comprueba
 que utilizar sin más el aumento de los precios para deflactar la recaudación lleva a un enorme error.
-
-## NOTA INFORMATIVA 7: (página 68)
-
-- Tipo: content
 
 En el segundo ejemplo se trata de ver la importancia de tener en cuenta tanto los distintos tipos que conviven
 en el IVA como las diferencias en el ritmo de subidas de precios en los productos sujetos al impuesto. En el
@@ -3567,9 +2781,9 @@ cuadro de la página siguiente se detallan los datos. El ejemplo consiste en dos
 otro al 21%, en el primer caso con un aumento del precio del 50% y en el segundo con un incremento de sólo
 el 10%. Como en el caso anterior, el consumo es el mismo en ambos periodos.
 
-## Como se puede ver, el crecimiento medio de los precios fue del 30%; sin embargo, el aumento de la (página 69)
+## Página 69
 
-- Tipo: table
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 67
 
 Como se puede ver, el crecimiento medio de los precios fue del 30%; sin embargo, el aumento de la
 recaudación fue tan solo del 16,4%. La diferencia se explica porque los precios que más suben corresponden a
@@ -3578,10 +2792,6 @@ obtener calculando el crecimiento medio de los precios, en lugar de con el peso 
 sucede en el 30%: 0,5*50+0,5*10), con el peso en la recaudación del periodo T-1 (16,4 = (400/2.500)*50 +
 (2.100/2.500)*10). Esto demuestra de nuevo que, si se utiliza la variación media de los precios para deflactar la
 recaudación, se estaría cometiendo un grave error.
-
-## Como se puede ver, el crecimiento medio de los precios fue del 30%; sin embargo, el aumento de la (página 69)
-
-- Tipo: content
 
 De toda la reflexión anterior se concluye que lo más correcto es utilizar un deflactor que se ajuste a las
 peculiaridades del IVA. El punto de partida para la elaboración de este deflactor es el Gasto final sujeto a IVA.
@@ -3592,9 +2802,9 @@ recaudación por IVA derivada de cada uno de estos tres elementos y agregar los 
 de la importancia de cada componente sobre el total. Como ilustración, en el Gráfico 1 se puede apreciar cómo
 han ido evolucionando los pesos de los distintos componentes del gasto sujeto a IVA.
 
-## Para el Gasto en bienes y servicios de los hogares se utiliza el IPC al nivel máximo de desagregación para captar (página 70)
+## Página 70
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 68
 
 Para el Gasto en bienes y servicios de los hogares se utiliza el IPC al nivel máximo de desagregación para captar
 el distinto comportamiento de los precios según el bien o servicio y el tipo aplicable para controlar su
@@ -3609,10 +2819,6 @@ mostrado una tendencia creciente a lo largo del tiempo desde el primer año publ
 del año, oscila entre el 23% y el 32% (con la anomalía del periodo afectado por el covid) del total en términos
 interiores como se puede apreciar en el Gráfico 2.
 
-## Para el Gasto en bienes y servicios de los hogares se utiliza el IPC al nivel máximo de desagregación para captar (página 70)
-
-- Tipo: content
-
 De esta forma, se obtiene una estructura del gasto en consumo sujeto a IVA, para cada año, adecuada para ser
 aplicada al total anual del gasto en bienes y servicios de hogares obtenido a partir de los modelos de
 autoliquidación. Aplicando a este gasto desagregado los tipos de IVA vigentes para cada año, se obtiene
@@ -3620,28 +2826,19 @@ directamente un IVA devengado al máximo nivel de desagregación posible. La úl
 deflactor para esta parte de la recaudación consiste en extrapolar los valores utilizando tanto las medias anuales
 de las variaciones interanuales del IPC como las variaciones de los tipos de IVA, de acuerdo al nivel de
 
-## desagregación con el que se está trabajando. De esta forma se consigue una serie de IVA a volumen constante (página 71)
+## Página 71
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 69
 desagregación con el que se está trabajando. De esta forma se consigue una serie de IVA a volumen constante
 del año anterior y, finalmente, el deflactor del IVA correspondiente a la parte del consumo de los hogares. Los
 índices de precios obtenidos de esta forma serían los eslabones anuales que se podrían encadenar para obtener
 un índice encadenado de precios para el principal componente la recaudación por IVA.
-
-## desagregación con el que se está trabajando. De esta forma se consigue una serie de IVA a volumen constante (página 71)
-
-- Tipo: content
 
 Para deflactar la parte de los ingresos correspondiente al Gasto en compra de vivienda de los hogares, se utiliza
 el Índice de Precios de Vivienda nueva (IPV) que elabora el Instituto Nacional de Estadística (INE), ya que se ha
 considerado poco significativo el peso de las viviendas de protección oficial dada la escasa relevancia de este
 componente en el conjunto de la recaudación por IVA. El proceso descrito en el párrafo anterior se simplifica de
 forma considerable al tratarse de un solo producto.
-
-## desagregación con el que se está trabajando. De esta forma se consigue una serie de IVA a volumen constante (página 71)
-
-- Tipo: content
 
 Finalmente, para la recaudación debida al Gasto de las AA.PP. el deflactor se ha aproximado a partir de los
 siguientes agregados de las cuentas de las AA.PP. elaboradas por la Intervención General de la Administración
@@ -3654,17 +2851,9 @@ sociales en especie, se considera como indicador el IPC general. Finalmente, el 
 bruta de capital es el deflactor implícito elaborado a partir de los datos sobre inversión publicados por la CNE
 para cada año.
 
-## desagregación con el que se está trabajando. De esta forma se consigue una serie de IVA a volumen constante (página 71)
-
-- Tipo: content
-
 Una vez obtenido el deflactor para cada una de las partes, se obtiene un deflactor sintético anual utilizando
 como ponderaciones los pesos que sobre el total tiene cada uno de ellos en los distintos años. El resultado se
 puede observar en el siguiente gráfico (Gráfico 3) al que se ha añadido el IPC general como referencia.
-
-## desagregación con el que se está trabajando. De esta forma se consigue una serie de IVA a volumen constante (página 71)
-
-- Tipo: table
 
 Como se puede apreciar, la diferencia del deflactor del IVA respecto al IPC general aumentó desde 2022,
 mostrando desde entonces una evolución dispar. Desde mediados de 2021 parte de los bienes que tenían un
@@ -3677,16 +2866,11 @@ son los que explican que se mantenga el diferencial en 2023. En 2024, sin embarg
 tipos que gravan los productos energéticos y algunos alimentos a los valores previos a las tensiones
 inflacionistas, ha hecho que el crecimiento del deflactor sintético de IVA supere al del IPC.
 
-## NOTA INFORMATIVA 8: (página 72)
+## Página 72
 
-- Tipo: note
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 70
 NOTA INFORMATIVA 8:
 EL IMPACTO DE LA DANA EN LAS CIFRAS ECONÓMICAS Y RECAUDATORIAS
-
-## NOTA INFORMATIVA 8: (página 72)
-
-- Tipo: content
 
 El impacto de la catástrofe provocada por la dana sobre la evolución de las cifras económicas y
 recaudatorias no fue, evidentemente, la cuestión más importante de esta tragedia, pero sí ocupó un lugar
@@ -3696,26 +2880,14 @@ inundación sobre la utilización de los medios de pago, ese indicador que, por 
 analistas, enseguida se muestra como ilustración de cualquier cambio en el comportamiento de empresas y
 consumidores.
 
-## NOTA INFORMATIVA 8: (página 72)
-
-- Tipo: content
-
 Lo cierto es que cualquier evaluación económica de un impacto no puede ser más que una aproximación al
 efecto real, aproximación sujeta a la discrecionalidad de los supuestos utilizados en la estimación. En el caso
 del impacto sobre los ingresos tributarios, se unen además las complejidades del propio sistema de
 recaudación y las peculiaridades de las medidas adoptadas para paliar los daños.
 
-## NOTA INFORMATIVA 8: (página 72)
-
-- Tipo: content
-
 Con la información diaria disponible a través del Sistema Inmediato de Información (SII), se puede obtener
 la trayectoria que siguieron las ventas desde el 29 de octubre. En el siguiente gráfico se muestra la
 evolución de las ventas totales entre esa fecha y el 10 de diciembre en 2023 y 2024.
-
-## NOTA INFORMATIVA 8: (página 72)
-
-- Tipo: content
 
 El impacto de la catástrofe se aprecia claramente con la separación de las dos líneas desde mitad de
 noviembre hasta comienzos de diciembre. A partir de ese momento las trayectorias vuelven a converger. El
@@ -3723,17 +2895,13 @@ gráfico está realizado con la información disponible pasados varios meses, pe
 rápida convergencia hacia la tendencia anterior ya se observaba en los datos de las semanas posteriores al
 29 de octubre, especialmente desde mediados de diciembre.
 
-## NOTA INFORMATIVA 8: (página 72)
-
-- Tipo: content
-
 La evolución de las ventas se pudo seguir, además, con un nivel de desglose que permitía ver las diferencias
 entre las empresas más cercanas a la catástrofe y el resto de empresas. El siguiente gráfico contiene los
 datos para distintas agregaciones de empresas extraídos a mediados de diciembre:
 
-## En el gráfico se comparan las evoluciones en las primeras semanas después de las inundaciones del total de (página 73)
+## Página 73
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 71
 
 En el gráfico se comparan las evoluciones en las primeras semanas después de las inundaciones del total de
 empresas (en azul; es la cifra de referencia habitual en los informes semanales de ventas), junto con el
@@ -3745,17 +2913,13 @@ hacer una mejor aproximación hay que hacer supuestos sobre cuál hubiese sido e
 empresas en caso de no haber sucedido la tragedia. Es en ese punto donde entra en juego la
 discrecionalidad de los analistas.
 
-## En el gráfico se comparan las evoluciones en las primeras semanas después de las inundaciones del total de (página 73)
-
-- Tipo: content
-
 El mismo problema se encuentra al abrir el foco y considerar no solo lo que venden esas empresas, sino lo
 que compran todos los residentes, empresas y familias, en la provincia de Valencia. El siguiente cuadro
 muestra la evolución de esas compras también a mediados de diciembre.
 
-## En el gráfico se representa la diferencia en las ventas en los mismos días de 2024 y 2023, en suma móvil de (página 74)
+## Página 74
 
-- Tipo: content
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 72
 
 En el gráfico se representa la diferencia en las ventas en los mismos días de 2024 y 2023, en suma móvil de
 28 días para suavizar la irregularidad de la serie. Como se ha visto, el impacto fue inmediato, aunque en
@@ -3763,18 +2927,10 @@ diciembre se notaba que la situación volvía a los niveles anteriores. También
 ¿es esta la verdadera medida del efecto? La respuesta es la misma, habría que suponer una situación
 alternativa sin impacto con la que comparar para poder hacer una aproximación al impacto real.
 
-## En el gráfico se representa la diferencia en las ventas en los mismos días de 2024 y 2023, en suma móvil de (página 74)
-
-- Tipo: content
-
 Como se ha señalado, la situación es más compleja aún si se quiere evaluar el impacto en el caso de la
 recaudación. Además de las dificultades asociadas al efecto sobre las variables económicas, hay que tener
 en cuenta los plazos en los que se ingresan los impuestos y las medidas puestas en marcha para facilitar el
 cumplimiento de las obligaciones fiscales de los afectados.
-
-## En el gráfico se representa la diferencia en las ventas en los mismos días de 2024 y 2023, en suma móvil de (página 74)
-
-- Tipo: table
 
 Respecto a lo primero, en noviembre los principales modelos que se deberían haber presentado eran los
 modelos mensuales correspondientes a octubre (básicamente, de Grandes Empresas) de retenciones sobre
@@ -3786,10 +2942,6 @@ plazo el 30 de octubre, figuró en la recaudación de diciembre. Los modelos de 
 que presentar las pymes son de periodicidad trimestral, de manera que el impacto sobre estas empresas se
 apreció en las declaraciones del cuarto trimestre que se presentaron entre enero y febrero de 2025.
 
-## En el gráfico se representa la diferencia en las ventas en los mismos días de 2024 y 2023, en suma móvil de (página 74)
-
-- Tipo: content
-
 En cuanto a las medidas con repercusión en los ingresos, hay que tener en cuenta que la mayoría
 supusieron un retraso en el ingreso del impuesto. El efecto que esto tuvo sobre la recaudación fue un menor
 importe inicial compensado con uno mayor unos meses más tarde. En el caso del segundo plazo de la cuota
@@ -3799,61 +2951,35 @@ empresas domiciliadas en la zona afectada (que se vio en 2025 y no en diciembre 
 lo normal) o con aquellas obligaciones para las que los contribuyentes se acogieron a las facilidades para el
 aplazamiento.
 
-## NOTA INFORMATIVA 9: (página 75)
+## Página 75
 
-- Tipo: note
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 73
 NOTA INFORMATIVA 9:
 LOS ARANCELES EN LOS INGRESOS TRIBUTARIOS
-
-## NOTA INFORMATIVA 9: (página 75)
-
-- Tipo: content
 
 Los ingresos por aranceles se denominan, en términos de la contabilidad tributaria, ingresos por Impuestos
 de Tráfico Exterior. En el Informe Anual figuran en los cuadros generales de ingresos (por ejemplo, Cuadro
 1.6) y en uno dedicado específicamente a estos impuestos (Cuadro 6.3). También se puede hacer un
 seguimiento mensual en los cuadros y ficheros de series históricas del informe mensual.
 
-## NOTA INFORMATIVA 9: (página 75)
-
-- Tipo: title
-
 La evolución de estos ingresos desde 1995 es la siguiente:
-
-## NOTA INFORMATIVA 9: (página 75)
-
-- Tipo: content
 
 Como se puede ver, el importe de estos ingresos es marginal dentro del total de los ingresos tributarios. En
 el mejor de los casos supuso un 1,1% del total de ingresos:
-
-## NOTA INFORMATIVA 9: (página 75)
-
-- Tipo: content
 
 Los impuestos giran sobre las importaciones procedentes de los países que no pertenecen a la Unión
 Europea. El tratamiento es el mismo en toda la Unión Europea en tanto que la frontera es común a todos los
 países integrantes. Los tipos que se aplican a cada producto dependen de diversos elementos (tipo de
 producto, país o zona de procedencia, umbrales,…). Se puede hacer una aproximación al tipo medio
 
-## implícito del arancel dividiendo los ingresos por el valor de las importaciones procedentes de fuera de la (página 76)
+## Página 76
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 74
 implícito del arancel dividiendo los ingresos por el valor de las importaciones procedentes de fuera de la
 Unión Europea. Es lo que se hace en el siguiente gráfico.
 
-## implícito del arancel dividiendo los ingresos por el valor de las importaciones procedentes de fuera de la (página 76)
-
-- Tipo: title
-
 Se puede ver que el tipo implícito es muy bajo y además ha seguido una suave tendencia a la baja desde
 1995.
-
-## implícito del arancel dividiendo los ingresos por el valor de las importaciones procedentes de fuera de la (página 76)
-
-- Tipo: table
 
 Por último, hay que señalar que, a efectos de la Contabilidad Nacional, estos ingresos no figuran como parte
 de los ingresos de las AA.PP. Realmente estos ingresos son propiedad de la Unión Europea, aunque los
@@ -3864,35 +2990,18 @@ prestar ese servicio a la Unión Europea (un 25% del total ingresado). En la Con
 de servicios cuenta como un recurso de las AA.PP. y se registra como un ingreso de la producción no de
 mercado (operación P.131).
 
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
+## Página 77
 
-- Tipo: title
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 75
 NOTAS EXPLICATIVAS Y FUENTES
-
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: content
 
 El esquema de análisis: bases imponibles, tipos efectivos, impuestos devengados e ingresos
 tributarios
 
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: content
-
 La estructura básica del análisis de los ingresos tributarios (IT) realizado en este informe se basa en la siguiente
 identidad:
 
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: title
-
 IT = BI * RD/BI * IT/RD,
-
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: content
 
 donde BI es la base imponible del impuesto, RD es la recaudación devengada por el mismo, RD/BI es el tipo efectivo
 medio e IT/RD una ratio que recoge los desfases entre el momento de devengo y el de ingreso. Esta expresión
@@ -3901,33 +3010,17 @@ rentas, etc., sujetos a tributación (BI), a la que se aplica un tipo (RD/BI), d
 (RD). A continuación, se inicia el proceso de cobro del impuesto (IT/RD), que determina el ingreso del impuesto en un
 momento en general posterior al del devengo.
 
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: content
-
 Esta identidad sintetiza el método de análisis utilizado tanto en su información numérica y gráfica como en los
 comentarios que lo acompañan. Se informa sobre los ingresos tributarios, pero se intentan identificar las causas
 últimas de sus variaciones a través del análisis de los tres componentes de la identidad, la base imponible, el tipo
 efectivo y el ajuste entre el devengo y la caja.
 
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: title
-
 Bases imponibles
-
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: content
 
 La fuente básica de información de las bases imponibles son las estadísticas anuales disponibles en la web de la
 AEAT (Estadísticas). Los datos de los años para los que todavía no se han publicado las estadísticas
 correspondientes se han estimado utilizando la información disponible de las mismas fuentes que sirven para la
 elaboración de estas publicaciones; se trata, por lo tanto, de datos provisionales.
-
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: content
 
 Las cifras de demografía que figuran en cuadros del informe proceden también en su mayor parte de las
 estadísticas anuales, lo que garantiza una evolución coherente de la población de contribuyentes y de las bases
@@ -3935,15 +3028,7 @@ imponibles en cada uno de los impuestos. Dichas cifras pueden diferir en algún 
 Memoria de la Agencia Tributaria que obedecen a distintos criterios de elaboración en cuanto al ámbito y al
 momento del registro.
 
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: title
-
 Impuestos devengados
-
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: content
 
 El procedimiento de gestión de los impuestos de la AEAT tiene como núcleo básico un sistema de declaraciones-
 autoliquidaciones. El sistema supone que los contribuyentes obligados a declarar según la normativa de cada uno
@@ -3952,10 +3037,6 @@ declaración-autoliquidación en la que consta el código del modelo de declarac
 identificación del contribuyente y el resultado de la liquidación que el propio contribuyente calcula a partir de
 datos económicos y personales declarados.
 
-## NOTAS EXPLICATIVAS Y FUENTES (página 77)
-
-- Tipo: content
-
 Los impuestos devengados se calculan básicamente por agregación de esos modelos de declaración-
 autoliquidación que presentan los contribuyentes. Los impuestos devengados brutos se obtienen sumando, para
 cada modelo de declaración, los importes de las declaraciones cuyo resultado es a favor de la Hacienda Pública,
@@ -3963,10 +3044,9 @@ con independencia del momento en que se haya ingresado. Los impuestos devengados
 restar a los impuestos brutos los importes de las declaraciones en las que el saldo es a favor del contribuyente y
 da derecho al mismo a solicitar su devolución.
 
-## Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos (página 78)
+## Página 78
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 76
 Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos
 informativos que son aquellos modelos que, sin carácter liquidatorio, resumen y complementan el contenido de las
 declaraciones periódicas y cuyo fin es el control del correcto cumplimiento de las obligaciones fiscales. Estos
@@ -3974,42 +3054,22 @@ modelos sirven, por ejemplo, para asignar entre las distintas figuras impositiva
 Impuesto sobre la Renta de No Residentes) las retenciones de capital mobiliario, arrendamientos y fondos de
 inversión.
 
-## Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos (página 78)
-
-- Tipo: content
-
 Por definición los impuestos devengados son consistentes con las bases imponibles (rentas, beneficios, ventas y
 consumos) declarados en los modelos. En consecuencia, el tipo impositivo efectivo para cada figura impositiva es
 el cociente entre el impuesto devengado neto y la base imponible.
-
-## Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos (página 78)
-
-- Tipo: content
 
 Los impuestos devengados están sujetos a cambios incluso años después de haberse cerrado el ejercicio de
 referencia dado que los contribuyentes pueden presentar sus declaraciones-autoliquidaciones fuera de plazo, ya
 sea voluntariamente o por exigencia de la Administración. Por ello las cifras de los impuestos devengados que
 figuran en el informe en los dos últimos años tienen un carácter provisional.
 
-## Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos (página 78)
-
-- Tipo: title
-
 Ingresos tributarios
-
-## Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos (página 78)
-
-- Tipo: content
 
 Los ingresos tributarios son ingresos en términos de caja y se expresan, salvo indicación en contrario, en términos
 líquidos, es decir, como diferencia entre los ingresos brutos y las devoluciones realizadas. Esta medida de los
 ingresos se atiene a la Instrucción de Contabilidad de la Intervención General de la Administración del Estado
 (IGAE). Las cifras son comparables a las que se recogen en la Memoria de la Administración Tributaria cuya fuente
 es la IGAE.
-
-## Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos (página 78)
-
-- Tipo: content
 
 Existe una equivalencia entre las autoliquidaciones que están detrás de los impuestos devengados y los conceptos
 del Sistema de Información Contable de la AEAT del que se extraen las cifras de ingresos en términos de caja.
@@ -4025,10 +3085,6 @@ figuras (IRPF, Impuesto sobre Sociedades e Impuesto sobre la Renta de los No Res
 devengados la asignación se hace de acuerdo a la personalidad jurídica del contribuyente (física, jurídica, no
 residente), mientras que contablemente se realiza con porcentajes fijos entre las distintas figuras.
 
-## Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos (página 78)
-
-- Tipo: content
-
 En 2017 y 2018 los ingresos tributarios se presentan, en algunos casos, corregidos del impacto que tuvo en esos
 años la implantación del sistema de Suministro Inmediato de Información (SII) en el IVA. La introducción de este
 sistema de gestión supuso un desplazamiento de ingresos de 2017 a 2018. Con el fin de obtener series
@@ -4037,58 +3093,33 @@ corrigen de ese desplazamiento. La corrección se realiza en términos anuales, 
 produzcan pequeñas discrepancias con las cifras que se publicaron en los informes mensuales de recaudación en
 los cuales la corrección se hace mes a mes para proporcionar una buena medida de la variación mensual.
 
-## Los datos de las declaraciones–autoliquidaciones se completan con la información procedente de los modelos (página 78)
-
-- Tipo: content
-
 El análisis de los ingresos en este informe se realiza en términos totales, es decir, antes de deducir las
 participaciones a las que tienen derecho las Administraciones Territoriales (Comunidades Autónomas y
 Corporaciones Locales) de acuerdo al sistema de financiación territorial. Esta participación se hace efectiva en
 cada uno de los años a través, básicamente, de entregas a cuenta y liquidaciones definitivas del ejercicio t-2. La
 información detallada de estas participaciones se puede encontrar en los Cuadros 7.3, 7.4 y 7.5 del informe, así
 
-## como los ingresos del Estado una vez minoradas estas participaciones (Cuadro 7.7). Además, también se ofrece la (página 79)
+## Página 79
 
-- Tipo: content
-
+INFORME ANUAL DE RECAUDACIÓN TRIBUTARIA 2024. Página 77
 como los ingresos del Estado una vez minoradas estas participaciones (Cuadro 7.7). Además, también se ofrece la
 información de las relaciones con las Haciendas Forales en el Cuadro 7.6.
-
-## como los ingresos del Estado una vez minoradas estas participaciones (Cuadro 7.7). Además, también se ofrece la (página 79)
-
-- Tipo: content
 
 El ámbito presupuestario de los ingresos tributarios analizados en el informe abarca el Capítulo I (salvo las cuotas
 por derechos pasivos), el Capítulo II y las tasas y otros ingresos tributarios (que contienen los recargos, sanciones
 e intereses) del Capítulo III. Una visión completa de los ingresos no financieros del Estado, incluyendo los ingresos
 no tributarios, se puede consultar en el Cuadro 7.8.
 
-## como los ingresos del Estado una vez minoradas estas participaciones (Cuadro 7.7). Además, también se ofrece la (página 79)
-
-- Tipo: content
-
 Junto al informe también se presentan cuadros de los ingresos tributarios en términos de derechos reconocidos
 (Cuadro 7.10 y fichero Derechos_Reconocidos.xlsx). Respecto a los ingresos tributarios en términos de caja, los
 derechos reconocidos excluyen los ingresos de ejercicios cerrados e incluyen los derechos del ejercicio pendientes
 de cobro. También se atienen a la Instrucción de Contabilidad citada anteriormente.
 
-## como los ingresos del Estado una vez minoradas estas participaciones (Cuadro 7.7). Además, también se ofrece la (página 79)
-
-- Tipo: title
-
 Ingresos tributarios por Delegaciones
-
-## como los ingresos del Estado una vez minoradas estas participaciones (Cuadro 7.7). Además, también se ofrece la (página 79)
-
-- Tipo: content
 
 En los ficheros adicionales de ingresos por Delegaciones que acompañan al informe se presenta la información de
 los ingresos tributarios distribuidos entre las 56 Delegaciones (agrupadas, cuando procede, en Delegaciones
 Especiales) y los Servicios Centrales.
-
-## como los ingresos del Estado una vez minoradas estas participaciones (Cuadro 7.7). Además, también se ofrece la (página 79)
-
-- Tipo: content
 
 Dado que la asignación de los contribuyentes por Delegaciones se hace de acuerdo a su domicilio fiscal, los
 ingresos tributarios de una Delegación no son necesariamente un buen indicador de la importancia fiscal del

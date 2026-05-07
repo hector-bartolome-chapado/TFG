@@ -1,76 +1,58 @@
-# TFG RAG financiero-fiscal
+# Prototipo RAG v1
 
-Repositorio tecnico del TFG orientado a un pipeline RAG sobre documentacion publica economico-fiscal del Estado espanol.
+Prototipo mínimo para entender y evaluar el flujo básico de un sistema RAG sobre documentos PDF:
 
-## Objetivo
-
-El proyecto estudia como limpiar, estructurar, fragmentar y enriquecer documentacion oficial para construir un corpus util para retrieval y evaluacion posterior. El foco actual del repositorio esta en:
-
-- limpieza determinista de PDFs y hojas de calculo
-- generacion de artefactos intermedios inspeccionables
-- chunking estructural
-- enriquecimiento selectivo con `llamus.cs.us.es`
+- extracción de texto por página
+- división en bloques
+- chunking simple
+- embeddings con `llamus`
+- retrieval por similitud coseno
+- interfaz `Streamlit` para preguntar al documento
+- visualización de embeddings con `TensorBoard Embedding Projector`
 
 ## Estructura
 
-```text
-TFG/
-├─ PDF LIMPIO/
-│  ├─ markdown/
-│  ├─ json/
-│  ├─ blocks/
-│  ├─ chunks/
-│  └─ chunks_enriched/
-├─ scripts/
-├─ tests/
-└─ docs/
-```
+- `scripts/simple_extractor/`: extracción, chunking, embeddings y configuración compartida
+- `scripts/RECUPERADOR/`: retrieval mínimo
+- `scripts/simple_pipeline.py`: punto de entrada programático del pipeline
+- `interfaz/`: laboratorio RAG visual en `Streamlit`
+- `RESULTADOS EMBEDDING/`: artefactos generados del prototipo
+- `VISUAL DE EMBEDDING/`: exportador para `TensorBoard Projector`
 
-## Que contiene el repositorio
+La carpeta `prueba/` queda fuera del repo activo. Ahí vive el trabajo anterior y material archivado.
 
-- `PDF LIMPIO/`: salidas procesadas del corpus listas para inspeccion, chunking y retrieval.
-- `scripts/`: utilidades del pipeline de limpieza y enriquecimiento.
-- `tests/`: verificacion automatica del extractor y del pipeline.
-- `docs/`: documentacion tecnica del flujo actual.
+## Flujo actual
 
-## Que no contiene
+1. `PDF -> páginas`
+2. `páginas -> bloques`
+3. `bloques -> chunks`
+4. `chunks -> embeddings`
+5. `pregunta -> embedding -> top_k`
+6. `top_k -> contexto -> respuesta final`
 
-- `PDF SIN LIMPIAR/`: fuentes originales brutas.
-- materiales de escritura no tecnica del TFG.
-- adjuntos pesados o duplicados sin valor para el pipeline.
+## Requisitos
 
-## Estado actual
+- `TFG/.llamus_api_key` o `LLAMUS_API_KEY`
+- dependencias Python del entorno actual
 
-Documentos piloto ya procesados:
+## Interfaz
 
-- `AEAT_informe_anual_2024`
-- `01 Presupuestos Generales del Estado Consolidados 2023`
-- `C.G.E. 2023`
-
-Artefactos ya generados:
-
-- `markdown`
-- `json`
-- `blocks.jsonl`
-- `chunks.jsonl`
-- `chunks_enriched.jsonl` para el piloto AEAT
-
-## Verificacion
-
-Tests disponibles:
-
-- `tests/test_clean_aeat_pdf.py`
-- `tests/test_corpus_pipeline.py`
-
-Ejecucion:
+Desde la raíz de `TFG`:
 
 ```powershell
-python -m unittest tests.test_clean_aeat_pdf
-python -m unittest tests.test_corpus_pipeline
+streamlit run .\interfaz\app.py
 ```
 
-## Siguiente fase
+## Visualización de embeddings
 
-- generar embeddings con `mxbai-embed-large:v1`
-- decidir vector store baseline
-- definir metricas iniciales de retrieval y fidelidad
+La visualización se hace con `TensorBoard Embedding Projector` a partir de los artefactos ya preparados en:
+
+- `RESULTADOS EMBEDDING/projector/AEAT_informe_anual_2024/`
+
+## Estado
+
+Este repositorio refleja el primer prototipo operativo:
+
+- embedding real de `AEAT_informe_anual_2024.pdf`
+- retrieval funcionando
+- primera interfaz RAG para pruebas manuales

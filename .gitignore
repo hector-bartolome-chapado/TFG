@@ -4,11 +4,15 @@ __pycache__/
 PDF SIN LIMPIAR/
 *.docx
 *.pdf
-!PDF LIMPIO/**/*.md
-!PDF LIMPIO/**/*.json
-!PDF LIMPIO/**/*.jsonl
 
 docs/superpowers/
+.llamus_api_key
+.llamus_api_key.*
+prueba/
+interfaz/__pycache__/
+scripts/__pycache__/
+tests/__pycache__/
+**/__pycache__/
 
 .DS_Store
 Thumbs.db
