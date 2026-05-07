@@ -19,7 +19,7 @@ Prototipo mínimo para entender y evaluar el flujo básico de un sistema RAG sob
 - `RESULTADOS EMBEDDING/`: artefactos generados del prototipo
 - `VISUAL DE EMBEDDING/`: exportador para `TensorBoard Projector`
 
-La carpeta `prueba/` queda fuera del repo activo. Ahí vive el trabajo anterior y material archivado.
+
 
 ## Flujo actual
 
