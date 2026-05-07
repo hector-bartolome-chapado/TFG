@@ -1,18 +1,9 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 from typing import Any
 
 
-# Parte un texto largo en trozos más pequeños intentando respetar frases completas.
-#
-# Entra:
-# - text: bloque de texto original.
-# - max_chars: tamaño máximo de cada trozo.
-# Sale:
-# - una lista de fragmentos con longitud razonable.
-# Por qué existe:
-# - en el v1 un párrafo puede ser más largo que el límite de chunking y, si no lo partimos, el embedding puede fallar.
 def split_long_text(text: str, max_chars: int) -> list[str]:
     stripped = text.strip()
     if len(stripped) <= max_chars:
@@ -49,15 +40,6 @@ def split_long_text(text: str, max_chars: int) -> list[str]:
     return [part for part in parts if part]
 
 
-# Agrupa bloques consecutivos en chunks simples hasta un tamaño máximo.
-#
-# Entra:
-# - blocks: bloques ya creados a partir de párrafos.
-# - max_chars: número máximo de caracteres por chunk.
-# Sale:
-# - chunks con rango de páginas y texto concatenado.
-# Por qué existe:
-# - es la primera versión del chunking: juntar párrafos cercanos sin reglas especiales.
 def build_chunks(blocks: list[dict[str, Any]], max_chars: int = 400) -> list[dict[str, Any]]:
     chunks: list[dict[str, Any]] = []
     pending: dict[str, Any] | None = None

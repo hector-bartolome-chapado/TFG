@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from typing import Any, Callable
 
@@ -7,17 +7,6 @@ import requests
 from scripts.simple_extractor.config import DEFAULT_EMBED_MODEL, DEFAULT_LLAMUS_BASE_URL
 
 
-# Pide un embedding a llamus para un único texto.
-#
-# Entra:
-# - text: chunk que queremos vectorizar.
-# - model: nombre del modelo de embeddings.
-# - base_url: servidor llamus.
-# - api_key: token del servidor.
-# Sale:
-# - una lista de números de coma flotante.
-# Por qué existe:
-# - esta es la integración mínima con el servidor real del TFG.
 def request_embedding(
     text: str,
     model: str = DEFAULT_EMBED_MODEL,
@@ -49,16 +38,6 @@ def request_embedding(
     raise ValueError("La respuesta de embeddings no contiene un vector usable.")
 
 
-# Recorre todos los chunks y les añade su embedding.
-#
-# Entra:
-# - chunks: lista de chunks ya construidos.
-# - model, base_url, api_key: parámetros del backend.
-# - requestor: función opcional para tests o mocks.
-# Sale:
-# - una lista de registros con chunk y embedding.
-# Por qué existe:
-# - separa claramente la fase de chunking de la fase de vectorización.
 def embed_chunks(
     chunks: list[dict[str, Any]],
     model: str = DEFAULT_EMBED_MODEL,

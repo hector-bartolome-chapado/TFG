@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 import pathlib
@@ -15,15 +15,6 @@ from scripts.simple_extractor.embeddings import embed_chunks
 from scripts.simple_extractor.extract import extract_pages
 
 
-# Guarda una lista de diccionarios en formato JSONL, una fila por línea.
-#
-# Entra:
-# - path: ruta de salida.
-# - rows: registros a guardar.
-# Sale:
-# - escribe el fichero en disco.
-# Por qué existe:
-# - JSONL es la salida más simple y útil para bloques, chunks y embeddings.
 def write_jsonl(path: pathlib.Path, rows: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as handle:
@@ -31,18 +22,6 @@ def write_jsonl(path: pathlib.Path, rows: list[dict[str, Any]]) -> None:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
-# Ejecuta el pipeline v1 completo de forma simple y legible.
-#
-# Entra:
-# - pdf_path: PDF con texto.
-# - output_root: carpeta donde se guardarán los artefactos.
-# - max_chars: tamaño máximo de los chunks.
-# - embed: si hay que llamar o no al servidor de embeddings.
-# - model/base_url/api_key: parámetros del backend.
-# Sale:
-# - un resumen con rutas y conteos.
-# Por qué existe:
-# - concentra el flujo completo que quieres aprender: extraer, bloquear, trocear y vectorizar.
 def process_document(
     pdf_path: pathlib.Path,
     output_root: pathlib.Path,

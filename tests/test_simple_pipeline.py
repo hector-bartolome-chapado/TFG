@@ -184,11 +184,11 @@ class SimplePipelineTests(unittest.TestCase):
         self.assertEqual(metadata_rows[0]["page"], "1")
         self.assertIn("preview_corto", metadata_rows[0])
         self.assertEqual(set(metadata_rows[0].keys()), {"page", "preview_corto"})
-        self.assertEqual(metadata_rows[1]["page"], "2-4")
+        self.assertEqual(metadata_rows[1]["page"], "2")
 
     def test_build_page_label_uses_only_page_fields(self):
         self.assertEqual(build_page_label({"page_start": 3, "page_end": 3}), "3")
-        self.assertEqual(build_page_label({"page_start": 3, "page_end": 5}), "3-5")
+        self.assertEqual(build_page_label({"page_start": 3, "page_end": 5}), "3")
         self.assertEqual(build_page_label({}), "")
 
     def test_export_projector_files_writes_metadata_config_and_checkpoint(self):

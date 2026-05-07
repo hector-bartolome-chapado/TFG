@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import pathlib
 import sys
@@ -20,30 +20,14 @@ from interfaz.rag_service import (
 )
 
 
-# Configura la página y el estilo base del laboratorio RAG.
-#
-# Entra:
-# - nada.
-# Sale:
-# - inicializa la app `Streamlit`.
-# Por qué existe:
-# - concentra la configuración visual y evita mezclarla con la lógica del laboratorio.
 def configure_page() -> None:
     st.set_page_config(page_title="Laboratorio RAG", layout="wide")
     st.title("Laboratorio RAG v1")
-    st.caption("Pregunta → retrieval → contexto → respuesta final")
+    st.caption("Pregunta â†’ retrieval â†’ contexto â†’ respuesta final")
 
 
-# Dibuja la barra lateral con documento, top_k y configuración básica.
-#
-# Entra:
-# - embedding_files: lista de documentos disponibles.
-# Sale:
-# - un diccionario con la selección del usuario.
-# Por qué existe:
-# - la barra lateral fija el estado del laboratorio sin cargar el panel principal.
 def render_sidebar(embedding_files: list[pathlib.Path]) -> dict[str, object]:
-    st.sidebar.header("Configuración")
+    st.sidebar.header("ConfiguraciÃ³n")
     if st.sidebar.button("Refrescar documentos"):
         st.rerun()
 
@@ -69,48 +53,19 @@ def render_sidebar(embedding_files: list[pathlib.Path]) -> dict[str, object]:
     }
 
 
-# Muestra cada hit recuperado de forma legible en el panel de retrieval.
-#
-# Entra:
-# - hits: resultados de retrieval ordenados por score.
-# Sale:
-# - pinta expanders con score y contenido.
-# Por qué existe:
-# - retrieval es el primer punto de fallo del RAG y debe quedar visible por separado.
 def render_hits(hits: list[dict[str, object]]) -> None:
     st.subheader("Retrieval")
     for index, hit in enumerate(hits, start=1):
-        title = f"{index}. {hit['chunk_id']} · score={hit['score']:.4f}"
+        title = f"{index}. {hit['chunk_id']} Â· score={hit['score']:.4f}"
         with st.expander(title, expanded=index == 1):
             st.code(hit["text"], language="text")
 
 
-# Muestra el contexto exacto que se va a enviar al modelo.
-#
-# Entra:
-# - context: string consolidado con todos los hits.
-# Sale:
-# - renderiza el bloque de contexto.
-# Por qué existe:
-# - separa errores de retrieval de errores de generación.
 def render_context(context: str) -> None:
     st.subheader("Contexto enviado")
     st.code(context, language="text")
 
 
-# Muestra la respuesta final y un bloque breve de depuración.
-#
-# Entra:
-# - answer: texto generado.
-# - retrieval_latency: tiempo de retrieval.
-# - generation_latency: tiempo de generación.
-# - prompt_messages: mensajes enviados al modelo.
-# - doc_name: documento seleccionado.
-# - row_count: número total de chunks cargados.
-# Sale:
-# - renderiza respuesta y debug.
-# Por qué existe:
-# - deja trazabilidad suficiente sin convertir la interfaz en una consola.
 def render_answer_and_debug(
     answer: str,
     retrieval_latency: float,
@@ -125,21 +80,13 @@ def render_answer_and_debug(
     st.subheader("Debug")
     left, right = st.columns(2)
     left.metric("Latencia retrieval", f"{retrieval_latency:.2f}s")
-    right.metric("Latencia generación", f"{generation_latency:.2f}s")
+    right.metric("Latencia generaciÃ³n", f"{generation_latency:.2f}s")
     st.write(f"Documento activo: `{doc_name}`")
     st.write(f"Chunks cargados: `{row_count}`")
     with st.expander("Prompt enviado", expanded=False):
         st.json(prompt_messages)
 
 
-# Orquesta la pantalla principal del laboratorio.
-#
-# Entra:
-# - nada; usa la selección y la pregunta del usuario.
-# Sale:
-# - ejecuta retrieval y generación y pinta el resultado.
-# Por qué existe:
-# - mantiene el flujo principal en un sitio fácil de seguir.
 def main() -> None:
     configure_page()
     embedding_files = list_embedding_files()
@@ -156,7 +103,7 @@ def main() -> None:
         st.error("No hay API key. Usa `TFG/.llamus_api_key` o `LLAMUS_API_KEY`.")
         return
 
-    question = st.text_area("Pregunta", placeholder="Escribe aquí una pregunta sobre el documento...")
+    question = st.text_area("Pregunta", placeholder="Escribe aquÃ­ una pregunta sobre el documento...")
     if not st.button("Buscar y responder", type="primary"):
         return
 
