@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 import pathlib
@@ -26,6 +26,8 @@ def process_document(
     pdf_path: pathlib.Path,
     output_root: pathlib.Path,
     max_chars: int = 400,
+    max_child_tokens: int | None = 220,
+    overlap_tokens: int = 40,
     embed: bool = False,
     model: str = DEFAULT_EMBED_MODEL,
     base_url: str = DEFAULT_LLAMUS_BASE_URL,
@@ -35,7 +37,12 @@ def process_document(
     doc_id = pdf_path.stem
     pages = extract_pages(pdf_path)
     blocks = build_blocks(doc_id, pages)
-    chunks = build_chunks(blocks, max_chars=max_chars)
+    chunks = build_chunks(
+        blocks,
+        max_chars=max_chars if max_child_tokens is None else None,
+        max_child_tokens=max_child_tokens,
+        overlap_tokens=overlap_tokens,
+    )
 
     blocks_path = output_root / "blocks" / f"{doc_id}.jsonl"
     chunks_path = output_root / "chunks" / f"{doc_id}.jsonl"
@@ -47,6 +54,7 @@ def process_document(
         "page_count": len(pages),
         "block_count": len(blocks),
         "chunk_count": len(chunks),
+        "chunking_strategy": "legacy_chars" if max_child_tokens is None else "parent_child_tokens",
         "blocks_path": str(blocks_path),
         "chunks_path": str(chunks_path),
     }

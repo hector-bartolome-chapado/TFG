@@ -1,15 +1,17 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import os
 import pathlib
 
 
 DEFAULT_LLAMUS_BASE_URL = "https://llamus.cs.us.es"
-DEFAULT_EMBED_MODEL = "mxbai-embed-large:v1"
-DEFAULT_CHAT_MODEL = "llama3.1:8b"
+DEFAULT_EMBED_MODEL = "qwen3-embedding:4b"
+DEFAULT_QA_GENERATION_MODEL = "qwen3:8b"
+DEFAULT_GOLD_VALIDATOR_MODEL = "qwen3:8b"
+DEFAULT_RAG_CHAT_MODEL = "gemma3:12b"
 RAG_SYSTEM_PROMPT = (
-    "Eres un asistente RAG. Responde solo con la informaciÃ³n del contexto proporcionado. "
-    "Si la respuesta no estÃ¡ en el contexto, dilo explÃ­citamente. No inventes cifras ni hechos."
+    "Eres un asistente RAG. Responde solo con la información del contexto proporcionado. "
+    "Si la respuesta no está en el contexto, dilo explícitamente. No inventes cifras ni hechos."
 )
 
 

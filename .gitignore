@@ -6,8 +6,11 @@ PDF SIN LIMPIAR/
 *.pdf
 
 docs/superpowers/
+.agents/
+.codex/
 .llamus_api_key
 .llamus_api_key.*
+!.llamus_api_key.example
 prueba/
 interfaz/__pycache__/
 scripts/__pycache__/

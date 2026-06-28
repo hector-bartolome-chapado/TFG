@@ -1,7 +1,11 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import re
 from typing import Any
+
+
+DEFAULT_CHILD_TOKENS = 220
+DEFAULT_OVERLAP_TOKENS = 40
 
 
 def split_long_text(text: str, max_chars: int) -> list[str]:
@@ -40,7 +44,33 @@ def split_long_text(text: str, max_chars: int) -> list[str]:
     return [part for part in parts if part]
 
 
-def build_chunks(blocks: list[dict[str, Any]], max_chars: int = 400) -> list[dict[str, Any]]:
+def split_text_by_tokens(text: str, max_tokens: int, overlap_tokens: int = 0) -> list[str]:
+    tokens = text.strip().split()
+    if not tokens:
+        return []
+    if max_tokens <= 0:
+        raise ValueError("max_tokens debe ser mayor que cero.")
+    if overlap_tokens < 0:
+        raise ValueError("overlap_tokens no puede ser negativo.")
+    if overlap_tokens >= max_tokens:
+        raise ValueError("overlap_tokens debe ser menor que max_tokens.")
+    if len(tokens) <= max_tokens:
+        return [" ".join(tokens)]
+
+    parts: list[str] = []
+    step = max_tokens - overlap_tokens
+    start = 0
+    while start < len(tokens):
+        part_tokens = tokens[start : start + max_tokens]
+        if part_tokens:
+            parts.append(" ".join(part_tokens))
+        if start + max_tokens >= len(tokens):
+            break
+        start += step
+    return parts
+
+
+def build_legacy_chunks(blocks: list[dict[str, Any]], max_chars: int = 400) -> list[dict[str, Any]]:
     chunks: list[dict[str, Any]] = []
     pending: dict[str, Any] | None = None
 
@@ -80,3 +110,59 @@ def build_chunks(blocks: list[dict[str, Any]], max_chars: int = 400) -> list[dic
 
     flush_pending()
     return chunks
+
+
+def build_parent_child_chunks(
+    blocks: list[dict[str, Any]],
+    max_child_tokens: int = DEFAULT_CHILD_TOKENS,
+    overlap_tokens: int = DEFAULT_OVERLAP_TOKENS,
+) -> list[dict[str, Any]]:
+    chunks: list[dict[str, Any]] = []
+    for block in blocks:
+        parent_text = block["text"].strip()
+        if not parent_text:
+            continue
+
+        parent_id = f"{block['block_id']}::parent"
+        child_texts = split_text_by_tokens(
+            parent_text,
+            max_tokens=max_child_tokens,
+            overlap_tokens=overlap_tokens,
+        )
+
+        for child_index, child_text in enumerate(child_texts, start=1):
+            chunks.append(
+                {
+                    "chunk_id": f"{parent_id}::child::{child_index}",
+                    "parent_id": parent_id,
+                    "doc_id": block["doc_id"],
+                    "page_start": block["page"],
+                    "page_end": block["page"],
+                    "text": child_text,
+                    "retrieval_text": child_text,
+                    "parent_text": parent_text,
+                    "chunk_index": child_index,
+                    "chunk_count": len(child_texts),
+                    "chunking_strategy": "parent_child_tokens",
+                    "max_child_tokens": max_child_tokens,
+                    "overlap_tokens": overlap_tokens,
+                }
+            )
+    return chunks
+
+
+def build_chunks(
+    blocks: list[dict[str, Any]],
+    max_chars: int | None = None,
+    max_child_tokens: int | None = None,
+    overlap_tokens: int = DEFAULT_OVERLAP_TOKENS,
+) -> list[dict[str, Any]]:
+    if max_child_tokens is not None:
+        return build_parent_child_chunks(
+            blocks,
+            max_child_tokens=max_child_tokens,
+            overlap_tokens=overlap_tokens,
+        )
+    if max_chars is not None:
+        return build_legacy_chunks(blocks, max_chars=max_chars)
+    return build_parent_child_chunks(blocks)

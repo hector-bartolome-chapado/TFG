@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from typing import Any, Callable
 
@@ -48,15 +48,26 @@ def embed_chunks(
     requester = requestor or request_embedding
     embedded_rows: list[dict[str, Any]] = []
     for chunk in chunks:
-        embedded_rows.append(
-            {
-                "chunk_id": chunk["chunk_id"],
-                "doc_id": chunk["doc_id"],
-                "page_start": chunk.get("page_start"),
-                "page_end": chunk.get("page_end"),
-                "model": model,
-                "text": chunk["text"],
-                "embedding": requester(chunk["text"], model, base_url, api_key),
-            }
-        )
+        row = {
+            "chunk_id": chunk["chunk_id"],
+            "doc_id": chunk["doc_id"],
+            "page_start": chunk.get("page_start"),
+            "page_end": chunk.get("page_end"),
+            "model": model,
+            "text": chunk["text"],
+            "embedding": requester(chunk["text"], model, base_url, api_key),
+        }
+        for field in (
+            "parent_id",
+            "parent_text",
+            "retrieval_text",
+            "chunk_index",
+            "chunk_count",
+            "chunking_strategy",
+            "max_child_tokens",
+            "overlap_tokens",
+        ):
+            if field in chunk:
+                row[field] = chunk[field]
+        embedded_rows.append(row)
     return embedded_rows

@@ -1,58 +1,38 @@
-# Prototipo RAG v1
+# Sistema RAG fiscal
 
-Prototipo mínimo para entender y evaluar el flujo básico de un sistema RAG sobre documentos PDF:
-
-- extracción de texto por página
-- división en bloques
-- chunking simple
-- embeddings con `llamus`
-- retrieval por similitud coseno
-- interfaz `Streamlit` para preguntar al documento
-- visualización de embeddings con `TensorBoard Embedding Projector`
+Prototipo RAG para consultar documentacion publica fiscal y presupuestaria espanola.
 
 ## Estructura
 
-- `scripts/simple_extractor/`: extracción, chunking, embeddings y configuración compartida
-- `scripts/RECUPERADOR/`: retrieval mínimo
-- `scripts/simple_pipeline.py`: punto de entrada programático del pipeline
-- `interfaz/`: laboratorio RAG visual en `Streamlit`
-- `RESULTADOS EMBEDDING/`: artefactos generados del prototipo
-- `VISUAL DE EMBEDDING/`: exportador para `TensorBoard Projector`
+- `interfaz/`: aplicacion Streamlit y servicio RAG.
+- `scripts/RECUPERADOR/`: recuperacion densa, BM25, hibrida fiscal y ajuste para consultas juridicas.
+- `scripts/simple_extractor/`: utilidades de ingesta, chunking y generacion de embeddings.
+- `RESULTADOS EMBEDDING/embeddings/`: embeddings JSONL usados como indice local del RAG.
+- `tests/`: pruebas unitarias de ingesta, recuperacion e interfaz.
 
+## Configuracion
 
+El sistema usa el servidor Llamus configurado en `scripts/simple_extractor/config.py`.
+Para ejecutar consultas reales, define una de estas opciones:
 
-## Flujo actual
+```powershell
+$env:LLAMUS_API_KEY = "tu_api_key"
+```
 
-1. `PDF -> páginas`
-2. `páginas -> bloques`
-3. `bloques -> chunks`
-4. `chunks -> embeddings`
-5. `pregunta -> embedding -> top_k`
-6. `top_k -> contexto -> respuesta final`
+o crea `.llamus_api_key` a partir de `.llamus_api_key.example`.
 
-## Requisitos
-
-- `TFG/.llamus_api_key` o `LLAMUS_API_KEY`
-- dependencias Python del entorno actual
-
-## Interfaz
-
-Desde la raíz de `TFG`:
+## Ejecucion
 
 ```powershell
 streamlit run .\interfaz\app.py
 ```
 
-## Visualización de embeddings
+## Tests
 
-La visualización se hace con `TensorBoard Embedding Projector` a partir de los artefactos ya preparados en:
+```powershell
+python -m unittest discover -s tests
+```
 
-- `RESULTADOS EMBEDDING/projector/AEAT_informe_anual_2024/`
+## Notas
 
-## Estado
-
-Este repositorio refleja el primer prototipo operativo:
-
-- embedding real de `AEAT_informe_anual_2024.pdf`
-- retrieval funcionando
-- primera interfaz RAG para pruebas manuales
+Los documentos originales no se incluyen en el repositorio limpio. El RAG funciona con los embeddings JSONL ya generados, que actuan como persistencia local auditable para el tamano del corpus del TFG.

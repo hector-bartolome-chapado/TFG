@@ -1,2 +1,1 @@
-﻿"""Simple PDF-to-chunks extractor for the learning-focused v1 pipeline."""
-
+"""Document extraction, chunking and embedding utilities for the final RAG pipeline."""

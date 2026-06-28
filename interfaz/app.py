@@ -9,25 +9,25 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts.simple_extractor.config import DEFAULT_CHAT_MODEL, DEFAULT_LLAMUS_BASE_URL, get_api_key
+from scripts.simple_extractor.config import DEFAULT_LLAMUS_BASE_URL, DEFAULT_RAG_CHAT_MODEL, get_api_key
 from interfaz.rag_service import (
-    build_answer_prompt,
     build_context,
+    build_controlled_answer_prompt,
+    generate_controlled_answer,
     list_embedding_files,
     load_document_embeddings,
     run_retrieval,
-    ask_llamus,
 )
 
 
 def configure_page() -> None:
-    st.set_page_config(page_title="Laboratorio RAG", layout="wide")
-    st.title("Laboratorio RAG v1")
-    st.caption("Pregunta â†’ retrieval â†’ contexto â†’ respuesta final")
+    st.set_page_config(page_title="Sistema RAG fiscal", layout="wide")
+    st.title("Sistema RAG fiscal")
+    st.caption("Pregunta -> recuperacion -> contexto -> respuesta final")
 
 
 def render_sidebar(embedding_files: list[pathlib.Path]) -> dict[str, object]:
-    st.sidebar.header("ConfiguraciÃ³n")
+    st.sidebar.header("Configuración")
     if st.sidebar.button("Refrescar documentos"):
         st.rerun()
 
@@ -43,7 +43,7 @@ def render_sidebar(embedding_files: list[pathlib.Path]) -> dict[str, object]:
         st.sidebar.warning("No hay embeddings en RESULTADOS EMBEDDING/embeddings.")
 
     top_k = st.sidebar.slider("top_k", min_value=1, max_value=10, value=5)
-    model = st.sidebar.text_input("Modelo generador", value=DEFAULT_CHAT_MODEL)
+    model = st.sidebar.text_input("Modelo generador", value=DEFAULT_RAG_CHAT_MODEL)
     base_url = st.sidebar.text_input("Servidor llamus", value=DEFAULT_LLAMUS_BASE_URL)
     return {
         "selected_path": selected_path,
@@ -103,7 +103,7 @@ def main() -> None:
         st.error("No hay API key. Usa `TFG/.llamus_api_key` o `LLAMUS_API_KEY`.")
         return
 
-    question = st.text_area("Pregunta", placeholder="Escribe aquÃ­ una pregunta sobre el documento...")
+    question = st.text_area("Pregunta", placeholder="Haz una pregunta sobre el documento...")
     if not st.button("Buscar y responder", type="primary"):
         return
 
@@ -125,12 +125,11 @@ def main() -> None:
         context = build_context(hits)
         render_context(context)
 
-        prompt_messages = build_answer_prompt(question, context)
-        generation_result = ask_llamus(
-            prompt_messages=prompt_messages,
-            model=str(sidebar_state["model"]),
-            base_url=str(sidebar_state["base_url"]),
-            api_key=api_key,
+        generation_result = generate_controlled_answer(question, hits)
+        prompt_messages = build_controlled_answer_prompt(
+            question,
+            context,
+            route=generation_result["decision"]["route"],
         )
         render_answer_and_debug(
             answer=generation_result["answer"],
