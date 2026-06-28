@@ -10,6 +10,19 @@ Prototipo RAG para consultar documentacion publica fiscal y presupuestaria espan
 - `RESULTADOS EMBEDDING/embeddings/`: embeddings JSONL usados como indice local del RAG.
 - `tests/`: pruebas unitarias de ingesta, recuperacion e interfaz.
 
+## Modulos de mejora
+
+Las mejoras del sistema final estan separadas en archivos especificos para que se pueda revisar la progresion tecnica:
+
+- `interfaz/question_routing.py`: clasificacion de preguntas por tipo de respuesta.
+- `interfaz/table_answers.py`: extraccion determinista de celdas en XLSX presupuestarios.
+- `interfaz/legal_answers.py`: respuesta juridica basada en articulos recuperados del BOE.
+- `interfaz/controlled_generation.py`: logica de decision, rechazo y respuesta controlada.
+- `scripts/RECUPERADOR/fiscal_scoring.py`: expansion de consultas fiscales y coincidencia exacta de impuestos/cifras.
+- `scripts/RECUPERADOR/legal_scoring.py`: priorizacion de articulos juridicos frente a indices.
+- `scripts/RECUPERADOR/table_scoring.py`: boost de filas y cabeceras tabulares.
+- `scripts/RECUPERADOR/text_matching.py`: BM25, tokenizacion y normalizacion compartida.
+
 ## Configuracion
 
 El sistema usa el servidor Llamus configurado en `scripts/simple_extractor/config.py`.
