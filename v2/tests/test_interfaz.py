@@ -9,7 +9,7 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from interfaz.rag_service import (
+from generacion.rag_service import (
     ask_llamus,
     build_answer_prompt,
     build_controlled_answer_prompt,
@@ -23,8 +23,8 @@ from interfaz.rag_service import (
     load_document_embeddings,
     run_retrieval,
 )
-from scripts.simple_pipeline import write_jsonl
-from scripts.simple_extractor.config import DEFAULT_RAG_CHAT_MODEL, RAG_SYSTEM_PROMPT
+from ingesta.simple_pipeline import write_jsonl
+from ingesta.config import DEFAULT_RAG_CHAT_MODEL, RAG_SYSTEM_PROMPT
 
 
 class InterfazServiceTests(unittest.TestCase):
@@ -246,7 +246,7 @@ class InterfazServiceTests(unittest.TestCase):
     def test_run_retrieval_returns_hits_and_latency(self):
         rows = [{"chunk_id": "c1", "doc_id": "doc", "text": "texto", "embedding": [1.0, 0.0]}]
 
-        with mock.patch("interfaz.rag_service.retrieve_top_k", return_value=[{"chunk_id": "c1", "score": 0.9, "text": "texto"}]) as retrieve_mock:
+        with mock.patch("generacion.rag_service.retrieve_top_k", return_value=[{"chunk_id": "c1", "score": 0.9, "text": "texto"}]) as retrieve_mock:
             result = run_retrieval(
                 "pregunta",
                 rows,
@@ -267,7 +267,7 @@ class InterfazServiceTests(unittest.TestCase):
             def json(self):
                 return {"choices": [{"message": {"content": "respuesta final"}}]}
 
-        with mock.patch("interfaz.rag_service.requests.post", return_value=FakeResponse()):
+        with mock.patch("generacion.rag_service.requests.post", return_value=FakeResponse()):
             result = ask_llamus(
                 prompt_messages=[{"role": "system", "content": RAG_SYSTEM_PROMPT}],
                 api_key="secret",

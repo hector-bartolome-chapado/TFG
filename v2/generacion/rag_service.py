@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import pathlib
 import time
@@ -6,17 +6,17 @@ from typing import Any
 
 import requests
 
-from interfaz.context_builder import build_context
-from interfaz.controlled_generation import (
+from generacion.context_builder import build_context
+from generacion.controlled_generation import (
     build_generation_decision,
     generate_controlled_answer,
     restate_answer,
     score_sentence_for_question,
 )
-from interfaz.legal_answers import clean_context_artifacts, extract_legal_answer
-from interfaz.prompting import build_answer_prompt, build_controlled_answer_prompt
-from interfaz.question_routing import classify_question_route
-from interfaz.table_answers import (
+from generacion.legal_answers import clean_context_artifacts, extract_legal_answer
+from generacion.prompting import build_answer_prompt, build_controlled_answer_prompt
+from generacion.question_routing import classify_question_route
+from generacion.table_answers import (
     extract_document_presence_answer,
     extract_single_row_table_answer,
     extract_table_cell_answer,
@@ -27,15 +27,15 @@ from interfaz.table_answers import (
     requested_table_header,
     score_table_row_label,
 )
-from interfaz.text_utils import (
+from generacion.text_utils import (
     STANDARD_NO_ANSWER,
     content_tokens,
     lower_first,
     normalize_for_generation,
     question_subject,
 )
-from scripts.RECUPERADOR.retrieval import load_embedding_rows, retrieve_top_k
-from scripts.simple_extractor.config import (
+from recuperacion.retrieval import load_embedding_rows, retrieve_top_k
+from ingesta.config import (
     DEFAULT_EMBED_MODEL,
     DEFAULT_LLAMUS_BASE_URL,
     DEFAULT_RAG_CHAT_MODEL,
@@ -115,3 +115,4 @@ def ask_llamus(
     if not isinstance(content, str):
         raise ValueError("La respuesta de chat no contiene texto usable.")
     return {"answer": content.strip(), "latency_seconds": ended_at - started_at}
+

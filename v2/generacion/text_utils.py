@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 import unicodedata
@@ -88,3 +88,4 @@ def question_subject(question: str) -> str:
         subject = re.sub(pattern, replacement, subject, flags=re.IGNORECASE).strip()
     subject = re.sub(r"\s+", " ", subject).strip()
     return lower_first(subject[:140].rstrip(" .,:;"))
+

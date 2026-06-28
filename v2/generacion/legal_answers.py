@@ -1,8 +1,8 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 
-from interfaz.text_utils import normalize_for_generation
+from generacion.text_utils import normalize_for_generation
 
 
 def clean_context_artifacts(text: str) -> str:
@@ -46,3 +46,4 @@ def extract_legal_answer(question: str, context: str) -> str | None:
 
     explanation = " ".join(dict.fromkeys(useful_sentences))
     return f"Norma: {norm_title} Explicacion: {explanation} Fuente: Ley 37/1992, fragmento recuperado del BOE."
+

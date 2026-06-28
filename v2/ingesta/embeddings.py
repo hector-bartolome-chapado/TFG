@@ -1,10 +1,10 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from typing import Any, Callable
 
 import requests
 
-from scripts.simple_extractor.config import DEFAULT_EMBED_MODEL, DEFAULT_LLAMUS_BASE_URL
+from ingesta.config import DEFAULT_EMBED_MODEL, DEFAULT_LLAMUS_BASE_URL
 
 
 def request_embedding(
@@ -71,3 +71,4 @@ def embed_chunks(
                 row[field] = chunk[field]
         embedded_rows.append(row)
     return embedded_rows
+

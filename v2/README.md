@@ -4,9 +4,10 @@ Prototipo RAG para consultar documentacion publica fiscal y presupuestaria espan
 
 ## Estructura
 
-- `interfaz/`: aplicacion Streamlit y servicio RAG.
-- `scripts/RECUPERADOR/`: recuperacion densa, BM25, hibrida fiscal y ajuste para consultas juridicas.
-- `scripts/simple_extractor/`: utilidades de ingesta, chunking y generacion de embeddings.
+- `ingesta/`: utilidades de ingesta, chunking y generacion de embeddings.
+- `recuperacion/`: recuperacion densa, BM25, hibrida fiscal y ajuste para consultas juridicas.
+- `generacion/`: clasificacion de preguntas, construccion de contexto, respuestas controladas y formatos especializados.
+- `interfaz/`: aplicacion Streamlit.
 - `RESULTADOS EMBEDDING/embeddings/`: embeddings JSONL usados como indice local del RAG.
 - `tests/`: pruebas unitarias de ingesta, recuperacion e interfaz.
 
@@ -14,18 +15,18 @@ Prototipo RAG para consultar documentacion publica fiscal y presupuestaria espan
 
 Las mejoras del sistema final estan separadas en archivos especificos para que se pueda revisar la progresion tecnica:
 
-- `interfaz/question_routing.py`: clasificacion de preguntas por tipo de respuesta.
-- `interfaz/table_answers.py`: extraccion determinista de celdas en XLSX presupuestarios.
-- `interfaz/legal_answers.py`: respuesta juridica basada en articulos recuperados del BOE.
-- `interfaz/controlled_generation.py`: logica de decision, rechazo y respuesta controlada.
-- `scripts/RECUPERADOR/fiscal_scoring.py`: expansion de consultas fiscales y coincidencia exacta de impuestos/cifras.
-- `scripts/RECUPERADOR/legal_scoring.py`: priorizacion de articulos juridicos frente a indices.
-- `scripts/RECUPERADOR/table_scoring.py`: boost de filas y cabeceras tabulares.
-- `scripts/RECUPERADOR/text_matching.py`: BM25, tokenizacion y normalizacion compartida.
+- `generacion/question_routing.py`: clasificacion de preguntas por tipo de respuesta.
+- `generacion/table_answers.py`: extraccion determinista de celdas en XLSX presupuestarios.
+- `generacion/legal_answers.py`: respuesta juridica basada en articulos recuperados del BOE.
+- `generacion/controlled_generation.py`: logica de decision, rechazo y respuesta controlada.
+- `recuperacion/fiscal_scoring.py`: expansion de consultas fiscales y coincidencia exacta de impuestos/cifras.
+- `recuperacion/legal_scoring.py`: priorizacion de articulos juridicos frente a indices.
+- `recuperacion/table_scoring.py`: boost de filas y cabeceras tabulares.
+- `recuperacion/text_matching.py`: BM25, tokenizacion y normalizacion compartida.
 
 ## Configuracion
 
-El sistema usa el servidor Llamus configurado en `scripts/simple_extractor/config.py`.
+El sistema usa el servidor Llamus configurado en `ingesta/config.py`.
 Para ejecutar consultas reales, define una de estas opciones:
 
 ```powershell

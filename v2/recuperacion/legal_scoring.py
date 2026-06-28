@@ -1,8 +1,8 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from typing import Any
 
-from scripts.RECUPERADOR.text_matching import normalize_for_ranking
+from recuperacion.text_matching import normalize_for_ranking
 
 
 LEGAL_QUERY_TERMS = (
@@ -47,3 +47,4 @@ def legal_relevance_score(row: dict[str, Any]) -> float:
     if "ley 37/1992" in text:
         score += 0.05
     return score
+

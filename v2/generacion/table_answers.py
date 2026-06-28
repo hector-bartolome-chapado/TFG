@@ -1,9 +1,9 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 from typing import Any
 
-from interfaz.text_utils import content_tokens, normalize_for_generation
+from generacion.text_utils import content_tokens, normalize_for_generation
 
 
 def parse_table_line(line: str) -> tuple[int | None, list[str]] | None:
@@ -201,3 +201,4 @@ def extract_document_presence_answer(question: str, hits: list[dict[str, Any]]) 
 
     formatted_docs = "; ".join(doc_ids[:6])
     return f"Documentos localizados: {formatted_docs}. Fuente: documentos recuperados en el top-{min(len(hits), 6)} del RAG."
+

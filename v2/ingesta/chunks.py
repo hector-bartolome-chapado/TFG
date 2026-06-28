@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 from typing import Any
@@ -166,3 +166,4 @@ def build_chunks(
     if max_chars is not None:
         return build_legacy_chunks(blocks, max_chars=max_chars)
     return build_parent_child_chunks(blocks)
+

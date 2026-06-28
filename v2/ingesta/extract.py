@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import pathlib
 import tempfile
@@ -70,6 +70,7 @@ def extract_pages(pdf_path: pathlib.Path) -> list[dict[str, Any]]:
             pages.append({"page": page_number, "text": text})
 
     return pages
+
 
 
 

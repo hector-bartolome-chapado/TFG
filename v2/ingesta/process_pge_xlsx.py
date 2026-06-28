@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -10,12 +10,12 @@ from typing import Any
 
 from openpyxl import load_workbook
 
-from scripts.simple_extractor.config import (
+from ingesta.config import (
     DEFAULT_EMBED_MODEL,
     DEFAULT_LLAMUS_BASE_URL,
     get_api_key,
 )
-from scripts.simple_extractor.embeddings import request_embedding
+from ingesta.embeddings import request_embedding
 
 
 DEFAULT_ROWS_PER_CHUNK = 12
@@ -221,3 +221,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

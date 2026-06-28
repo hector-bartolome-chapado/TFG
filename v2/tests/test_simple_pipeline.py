@@ -11,7 +11,7 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts.RECUPERADOR.retrieval import (
+from recuperacion.retrieval import (
     bm25_scores,
     build_focused_context,
     cosine_similarity,
@@ -24,10 +24,10 @@ from scripts.RECUPERADOR.retrieval import (
     table_relevance_score,
     tokenize_for_bm25,
 )
-from scripts.simple_extractor.blocks import split_into_paragraphs
-from scripts.simple_extractor.chunks import build_chunks, split_long_text, split_text_by_tokens
-from scripts.simple_extractor.embeddings import embed_chunks, request_embedding
-from scripts.simple_pipeline import process_document, write_jsonl
+from ingesta.blocks import split_into_paragraphs
+from ingesta.chunks import build_chunks, split_long_text, split_text_by_tokens
+from ingesta.embeddings import embed_chunks, request_embedding
+from ingesta.simple_pipeline import process_document, write_jsonl
 
 
 class SimplePipelineTests(unittest.TestCase):
@@ -104,10 +104,10 @@ class SimplePipelineTests(unittest.TestCase):
 
         from unittest import mock
 
-        with mock.patch("scripts.simple_extractor.embeddings.requests.post", return_value=FakeResponse({"embedding": [0.1]})):
+        with mock.patch("ingesta.embeddings.requests.post", return_value=FakeResponse({"embedding": [0.1]})):
             self.assertEqual(request_embedding("hola"), [0.1])
 
-        with mock.patch("scripts.simple_extractor.embeddings.requests.post", return_value=FakeResponse({"embeddings": [[0.2]]})):
+        with mock.patch("ingesta.embeddings.requests.post", return_value=FakeResponse({"embeddings": [[0.2]]})):
             self.assertEqual(request_embedding("hola"), [0.2])
 
     def test_process_document_writes_blocks_and_chunks(self):

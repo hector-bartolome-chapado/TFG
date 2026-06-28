@@ -1,8 +1,8 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from typing import Any
 
-from scripts.RECUPERADOR.text_matching import get_search_text, tokenize_for_bm25
+from recuperacion.text_matching import get_search_text, tokenize_for_bm25
 
 
 FISCAL_QUERY_EXPANSIONS = {
@@ -44,3 +44,4 @@ def fiscal_exact_score(question: str, row: dict[str, Any]) -> float:
     if not important_tokens:
         return 0.0
     return len(important_tokens & text_tokens) / len(important_tokens)
+

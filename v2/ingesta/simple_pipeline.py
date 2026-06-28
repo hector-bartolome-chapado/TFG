@@ -1,18 +1,18 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 import pathlib
 from typing import Any
 
-from scripts.simple_extractor.blocks import build_blocks
-from scripts.simple_extractor.chunks import build_chunks
-from scripts.simple_extractor.config import (
+from ingesta.blocks import build_blocks
+from ingesta.chunks import build_chunks
+from ingesta.config import (
     DEFAULT_EMBED_MODEL,
     DEFAULT_LLAMUS_BASE_URL,
     get_api_key,
 )
-from scripts.simple_extractor.embeddings import embed_chunks
-from scripts.simple_extractor.extract import extract_pages
+from ingesta.embeddings import embed_chunks
+from ingesta.extract import extract_pages
 
 
 def write_jsonl(path: pathlib.Path, rows: list[dict[str, Any]]) -> None:
@@ -76,3 +76,4 @@ def process_document(
     write_jsonl(embeddings_path, embedded_chunks)
     result["embeddings_path"] = str(embeddings_path)
     return result
+

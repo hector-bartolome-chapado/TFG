@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 import math
@@ -6,17 +6,17 @@ import pathlib
 import re
 from typing import Any, Callable
 
-from scripts.RECUPERADOR.fiscal_scoring import expand_fiscal_query, fiscal_exact_score
-from scripts.RECUPERADOR.legal_scoring import is_legal_query, legal_relevance_score
-from scripts.RECUPERADOR.table_scoring import is_table_query, table_relevance_score
-from scripts.RECUPERADOR.text_matching import (
+from recuperacion.fiscal_scoring import expand_fiscal_query, fiscal_exact_score
+from recuperacion.legal_scoring import is_legal_query, legal_relevance_score
+from recuperacion.table_scoring import is_table_query, table_relevance_score
+from recuperacion.text_matching import (
     bm25_scores,
     normalized_scores,
     reciprocal_rank_fusion,
     tokenize_for_bm25,
 )
-from scripts.simple_extractor.config import DEFAULT_EMBED_MODEL, DEFAULT_LLAMUS_BASE_URL
-from scripts.simple_extractor.embeddings import request_embedding
+from ingesta.config import DEFAULT_EMBED_MODEL, DEFAULT_LLAMUS_BASE_URL
+from ingesta.embeddings import request_embedding
 
 
 def load_embedding_rows(embeddings_path: pathlib.Path) -> list[dict[str, Any]]:
@@ -237,3 +237,4 @@ def retrieve_top_k(
     else:
         raise ValueError(f"Estrategia de recuperacion no soportada: {strategy}")
     return ranked_rows[:top_k]
+

@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import os
 import pathlib
@@ -25,3 +25,4 @@ def load_local_api_key(project_root: pathlib.Path) -> str | None:
 
 def get_api_key(project_root: pathlib.Path) -> str | None:
     return load_local_api_key(project_root) or os.environ.get("LLAMUS_API_KEY")
+

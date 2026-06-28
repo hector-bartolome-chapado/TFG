@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from typing import Any
 
@@ -18,3 +18,4 @@ def build_context(hits: list[dict[str, Any]]) -> str:
             label += f" | parent={hit['parent_id']}"
         parts.append(f"[{label} | score={hit['score']:.4f}]\n{context_text}")
     return "\n\n".join(parts)
+

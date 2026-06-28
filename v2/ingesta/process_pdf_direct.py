@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -9,14 +9,14 @@ from typing import Any
 
 from pypdf import PdfReader
 
-from scripts.simple_extractor.chunks import build_parent_child_chunks
-from scripts.simple_extractor.config import (
+from ingesta.chunks import build_parent_child_chunks
+from ingesta.config import (
     DEFAULT_EMBED_MODEL,
     DEFAULT_LLAMUS_BASE_URL,
     get_api_key,
 )
-from scripts.simple_extractor.embeddings import request_embedding
-from scripts.simple_pipeline import write_jsonl
+from ingesta.embeddings import request_embedding
+from ingesta.simple_pipeline import write_jsonl
 
 
 def read_existing_jsonl(path: pathlib.Path) -> list[dict[str, Any]]:
@@ -184,3 +184,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

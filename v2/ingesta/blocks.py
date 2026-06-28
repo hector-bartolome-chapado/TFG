@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 from typing import Any
@@ -22,4 +22,5 @@ def build_blocks(doc_id: str, pages: list[dict[str, Any]]) -> list[dict[str, Any
                 }
             )
     return blocks
+
 

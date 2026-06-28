@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import math
 import re
@@ -75,3 +75,4 @@ def reciprocal_rank_fusion(
         for rank, chunk_id in enumerate(ranked_ids, start=1):
             fused[chunk_id] = fused.get(chunk_id, 0.0) + 1.0 / (rrf_k + rank)
     return fused
+

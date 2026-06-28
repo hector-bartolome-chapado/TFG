@@ -1,18 +1,18 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 import time
 from typing import Any
 
-from interfaz.context_builder import build_context
-from interfaz.legal_answers import extract_legal_answer
-from interfaz.question_routing import classify_question_route
-from interfaz.table_answers import (
+from generacion.context_builder import build_context
+from generacion.legal_answers import extract_legal_answer
+from generacion.question_routing import classify_question_route
+from generacion.table_answers import (
     extract_document_presence_answer,
     extract_single_row_table_answer,
     extract_table_cell_answer,
 )
-from interfaz.text_utils import (
+from generacion.text_utils import (
     STANDARD_NO_ANSWER,
     content_tokens,
     lower_first,
@@ -136,3 +136,4 @@ def generate_controlled_answer(question: str, hits: list[dict[str, Any]]) -> dic
         "latency_seconds": time.perf_counter() - started_at,
         "decision": decision,
     }
+

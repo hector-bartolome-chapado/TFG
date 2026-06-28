@@ -9,8 +9,8 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts.simple_extractor.config import DEFAULT_LLAMUS_BASE_URL, DEFAULT_RAG_CHAT_MODEL, get_api_key
-from interfaz.rag_service import (
+from ingesta.config import DEFAULT_LLAMUS_BASE_URL, DEFAULT_RAG_CHAT_MODEL, get_api_key
+from generacion.rag_service import (
     build_context,
     build_controlled_answer_prompt,
     generate_controlled_answer,
@@ -56,7 +56,7 @@ def render_sidebar(embedding_files: list[pathlib.Path]) -> dict[str, object]:
 def render_hits(hits: list[dict[str, object]]) -> None:
     st.subheader("Retrieval")
     for index, hit in enumerate(hits, start=1):
-        title = f"{index}. {hit['chunk_id']} Â· score={hit['score']:.4f}"
+        title = f"{index}. {hit['chunk_id']} - score={hit['score']:.4f}"
         with st.expander(title, expanded=index == 1):
             st.code(hit["text"], language="text")
 
@@ -80,7 +80,7 @@ def render_answer_and_debug(
     st.subheader("Debug")
     left, right = st.columns(2)
     left.metric("Latencia retrieval", f"{retrieval_latency:.2f}s")
-    right.metric("Latencia generaciÃ³n", f"{generation_latency:.2f}s")
+    right.metric("Latencia generación", f"{generation_latency:.2f}s")
     st.write(f"Documento activo: `{doc_name}`")
     st.write(f"Chunks cargados: `{row_count}`")
     with st.expander("Prompt enviado", expanded=False):

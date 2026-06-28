@@ -1,8 +1,8 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
-from scripts.simple_extractor.config import RAG_SYSTEM_PROMPT
-from interfaz.question_routing import classify_question_route
-from interfaz.text_utils import STANDARD_NO_ANSWER
+from ingesta.config import RAG_SYSTEM_PROMPT
+from generacion.question_routing import classify_question_route
+from generacion.text_utils import STANDARD_NO_ANSWER
 
 
 def build_answer_prompt(question: str, context: str) -> list[dict[str, str]]:
@@ -63,3 +63,4 @@ def build_controlled_answer_prompt(question: str, context: str, route: str | Non
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
     ]
+

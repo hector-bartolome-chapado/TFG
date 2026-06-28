@@ -1,9 +1,9 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 from typing import Any
 
-from scripts.RECUPERADOR.text_matching import normalize_for_ranking, tokenize_for_bm25
+from recuperacion.text_matching import normalize_for_ranking, tokenize_for_bm25
 
 
 TABLE_QUERY_TERMS = (
@@ -68,3 +68,4 @@ def table_relevance_score(question: str, row: dict[str, Any]) -> float:
     if has_requested_year_header:
         score += 0.25
     return score
+

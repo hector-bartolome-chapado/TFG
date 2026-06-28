@@ -1,6 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
-from interfaz.text_utils import content_tokens, normalize_for_generation
+from generacion.text_utils import content_tokens, normalize_for_generation
 
 
 def classify_question_route(question: str) -> str:
@@ -60,3 +60,4 @@ def classify_question_route(question: str) -> str:
     }:
         return "tax_exact"
     return "simple_fact"
+
