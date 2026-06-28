@@ -1,38 +1,42 @@
-# Sistema RAG fiscal
+# Sistema RAG aplicado a documentacion publica fiscal
 
-Prototipo RAG para consultar documentacion publica fiscal y presupuestaria espanola.
+Repositorio tecnico del Trabajo Fin de Grado. El codigo se organiza en dos versiones para que pueda verse la evolucion del sistema desde el prototipo inicial hasta el RAG final.
 
-## Estructura
+## Estructura del repositorio
 
-- `interfaz/`: aplicacion Streamlit y servicio RAG.
-- `scripts/RECUPERADOR/`: recuperacion densa, BM25, hibrida fiscal y ajuste para consultas juridicas.
-- `scripts/simple_extractor/`: utilidades de ingesta, chunking y generacion de embeddings.
-- `RESULTADOS EMBEDDING/embeddings/`: embeddings JSONL usados como indice local del RAG.
-- `tests/`: pruebas unitarias de ingesta, recuperacion e interfaz.
+- `v1/`: prototipo base. Incluye la primera ingesta sobre el informe anual de la AEAT, recuperacion inicial, interfaz de pruebas, artefactos intermedios y visualizacion de embeddings.
+- `v2/`: sistema final. Incorpora las mejoras de ingesta, chunking padre-hijo, embeddings actualizados, recuperacion hibrida fiscal, soporte para normativa BOE, soporte para ficheros XLSX presupuestarios, respuestas controladas y tests ampliados.
 
-## Configuracion
+## Evolucion tecnica
 
-El sistema usa el servidor Llamus configurado en `scripts/simple_extractor/config.py`.
-Para ejecutar consultas reales, define una de estas opciones:
+La carpeta `v1` conserva el punto de partida usado para evaluar las limitaciones iniciales: corpus reducido, pipeline mas simple y recuperacion menos especializada.
+
+La carpeta `v2` contiene el resultado final del desarrollo:
+
+- ingesta de PDFs y XLSX;
+- persistencia local en JSONL;
+- recuperacion densa, BM25 y fusion hibrida fiscal;
+- tratamiento especifico de consultas juridicas;
+- extraccion determinista de celdas en tablas presupuestarias;
+- interfaz Streamlit;
+- pruebas unitarias de ingesta, recuperacion y generacion.
+
+## Ejecutar el sistema final
+
+Desde la raiz del repositorio:
 
 ```powershell
-$env:LLAMUS_API_KEY = "tu_api_key"
-```
-
-o crea `.llamus_api_key` a partir de `.llamus_api_key.example`.
-
-## Ejecucion
-
-```powershell
+cd .\v2
 streamlit run .\interfaz\app.py
 ```
 
-## Tests
+Para ejecutar los tests del sistema final:
 
 ```powershell
+cd .\v2
 python -m unittest discover -s tests
 ```
 
-## Notas
+## Credenciales
 
-Los documentos originales no se incluyen en el repositorio limpio. El RAG funciona con los embeddings JSONL ya generados, que actuan como persistencia local auditable para el tamano del corpus del TFG.
+No se versiona ninguna clave privada. Para ejecutar llamadas reales al servidor Llamus, define `LLAMUS_API_KEY` o crea un fichero local `.llamus_api_key` a partir de `v2/.llamus_api_key.example`.
