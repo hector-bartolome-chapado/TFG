@@ -1,42 +1,120 @@
-# Sistema RAG aplicado a documentacion publica fiscal
+# Fiscal RAG System
 
-Repositorio tecnico del Trabajo Fin de Grado. El codigo se organiza en dos versiones para que pueda verse la evolucion del sistema desde el prototipo inicial hasta el RAG final.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-Retrieval%20Augmented%20Generation-111827)
+![Streamlit](https://img.shields.io/badge/Streamlit-Interface-FF4B4B?logo=streamlit&logoColor=white)
+![Status](https://img.shields.io/badge/status-academic%20TFG-blue)
 
-## Estructura del repositorio
+Technical repository for my Computer Engineering final degree project at Universidad de Sevilla.
 
-- `v1/`: prototipo base. Incluye la primera ingesta sobre el informe anual de la AEAT, recuperacion inicial, interfaz de pruebas, artefactos intermedios y visualizacion de embeddings.
-- `v2/`: sistema final. Incorpora las mejoras de ingesta, chunking padre-hijo, embeddings actualizados, recuperacion hibrida fiscal, soporte para normativa BOE, soporte para ficheros XLSX presupuestarios, respuestas controladas y tests ampliados.
+The project builds a Retrieval-Augmented Generation system over public fiscal documentation. It covers document ingestion, chunking, embeddings, hybrid retrieval, controlled answer generation, evaluation and a Streamlit interface.
 
-## Evolucion tecnica
+## Why It Matters
 
-La carpeta `v1` conserva el punto de partida usado para evaluar las limitaciones iniciales: corpus reducido, pipeline mas simple y recuperacion menos especializada.
+Public fiscal documents are long, heterogeneous and difficult to query with simple keyword search. This project explores how a RAG pipeline can retrieve relevant passages and generate grounded answers while keeping the processing steps inspectable.
 
-La carpeta `v2` contiene el resultado final del desarrollo:
+For recruiters, this repository shows applied AI engineering beyond a notebook: data preparation, retrieval design, evaluation, UI, tests and project organization.
 
-- ingesta de PDFs y XLSX;
-- persistencia local en JSONL;
-- recuperacion densa, BM25 y fusion hibrida fiscal;
-- tratamiento especifico de consultas juridicas;
-- extraccion determinista de celdas en tablas presupuestarias;
-- interfaz Streamlit;
-- pruebas unitarias de ingesta, recuperacion y generacion.
+## Core Features
 
-## Ejecutar el sistema final
+- PDF and XLSX ingestion for fiscal and budget documentation.
+- Local JSONL persistence for processed document units.
+- Parent-child chunking strategy.
+- Dense retrieval plus BM25 lexical retrieval.
+- Hybrid retrieval fusion adapted to fiscal queries.
+- Controlled generation over retrieved context.
+- Streamlit interface for interactive querying.
+- RAGAS-based evaluation over a curated question set.
+- Unit tests for ingestion, retrieval and generation modules.
 
-Desde la raiz del repositorio:
+## Architecture
+
+```text
+Documents
+   |
+   v
+Ingestion -> Chunking -> Embeddings -> Local stores
+                                      |
+                                      v
+                              Hybrid retrieval
+                                      |
+                                      v
+                            Controlled generation
+                                      |
+                                      v
+                              Streamlit interface
+```
+
+## Repository Structure
+
+```text
+v1/  initial prototype and exploratory artifacts
+v2/  final system organized by pipeline stage
+```
+
+The final version is under `v2/`:
+
+```text
+v2/
+  ingesta/        document ingestion and preprocessing
+  recuperacion/   dense, lexical and hybrid retrieval
+  generacion/     answer generation and response control
+  interfaz/       Streamlit application
+  tests/          focused unit tests
+```
+
+## Tech Stack
+
+- Python
+- Streamlit
+- BM25 retrieval
+- Vector embeddings
+- JSONL local persistence
+- RAGAS evaluation
+- Public fiscal documentation as the domain corpus
+
+## Run Locally
+
+From the repository root:
 
 ```powershell
 cd .\v2
 streamlit run .\interfaz\app.py
 ```
 
-Para ejecutar los tests del sistema final:
+Run the test suite:
 
 ```powershell
 cd .\v2
 python -m unittest discover -s tests
 ```
 
-## Credenciales
+## Credentials
 
-No se versiona ninguna clave privada. Para ejecutar llamadas reales al servidor Llamus, define `LLAMUS_API_KEY` o crea un fichero local `.llamus_api_key` a partir de `v2/.llamus_api_key.example`.
+No private credentials are versioned.
+
+To use real calls against the Llamus server, define `LLAMUS_API_KEY` or create a local `.llamus_api_key` file from:
+
+```text
+v2/.llamus_api_key.example
+```
+
+## Portfolio Notes
+
+This is the strongest project in my portfolio for roles involving:
+
+- applied AI and RAG systems;
+- Python backend/data pipelines;
+- document processing;
+- search and retrieval;
+- evaluation of LLM-based systems;
+- user-facing technical prototypes.
+
+## Author
+
+**Hector Bartolome Chapado**
+
+Computer Engineering graduate, Universidad de Sevilla
+
+- GitHub: [hector-bartolome-chapado](https://github.com/hector-bartolome-chapado)
+- LinkedIn: [linkedin.com/in/infohbc](https://www.linkedin.com/in/infohbc/)
