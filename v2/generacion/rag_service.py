@@ -2,7 +2,7 @@
 
 import pathlib
 import time
-from typing import Any
+from typing import Any, Callable
 
 import requests
 
@@ -65,6 +65,7 @@ def run_retrieval(
     api_key: str | None = None,
     strategy: str = "fiscal_hybrid",
     rrf_k: int = 60,
+    embedder: Callable[[str, str, str, str | None], list[float]] | None = None,
 ) -> dict[str, Any]:
     started_at = time.perf_counter()
     hits = retrieve_top_k(
@@ -76,6 +77,7 @@ def run_retrieval(
         api_key=api_key,
         strategy=strategy,
         rrf_k=rrf_k,
+        embedder=embedder,
     )
     return {"hits": hits, "latency_seconds": time.perf_counter() - started_at}
 
@@ -85,6 +87,7 @@ def ask_llamus(
     model: str = DEFAULT_RAG_CHAT_MODEL,
     base_url: str = DEFAULT_LLAMUS_BASE_URL,
     api_key: str | None = None,
+    timeout_seconds: int = 120,
 ) -> dict[str, Any]:
     headers = {"Content-Type": "application/json"}
     if api_key:
@@ -95,7 +98,7 @@ def ask_llamus(
         f"{base_url.rstrip('/')}/api/chat/completions",
         headers=headers,
         json={"model": model, "messages": prompt_messages, "temperature": 0.0},
-        timeout=120,
+        timeout=timeout_seconds,
     )
     ended_at = time.perf_counter()
 

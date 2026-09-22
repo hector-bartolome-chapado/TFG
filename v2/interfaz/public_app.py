@@ -3,88 +3,261 @@ from __future__ import annotations
 import logging
 import pathlib
 import sys
+from typing import Any
 
+import requests
 import streamlit as st
 
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from generacion.rag_service import (
-    build_context,
-    generate_controlled_answer,
-    list_embedding_files,
-    load_document_embeddings,
-    run_retrieval,
-)
+from generacion.rag_service import generate_controlled_answer, list_embedding_files, run_retrieval
 from ingesta.config import DEFAULT_LLAMUS_BASE_URL, get_api_key
+from ingesta.embeddings import request_embedding
+from interfaz.public_service import evidence_label, load_corpus, resolve_question, source_name
 
 
-@st.cache_data(show_spinner=False, max_entries=2)
-def load_rows(path: str) -> list[dict[str, object]]:
-    return load_document_embeddings(pathlib.Path(path))
+EXAMPLE_QUESTIONS = (
+    "¿Cuáles fueron los ingresos tributarios en 2024?",
+    "¿Qué establece el artículo 1 de la Ley 37/1992 sobre el IVA?",
+    "¿Qué concepto figura en la fila C09.I01 del Excel de PGE 2024?",
+)
+
+PAGE_STYLE = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+:root { --ink: #182b3d; --muted: #536578; --paper: #f6f3ec; --line: #d7dfdf; --accent: #137973; }
+html, body, [data-testid="stAppViewContainer"] { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; }
+[data-testid="stHeader"] { background: transparent; }
+.block-container { max-width: 1480px; padding-top: 2.2rem; padding-bottom: 4rem; }
+h1, h2, h3 { font-family: 'Libre Baskerville', Georgia, serif; color: var(--ink); letter-spacing: -.025em; }
+.masthead { border-top: 4px solid var(--ink); border-bottom: 1px solid var(--line); padding: 1.5rem 0 1.25rem; margin-bottom: 1.8rem; }
+.eyebrow { color: var(--accent); font-size: .76rem; letter-spacing: .17em; text-transform: uppercase; font-weight: 700; }
+.masthead h1 { font-size: clamp(2rem, 4vw, 3.25rem); margin: .35rem 0 .55rem; }
+.masthead p { color: var(--muted); font-size: 1.03rem; max-width: 760px; line-height: 1.55; margin: 0; }
+.section-title { font-size: .82rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); font-weight: 700; border-bottom: 1px solid var(--line); padding: .65rem 0 .8rem; margin-bottom: 1rem; }
+.dossier-kicker { color: var(--accent); font-weight: 700; letter-spacing: .12em; font-size: .78rem; text-transform: uppercase; }
+.source-note { border-left: 3px solid var(--accent); padding-left: .8rem; margin: .75rem 0; font-size: .88rem; color: var(--muted); }
+.quiet-note { font-size: .83rem; color: var(--muted); line-height: 1.5; }
+[data-testid="stVerticalBlockBorderWrapper"] { border-color: var(--line); background: #fffefa; }
+[data-testid="stChatMessage"] { border: 1px solid var(--line); background: #fffefa; border-radius: 8px; margin-bottom: .75rem; }
+[data-testid="stChatMessage"] p { line-height: 1.62; }
+.stButton > button { border-radius: 5px; font-weight: 600; border-color: #b6caca; }
+.stButton > button:hover { border-color: var(--accent); color: var(--accent); }
+.stButton > button[kind="primary"] { background: var(--ink); border-color: var(--ink); }
+@media (max-width: 760px) { .block-container { padding: 1.1rem .9rem 3rem; } .masthead h1 { font-size: 2rem; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+</style>
+"""
+
+
+@st.cache_resource(show_spinner=False)
+def load_cached_corpus(paths: tuple[str, ...]) -> list[dict[str, Any]]:
+    return load_corpus([pathlib.Path(path) for path in paths])
+
+
+def select_evidence(turn_index: int, hit_index: int) -> None:
+    st.session_state.selected_evidence = (turn_index, hit_index)
+
+
+def reset_conversation() -> None:
+    st.session_state.turns = []
+    st.session_state.selected_evidence = None
+    st.session_state.pending_clarification = False
+    st.session_state.failed_query = None
+
+
+def failure_message(phase: str, error: Exception) -> str:
+    if isinstance(error, requests.exceptions.Timeout):
+        reason = "Llamus no respondió dentro del tiempo de espera."
+    elif isinstance(error, requests.exceptions.HTTPError):
+        status = error.response.status_code if error.response is not None else "desconocido"
+        reason = f"Llamus devolvió un error HTTP {status}."
+    elif isinstance(error, requests.exceptions.ConnectionError):
+        reason = "No se pudo conectar con Llamus."
+    else:
+        reason = "No se pudo completar esta fase."
+    return f"Fallo en {phase}: {reason} Puedes reintentar la consulta."
+
+
+def run_public_query(question: str, rows: list[dict[str, Any]], api_key: str) -> None:
+    history = st.session_state.turns
+    try:
+        with st.spinner("Interpretando la pregunta…"):
+            resolved = resolve_question(
+                question, history, api_key=api_key,
+                force_rewrite=st.session_state.pending_clarification,
+            )
+    except Exception as error:
+        logging.exception("Error en la interpretación de la repregunta")
+        st.session_state.failed_query = {"question": question, "message": failure_message("interpretación", error)}
+        return
+
+    if resolved["clarification"]:
+        history.append({"question": question, "answer": resolved["clarification"], "hits": [], "clarification": True})
+        st.session_state.pending_clarification = True
+        st.session_state.failed_query = None
+        return
+
+    standalone_question = str(resolved["question"])
+    try:
+        with st.spinner("Buscando evidencia en el corpus…"):
+            result = run_retrieval(
+                question=standalone_question, rows=rows, top_k=3,
+                base_url=DEFAULT_LLAMUS_BASE_URL, api_key=api_key,
+                embedder=lambda text, model, base_url, key: request_embedding(
+                    text, model, base_url, key, timeout_seconds=35,
+                ),
+            )
+    except Exception as error:
+        logging.exception("Error en la recuperación pública")
+        st.session_state.failed_query = {"question": question, "message": failure_message("recuperación", error)}
+        return
+
+    try:
+        with st.spinner("Redactando una respuesta apoyada en la evidencia…"):
+            generated = generate_controlled_answer(standalone_question, result["hits"])
+    except Exception as error:
+        logging.exception("Error en la generación pública")
+        st.session_state.failed_query = {"question": question, "message": failure_message("generación", error)}
+        return
+
+    history.append({
+        "question": question, "resolved_question": standalone_question,
+        "answer": generated["answer"], "hits": result["hits"],
+        "retrieval_seconds": result["latency_seconds"],
+    })
+    st.session_state.selected_evidence = (len(history) - 1, 0) if result["hits"] else None
+    st.session_state.pending_clarification = False
+    st.session_state.failed_query = None
+
+
+def render_evidence_dossier() -> None:
+    st.markdown('<div class="section-title">Ficha de evidencia</div>', unsafe_allow_html=True)
+    selection = st.session_state.selected_evidence
+    turns = st.session_state.turns
+    if selection is None or selection[0] >= len(turns) or selection[1] >= len(turns[selection[0]]["hits"]):
+        with st.container(border=True):
+            st.markdown("### Aún no hay una fuente seleccionada")
+            st.write("Formula una pregunta y pulsa una referencia numerada para examinar el fragmento recuperado.")
+        return
+
+    turn_index, hit_index = selection
+    hit = turns[turn_index]["hits"][hit_index]
+    label = evidence_label(hit)
+    location = label.split(" · ", 1)[-1] if " · " in label else "Localización no disponible"
+    with st.container(border=True):
+        st.markdown(f'<div class="dossier-kicker">Referencia [{hit_index + 1}] · Consulta {turn_index + 1}</div>', unsafe_allow_html=True)
+        st.markdown(f"### {source_name(hit)}")
+        st.write(location)
+        st.markdown("**Fragmento localizado**")
+        st.write(str(hit.get("text") or "No hay extracto disponible."))
+        parent_text = hit.get("parent_text")
+        if parent_text:
+            with st.expander("Ver contexto padre"):
+                st.write(str(parent_text))
+        focused_text = hit.get("context_text")
+        if focused_text and focused_text != parent_text and focused_text != hit.get("text"):
+            with st.expander("Ver ventana de contexto utilizada"):
+                st.write(str(focused_text))
+        with st.expander("Identificadores técnicos"):
+            st.code(f"doc_id: {hit.get('doc_id')}\nchunk_id: {hit.get('chunk_id')}\nparent_id: {hit.get('parent_id')}", language="text")
+    st.markdown(
+        '<div class="source-note">Evidencia recuperada por el sistema. La ficha no atribuye frases concretas de la respuesta a una fuente verificada individualmente.</div>',
+        unsafe_allow_html=True,
+    )
+
+
+def render_conversation(api_key: str | None) -> str | None:
+    st.markdown('<div class="section-title">Conversación</div>', unsafe_allow_html=True)
+    turns = st.session_state.turns
+    if not turns:
+        st.markdown("### Empieza por una pregunta")
+        st.write("Consulta los informes, la normativa y las hojas de cálculo en lenguaje natural. El sistema selecciona los documentos pertinentes.")
+        for index, example in enumerate(EXAMPLE_QUESTIONS):
+            if st.button(example, key=f"example_{index}", use_container_width=True, disabled=not api_key):
+                return example
+
+    for turn_index, turn in enumerate(turns):
+        with st.chat_message("user"):
+            st.write(turn["question"])
+        with st.chat_message("assistant"):
+            if turn.get("resolved_question") and turn["resolved_question"] != turn["question"]:
+                st.caption(f"Consulta interpretada: {turn['resolved_question']}")
+            st.write(turn["answer"])
+            if turn["hits"]:
+                st.markdown('<div class="source-note">Fuentes recuperadas · selecciona una referencia para inspeccionarla</div>', unsafe_allow_html=True)
+                for hit_index, hit in enumerate(turn["hits"]):
+                    st.button(
+                        f"[{hit_index + 1}] {evidence_label(hit)}",
+                        key=f"reference_{turn_index}_{hit_index}",
+                        on_click=select_evidence, args=(turn_index, hit_index),
+                        use_container_width=True,
+                    )
+            elif turn.get("clarification"):
+                st.caption("Necesito esa precisión antes de buscar evidencia.")
+
+    failed_query = st.session_state.failed_query
+    if failed_query:
+        st.error(failed_query["message"])
+        if st.button("Reintentar la consulta", key="retry_query"):
+            return str(failed_query["question"])
+
+    return st.chat_input("Pregunta sobre cualquier documento indexado…", max_chars=600, disabled=not api_key)
 
 
 def main() -> None:
-    st.set_page_config(page_title="RAG documental · TFG", layout="wide")
-    st.title("Consulta documental con IA")
-    st.caption("Proyecto de TFG · Respuestas basadas en documentación pública con evidencia consultable")
+    st.set_page_config(page_title="Mesa de evidencias · TFG", page_icon="📚", layout="wide")
+    st.markdown(PAGE_STYLE, unsafe_allow_html=True)
+    for key, default in (
+        ("turns", []), ("selected_evidence", None),
+        ("pending_clarification", False), ("failed_query", None),
+    ):
+        if key not in st.session_state:
+            st.session_state[key] = default
 
+    st.markdown(
+        '<div class="masthead"><div class="eyebrow">Trabajo Fin de Grado · Consulta documental</div>'
+        '<h1>Mesa de evidencias</h1><p>Pregunta al corpus completo. Cada respuesta conserva las referencias '
+        'recuperadas para que puedas revisar el documento, su localización y el contexto original.</p></div>',
+        unsafe_allow_html=True,
+    )
     files = list_embedding_files()
     if not files:
         st.error("No hay documentos indexados disponibles.")
         return
+    try:
+        with st.spinner("Abriendo el corpus documental…"):
+            rows = load_cached_corpus(tuple(str(path) for path in files))
+    except Exception:
+        logging.exception("No se pudo cargar el corpus público")
+        st.error("No se pudo cargar el corpus indexado. Contacta con el responsable de la demostración.")
+        return
 
     api_key = get_api_key(PROJECT_ROOT)
+    info, action = st.columns([5, 1])
+    with info:
+        st.caption(f"{len(files)} documentos · {len(rows):,} fragmentos indexados · PDF y Excel".replace(",", "."))
+    with action:
+        st.button("Nueva conversación", key="new_conversation", on_click=reset_conversation, use_container_width=True)
     if not api_key:
-        st.error("El servicio de consulta no está configurado. Contacta con el responsable de la demostración.")
-        return
+        st.warning("La conexión con Llamus no está configurada. Las fichas pueden explorarse, pero no es posible realizar nuevas consultas.")
 
-    with st.sidebar:
-        st.header("Documento")
-        selected_path = st.selectbox("Fuente documental", files, format_func=lambda path: path.stem)
-        st.caption("El sistema consulta el documento seleccionado y muestra los fragmentos recuperados.")
+    conversation, dossier = st.columns([1.8, 1], gap="large")
+    with conversation:
+        submitted = render_conversation(api_key)
+    with dossier:
+        render_evidence_dossier()
 
-    question = st.text_area("Tu pregunta", max_chars=600, placeholder="¿Qué indica el documento sobre...?")
-    if not st.button("Buscar respuesta", type="primary"):
-        return
-    if not question.strip():
-        st.warning("Escribe una pregunta para comenzar.")
-        return
-
-    try:
-        with st.spinner("Buscando evidencia en el documento..."):
-            rows = load_rows(str(selected_path))
-            result = run_retrieval(
-                question=question.strip(),
-                rows=rows,
-                top_k=3,
-                base_url=DEFAULT_LLAMUS_BASE_URL,
-                api_key=api_key,
-            )
-            hits = result["hits"]
-            answer = generate_controlled_answer(question.strip(), hits)["answer"]
-            context = build_context(hits)
-    except Exception:
-        logging.exception("Error en la consulta pública del RAG")
-        st.error("No se pudo completar la consulta. Inténtalo de nuevo más tarde.")
-        return
-
-    st.subheader("Respuesta")
-    st.write(answer)
-    st.caption("Comprueba siempre la evidencia antes de utilizar la respuesta en una decisión real.")
-
-    with st.expander("Ver evidencia recuperada"):
-        if not hits:
-            st.write("No se recuperaron fragmentos.")
-        for index, hit in enumerate(hits, start=1):
-            page = hit.get("page_start")
-            source = f" · página {page}" if page is not None else ""
-            st.markdown(f"**{index}. {hit['doc_id']}{source}**")
-            st.write(hit.get("context_text") or hit.get("parent_text") or hit["text"])
-
-    with st.expander("Ver contexto completo usado para la respuesta"):
-        st.text(context)
+    st.markdown(
+        '<p class="quiet-note">Este chat explora el corpus ampliado; la evaluación académica de 80 preguntas se realizó con condiciones controladas distintas. '
+        'Comprueba siempre las fuentes antes de tomar decisiones.</p>',
+        unsafe_allow_html=True,
+    )
+    if submitted and submitted.strip() and api_key:
+        run_public_query(submitted.strip(), rows, api_key)
+        st.rerun()
 
 
 if __name__ == "__main__":

@@ -82,6 +82,15 @@ cd .\v2
 streamlit run .\interfaz\app.py
 ```
 
+The public evidence-desk interface uses `v2/interfaz/public_app.py`:
+
+```powershell
+cd .\v2
+streamlit run .\interfaz\public_app.py
+```
+
+It searches all available embedding JSONL files together, then shows the retrieved excerpts with PDF page or Excel sheet/row locations and parent context. A browser session keeps its own conversation; follow-up references are rewritten with `gemma3:12b` before the existing hybrid retrieval and controlled generation run. Independent questions do not call the rewriting model. The original PDF/XLSX files are not served by the public app, and the listed passages are retrieved evidence rather than verified sentence-level citations. Live queries require the university Llamus embedding endpoint; if it fails, the app reports the failing phase instead of generating an answer from a fallback search. The expanded-corpus chat and follow-ups are demo capabilities, not part of the controlled 80-question evaluation.
+
 Run the test suite:
 
 ```powershell

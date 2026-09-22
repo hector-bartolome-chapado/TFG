@@ -87,6 +87,11 @@ def copy_retrieval_fields(row: dict[str, Any], score: float) -> dict[str, Any]:
         "chunking_strategy",
         "retrieval_text",
         "context_text",
+        "source_file",
+        "sheet",
+        "sheet_index",
+        "row_start",
+        "row_end",
     ):
         if field in row:
             ranked_row[field] = row[field]
