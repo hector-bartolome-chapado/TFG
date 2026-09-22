@@ -82,6 +82,26 @@ class PublicServiceTests(unittest.TestCase):
         ], api_key="secret", chat_client=client)
         self.assertEqual(result["clarification"], "¿A qué impuesto te refieres?")
 
+    def test_clarification_reply_is_accepted_without_repeating_the_question(self):
+        client = mock.Mock(return_value={"answer": '{"standalone_question":"","needs_clarification":true,"clarification_question":"¿Te refieres a gráficos del IPC?"}'})
+        result = resolve_question(
+            "Gráficos relacionados con el IPC y su relación con el IVA en 2025.",
+            [
+                {"question": "Y del IPC en el año 2025", "answer": "", "hits": []},
+                {
+                    "question": "Y del IPC en el año 2025",
+                    "answer": "¿Te refieres a gráficos relacionados con el IPC y el IVA?",
+                    "hits": [],
+                    "clarification": True,
+                },
+            ],
+            api_key="secret", chat_client=client, force_rewrite=True,
+        )
+        self.assertIsNone(result["clarification"])
+        self.assertIn("Y del IPC en el año 2025", result["question"])
+        self.assertIn("relación con el IVA en 2025", result["question"])
+        client.assert_not_called()
+
     def test_interface_reference_selection_and_new_conversation(self):
         from streamlit.testing.v1 import AppTest
 

@@ -51,6 +51,16 @@ def is_followup(question: str) -> bool:
     return bool(FOLLOWUP_PREFIX.search(normalized) or FOLLOWUP_REFERENCE.search(normalized))
 
 
+def resolve_clarification_reply(question: str, history: list[dict[str, Any]]) -> str | None:
+    for turn in reversed(history):
+        if not turn.get("clarification"):
+            continue
+        original_question = str(turn.get("question") or "").strip()
+        if original_question:
+            return f"{original_question} {question}".strip()[:700]
+    return None
+
+
 def resolve_question(
     question: str,
     history: list[dict[str, Any]],
@@ -60,6 +70,10 @@ def resolve_question(
     force_rewrite: bool = False,
 ) -> dict[str, str | None]:
     question = question.strip()
+    if force_rewrite:
+        resolved_question = resolve_clarification_reply(question, history)
+        if resolved_question:
+            return {"question": resolved_question, "clarification": None}
     if not history or not (force_rewrite or is_followup(question)):
         return {"question": question, "clarification": None}
 
