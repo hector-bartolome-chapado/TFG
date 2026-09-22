@@ -214,6 +214,23 @@ class InterfazServiceTests(unittest.TestCase):
         self.assertIn("Dato principal:", result["answer"])
         self.assertIn("578.183,03", result["answer"])
 
+    def test_generate_controlled_answer_locates_exact_excel_row_code(self):
+        hits = [{
+            "chunk_id": "xlsx-c09", "doc_id": "pge-2024", "score": 0.9,
+            "source_file": "Presupuestos2024.xlsx", "sheet": "16",
+            "row_start": 232, "row_end": 243,
+            "text": (
+                "Documento: Presupuestos2024.xlsx\nHoja: 16\n"
+                "Fila 232: 42BC | C02.I03 Programa de rehabilitación energética | 300\n"
+                "Fila 240: 42IA | C09.I01 Hidrógeno renovable: un proyecto país | 600 | 555\n"
+            ),
+        }]
+        result = generate_controlled_answer("¿Qué concepto figura en la fila C09.I01 del Excel de PGE 2024?", hits)
+        self.assertIn("Hidrógeno renovable", result["answer"])
+        self.assertIn("fila 240", result["answer"])
+        self.assertIn("hoja 16", result["answer"])
+        self.assertNotIn("rehabilitación energética", result["answer"])
+
     def test_extract_legal_answer_explains_article_content(self):
         context = (
             "TITULO PRELIMINAR Naturaleza y ambito de aplicacion "

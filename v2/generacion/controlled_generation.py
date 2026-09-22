@@ -9,6 +9,7 @@ from generacion.legal_answers import extract_legal_answer
 from generacion.question_routing import classify_question_route
 from generacion.table_answers import (
     extract_document_presence_answer,
+    extract_row_code_concept_answer,
     extract_single_row_table_answer,
     extract_table_cell_answer,
 )
@@ -107,6 +108,7 @@ def generate_controlled_answer(question: str, hits: list[dict[str, Any]]) -> dic
     context = build_context(hits)
     route = decision["route"]
     for extractor in (
+        lambda: extract_row_code_concept_answer(question, hits),
         lambda: extract_document_presence_answer(question, hits),
         lambda: extract_table_cell_answer(question, context),
         lambda: extract_single_row_table_answer(question, context),

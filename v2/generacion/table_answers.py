@@ -186,6 +186,42 @@ def extract_single_row_table_answer(question: str, context: str) -> str | None:
     return None
 
 
+def extract_row_code_concept_answer(question: str, hits: list[dict[str, Any]]) -> str | None:
+    normalized_question = normalize_for_generation(question)
+    if not any(term in normalized_question for term in (
+        "concepto", "denominacion", "programa", "que figura", "que corresponde", "que es",
+    )):
+        return None
+    code_match = re.search(r"\bC\d{2}\.I\d{2}\b", question, flags=re.IGNORECASE)
+    if not code_match:
+        return None
+    requested_code = code_match.group().upper()
+
+    for hit in hits:
+        if hit.get("sheet") is None:
+            continue
+        context = str(hit.get("context_text") or hit.get("parent_text") or hit.get("text") or "")
+        for line in context.splitlines():
+            parsed = parse_table_line(line)
+            if not parsed:
+                continue
+            row_number, cells = parsed
+            for cell in cells:
+                concept_match = re.match(
+                    rf"^{re.escape(requested_code)}\s+(.+)$", cell, flags=re.IGNORECASE,
+                )
+                if not concept_match:
+                    continue
+                concept = concept_match.group(1).strip()
+                source_file = str(hit.get("source_file") or hit.get("doc_id") or "documento")
+                source_name = source_file.replace("\\", "/").rsplit("/", 1)[-1]
+                return (
+                    f"Dato principal: {requested_code} corresponde a «{concept}». "
+                    f"Fuente: {source_name}, hoja {hit['sheet']}, fila {row_number}."
+                )
+    return None
+
+
 def extract_document_presence_answer(question: str, hits: list[dict[str, Any]]) -> str | None:
     normalized_question = normalize_for_generation(question)
     if not any(pattern in normalized_question for pattern in ("en que documentos", "que documentos", "donde aparecen")):

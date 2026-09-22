@@ -63,10 +63,16 @@ h1, h2, h3 { font-family: 'Libre Baskerville', Georgia, serif; color: var(--ink)
 [data-testid="stChatInputSubmitButton"] { background: #e7f4f1 !important; }
 [data-testid="stExpander"] summary, [data-testid="stExpander"] p { color: var(--ink) !important; }
 [data-testid="stRadio"] label, [data-testid="stRadio"] p, [data-testid="stRadio"] span { color: var(--ink) !important; }
+[data-testid="stRadio"] p { white-space: normal !important; overflow-wrap: anywhere; }
 [data-testid="stRadio"] input { accent-color: var(--accent); }
 .evidence-excerpt { color: var(--ink); background: #f3f7f5; border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 1rem; border-radius: 4px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
 .evidence-excerpt.spreadsheet { font-family: ui-monospace, Consolas, monospace; font-size: .86rem; }
-@media (max-width: 760px) { .block-container { padding: 1.1rem .9rem 3rem; } .masthead h1 { font-size: 2rem; } }
+@media (max-width: 760px) {
+  .block-container { padding: 1.1rem .9rem 3rem; }
+  .masthead h1 { font-size: 2rem; }
+  .stButton > button { height: auto !important; min-height: 2.75rem; white-space: normal !important; }
+  .stButton > button p { white-space: normal !important; overflow: visible !important; text-overflow: clip !important; line-height: 1.35; }
+}
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
 </style>
 """
