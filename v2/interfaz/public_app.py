@@ -47,6 +47,7 @@ h1, h2, h3 { font-family: 'Libre Baskerville', Georgia, serif; color: var(--ink)
 [data-testid="stChatMessage"] [data-testid="stCaptionContainer"] p { color: var(--muted) !important; }
 [data-testid="stAppViewContainer"] [data-testid="stMarkdown"] p { color: var(--ink); }
 [data-testid="stHeader"] button, [data-testid="stHeader"] svg { color: var(--ink) !important; }
+[data-testid="stToolbarActions"] button, [data-testid="stToolbarActions"] span, [data-testid="stToolbarActions"] svg { color: var(--ink) !important; fill: var(--ink) !important; }
 .stButton > button { border-radius: 5px; font-weight: 600; border: 1px solid #b6caca !important; background: #fffefa !important; color: var(--ink) !important; }
 .stButton > button p { color: var(--ink) !important; }
 .stButton > button:hover { border-color: var(--accent) !important; color: var(--accent) !important; }
@@ -55,9 +56,11 @@ h1, h2, h3 { font-family: 'Libre Baskerville', Georgia, serif; color: var(--ink)
 .stButton > button[kind="primary"] { background: var(--accent) !important; border-color: var(--accent) !important; color: #fff !important; }
 .stButton > button[kind="primary"] p { color: #fff !important; }
 [data-testid="stChatInput"] { background: #fffefa !important; border: 1px solid #b6caca; }
+[data-testid="stChatInput"] > div, [data-testid="stChatInput"] > div > div { background: #fffefa !important; }
 [data-testid="stChatInput"] textarea { color: var(--ink) !important; background: #fffefa !important; }
 [data-testid="stChatInput"] textarea::placeholder { color: var(--muted) !important; opacity: 1; }
 [data-testid="stChatInput"] button, [data-testid="stChatInput"] svg { color: var(--accent) !important; fill: var(--accent) !important; }
+[data-testid="stChatInputSubmitButton"] { background: #e7f4f1 !important; }
 [data-testid="stExpander"] summary, [data-testid="stExpander"] p { color: var(--ink) !important; }
 [data-testid="stRadio"] label, [data-testid="stRadio"] p, [data-testid="stRadio"] span { color: var(--ink) !important; }
 [data-testid="stRadio"] input { accent-color: var(--accent); }
