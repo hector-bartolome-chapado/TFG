@@ -41,6 +41,24 @@ o crea `.llamus_api_key` a partir de `.llamus_api_key.example`.
 streamlit run .\interfaz\app.py
 ```
 
+## Demostración web pública
+
+La interfaz pública se encuentra en `interfaz/public_app.py`. Utiliza los índices JSONL
+incluidos en el repositorio y pide al servidor institucional únicamente el embedding de
+cada consulta. El servidor y el modelo están fijados en el código para que un visitante
+no pueda cambiar el destino de la clave de acceso.
+
+Para publicarla en Streamlit Community Cloud, selecciona este repositorio y el archivo
+de entrada `v2/interfaz/public_app.py`. En la configuración avanzada de la aplicación,
+guarda la clave como secreto (nunca en Git):
+
+```toml
+LLAMUS_API_KEY = "clave_autorizada"
+```
+
+El archivo `interfaz/requirements.txt` contiene las dependencias de la web. La app
+requiere que el servidor institucional acepte peticiones desde el alojamiento externo.
+
 ## Tests
 
 ```powershell
