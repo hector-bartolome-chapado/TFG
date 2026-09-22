@@ -258,15 +258,6 @@ class InterfazServiceTests(unittest.TestCase):
         self.assertGreaterEqual(result["latency_seconds"], 0.0)
         self.assertEqual(retrieve_mock.call_args.kwargs["strategy"], "fiscal_hybrid")
 
-    def test_run_retrieval_forwards_custom_embedder(self):
-        rows = [{"chunk_id": "c1", "doc_id": "doc", "text": "texto", "embedding": [1.0, 0.0]}]
-        embedder = lambda text, model, base_url, api_key: [1.0, 0.0]
-
-        with mock.patch("generacion.rag_service.retrieve_top_k", return_value=[]) as retrieve_mock:
-            run_retrieval("pregunta", rows, top_k=1, embedder=embedder)
-
-        self.assertIs(retrieve_mock.call_args.kwargs["embedder"], embedder)
-
     def test_ask_llamus_reads_openai_style_response(self):
         class FakeResponse:
             def __init__(self):

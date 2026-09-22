@@ -12,7 +12,6 @@ def request_embedding(
     model: str = DEFAULT_EMBED_MODEL,
     base_url: str = DEFAULT_LLAMUS_BASE_URL,
     api_key: str | None = None,
-    timeout: float = 90,
 ) -> list[float]:
     headers = {"Content-Type": "application/json"}
     if api_key:
@@ -22,7 +21,7 @@ def request_embedding(
         f"{base_url.rstrip('/')}/ollama/api/embed",
         headers=headers,
         json={"model": model, "input": text},
-        timeout=timeout,
+        timeout=90,
     )
     if response.status_code >= 400:
         detail = (response.text or "")[:500]

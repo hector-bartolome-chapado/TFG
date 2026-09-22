@@ -18,25 +18,6 @@ from generacion.rag_service import (
     run_retrieval,
 )
 from ingesta.config import DEFAULT_LLAMUS_BASE_URL, get_api_key
-from ingesta.embeddings import request_embedding
-
-
-PUBLIC_EMBED_TIMEOUT_SECONDS = 15
-
-
-def request_public_embedding(
-    text: str,
-    model: str,
-    base_url: str,
-    api_key: str | None,
-) -> list[float]:
-    return request_embedding(
-        text=text,
-        model=model,
-        base_url=base_url,
-        api_key=api_key,
-        timeout=PUBLIC_EMBED_TIMEOUT_SECONDS,
-    )
 
 
 @st.cache_data(show_spinner=False, max_entries=2)
@@ -80,8 +61,6 @@ def main() -> None:
                 top_k=3,
                 base_url=DEFAULT_LLAMUS_BASE_URL,
                 api_key=api_key,
-                embedder=request_public_embedding,
-                allow_lexical_fallback=True,
             )
             hits = result["hits"]
             answer = generate_controlled_answer(question.strip(), hits)["answer"]
@@ -94,8 +73,6 @@ def main() -> None:
     st.subheader("Respuesta")
     st.write(answer)
     st.caption("Comprueba siempre la evidencia antes de utilizar la respuesta en una decisión real.")
-    if result["retrieval_mode"] == "lexical_fallback":
-        st.info("La búsqueda semántica no estaba disponible; se ha usado búsqueda por términos y evidencia textual.")
 
     with st.expander("Ver evidencia recuperada"):
         if not hits:

@@ -5,7 +5,6 @@ import tempfile
 import unittest
 
 import fitz
-import requests
 
 
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -20,10 +19,8 @@ from recuperacion.retrieval import (
     is_legal_query,
     legal_relevance_score,
     load_embedding_rows,
-    rank_chunks_fiscal_lexical,
     reciprocal_rank_fusion,
     retrieve_top_k,
-    retrieve_top_k_with_fallback,
     table_relevance_score,
     tokenize_for_bm25,
 )
@@ -107,9 +104,8 @@ class SimplePipelineTests(unittest.TestCase):
 
         from unittest import mock
 
-        with mock.patch("ingesta.embeddings.requests.post", return_value=FakeResponse({"embedding": [0.1]})) as post:
-            self.assertEqual(request_embedding("hola", timeout=7), [0.1])
-        self.assertEqual(post.call_args.kwargs["timeout"], 7)
+        with mock.patch("ingesta.embeddings.requests.post", return_value=FakeResponse({"embedding": [0.1]})):
+            self.assertEqual(request_embedding("hola"), [0.1])
 
         with mock.patch("ingesta.embeddings.requests.post", return_value=FakeResponse({"embeddings": [[0.2]]})):
             self.assertEqual(request_embedding("hola"), [0.2])
@@ -219,53 +215,6 @@ class SimplePipelineTests(unittest.TestCase):
 
         self.assertEqual(ranked[0]["chunk_id"], "tax-exact")
         self.assertIn("expanded_query", ranked[0])
-
-    def test_fiscal_lexical_fallback_prioritizes_exact_tax_evidence(self):
-        rows = [
-            {
-                "chunk_id": "semantic",
-                "doc_id": "doc",
-                "text": "Los ingresos tributarios aumentaron por la actividad economica",
-                "embedding": [1.0, 0.0],
-            },
-            {
-                "chunk_id": "tax-exact",
-                "doc_id": "doc",
-                "text": "El Impuesto sobre Sociedades crecio un 11,5% en 2024",
-                "embedding": [0.0, 1.0],
-            },
-        ]
-
-        ranked = rank_chunks_fiscal_lexical("Cuanto crecio el IS en 2024?", rows)
-
-        self.assertEqual(ranked[0]["chunk_id"], "tax-exact")
-        self.assertEqual(ranked[0]["retrieval_mode"], "lexical_fallback")
-
-    def test_retrieval_uses_lexical_fallback_when_embedding_request_times_out(self):
-        rows = [
-            {
-                "chunk_id": "general",
-                "doc_id": "doc",
-                "text": "Los ingresos tributarios aumentaron en el ejercicio.",
-                "embedding": [1.0, 0.0],
-            },
-            {
-                "chunk_id": "target",
-                "doc_id": "doc",
-                "text": "El IRPF crecio un 8,4% en 2024.",
-                "embedding": [0.0, 1.0],
-            },
-        ]
-
-        hits, mode = retrieve_top_k_with_fallback(
-            question="Cuanto crecio el IRPF en 2024?",
-            embedding_rows=rows,
-            top_k=1,
-            embedder=lambda *args: (_ for _ in ()).throw(requests.Timeout()),
-        )
-
-        self.assertEqual(mode, "lexical_fallback")
-        self.assertEqual(hits[0]["chunk_id"], "target")
 
     def test_fiscal_hybrid_prioritizes_legal_articles_over_indexes(self):
         rows = [

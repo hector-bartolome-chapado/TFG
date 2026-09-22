@@ -6,8 +6,6 @@ import pathlib
 import re
 from typing import Any, Callable
 
-import requests
-
 from recuperacion.fiscal_scoring import expand_fiscal_query, fiscal_exact_score
 from recuperacion.legal_scoring import is_legal_query, legal_relevance_score
 from recuperacion.table_scoring import is_table_query, table_relevance_score
@@ -216,51 +214,6 @@ def rank_chunks_fiscal_hybrid(
     )
 
 
-def rank_chunks_fiscal_lexical(
-    question: str,
-    embedding_rows: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    expanded_question = expand_fiscal_query(question)
-    bm25_by_id = bm25_scores(expanded_question, embedding_rows)
-    bm25_norm = normalized_scores(bm25_by_id)
-    legal_query = is_legal_query(question)
-    table_query = is_table_query(question)
-
-    ranked_rows: list[dict[str, Any]] = []
-    for row in embedding_rows:
-        chunk_id = row["chunk_id"]
-        lexical_boost = fiscal_exact_score(question, row)
-        legal_boost = legal_relevance_score(row) if legal_query else 0.0
-        table_boost = table_relevance_score(question, row) if table_query else 0.0
-        score = bm25_norm.get(chunk_id, 0.0) + 0.20 * lexical_boost + legal_boost + 0.45 * table_boost
-        ranked_row = copy_retrieval_fields(row, score)
-        ranked_row["bm25_score"] = bm25_by_id.get(chunk_id, 0.0)
-        ranked_row["fiscal_exact_score"] = lexical_boost
-        ranked_row["legal_relevance_score"] = legal_boost
-        ranked_row["table_relevance_score"] = table_boost
-        ranked_row["expanded_query"] = expanded_question
-        ranked_row["retrieval_mode"] = "lexical_fallback"
-        if row.get("parent_text") and row.get("chunking_strategy") != "xlsx_rows_parent_child":
-            ranked_row["context_text"] = build_focused_context(
-                child_text=str(row.get("text") or ""),
-                parent_text=str(row["parent_text"]),
-                question=question,
-            )
-        ranked_rows.append(ranked_row)
-
-    return sorted(
-        ranked_rows,
-        key=lambda item: (
-            item["score"],
-            item["legal_relevance_score"],
-            item["table_relevance_score"],
-            item["fiscal_exact_score"],
-            item["bm25_score"],
-        ),
-        reverse=True,
-    )
-
-
 def retrieve_top_k(
     question: str,
     embedding_rows: list[dict[str, Any]],
@@ -284,34 +237,4 @@ def retrieve_top_k(
     else:
         raise ValueError(f"Estrategia de recuperacion no soportada: {strategy}")
     return ranked_rows[:top_k]
-
-
-def retrieve_top_k_with_fallback(
-    question: str,
-    embedding_rows: list[dict[str, Any]],
-    top_k: int = 5,
-    model: str = DEFAULT_EMBED_MODEL,
-    base_url: str = DEFAULT_LLAMUS_BASE_URL,
-    api_key: str | None = None,
-    embedder: Callable[[str, str, str, str | None], list[float]] | None = None,
-    strategy: str = "fiscal_hybrid",
-    rrf_k: int = 60,
-) -> tuple[list[dict[str, Any]], str]:
-    try:
-        hits = retrieve_top_k(
-            question=question,
-            embedding_rows=embedding_rows,
-            top_k=top_k,
-            model=model,
-            base_url=base_url,
-            api_key=api_key,
-            embedder=embedder,
-            strategy=strategy,
-            rrf_k=rrf_k,
-        )
-        for hit in hits:
-            hit["retrieval_mode"] = "hybrid"
-        return hits, "hybrid"
-    except requests.RequestException:
-        return rank_chunks_fiscal_lexical(question, embedding_rows)[:top_k], "lexical_fallback"
 
