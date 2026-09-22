@@ -2,7 +2,7 @@
 
 import pathlib
 import time
-from typing import Any
+from typing import Any, Callable
 
 import requests
 
@@ -34,7 +34,7 @@ from generacion.text_utils import (
     normalize_for_generation,
     question_subject,
 )
-from recuperacion.retrieval import load_embedding_rows, retrieve_top_k
+from recuperacion.retrieval import load_embedding_rows, retrieve_top_k, retrieve_top_k_with_fallback
 from ingesta.config import (
     DEFAULT_EMBED_MODEL,
     DEFAULT_LLAMUS_BASE_URL,
@@ -65,19 +65,31 @@ def run_retrieval(
     api_key: str | None = None,
     strategy: str = "fiscal_hybrid",
     rrf_k: int = 60,
+    embedder: Callable[[str, str, str, str | None], list[float]] | None = None,
+    allow_lexical_fallback: bool = False,
 ) -> dict[str, Any]:
     started_at = time.perf_counter()
-    hits = retrieve_top_k(
-        question=question,
-        embedding_rows=rows,
-        top_k=top_k,
-        model=model,
-        base_url=base_url,
-        api_key=api_key,
-        strategy=strategy,
-        rrf_k=rrf_k,
-    )
-    return {"hits": hits, "latency_seconds": time.perf_counter() - started_at}
+    arguments = {
+        "question": question,
+        "embedding_rows": rows,
+        "top_k": top_k,
+        "model": model,
+        "base_url": base_url,
+        "api_key": api_key,
+        "embedder": embedder,
+        "strategy": strategy,
+        "rrf_k": rrf_k,
+    }
+    if allow_lexical_fallback:
+        hits, retrieval_mode = retrieve_top_k_with_fallback(**arguments)
+    else:
+        hits = retrieve_top_k(**arguments)
+        retrieval_mode = "hybrid"
+    return {
+        "hits": hits,
+        "latency_seconds": time.perf_counter() - started_at,
+        "retrieval_mode": retrieval_mode,
+    }
 
 
 def ask_llamus(
