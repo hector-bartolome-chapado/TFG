@@ -1,3 +1,4 @@
+import contextlib
 import pathlib
 import sys
 import tempfile
@@ -10,6 +11,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from ingesta.simple_pipeline import write_jsonl
+import interfaz.public_app as public_app
 from interfaz.public_app import failure_message
 from interfaz.public_service import evidence_label, load_corpus, resolve_question
 from recuperacion.retrieval import rank_chunks_fiscal_hybrid
@@ -101,6 +103,34 @@ class PublicServiceTests(unittest.TestCase):
         app.button(key="new_conversation").click().run()
         self.assertEqual(app.session_state.turns, [])
         self.assertIsNone(app.session_state.selected_evidence)
+
+    def test_new_query_after_rendering_evidence_selector_does_not_crash(self):
+        class StateWithRenderedSelector(dict):
+            def __getattr__(self, key):
+                return self[key]
+
+            def __setattr__(self, key, value):
+                if key == "evidence_selector":
+                    raise AssertionError("No se puede modificar un widget ya renderizado")
+                self[key] = value
+
+        state = StateWithRenderedSelector(
+            turns=[{"question": "Consulta anterior", "answer": "Respuesta anterior", "hits": []}],
+            selected_evidence=(0, 0), pending_clarification=False, failed_query=None,
+            evidence_selector=0,
+        )
+        hit = {"chunk_id": "b", "doc_id": "boe", "text": "Normativa", "page_start": 2}
+        with mock.patch.object(public_app.st, "session_state", state), mock.patch.object(
+            public_app.st, "spinner", return_value=contextlib.nullcontext()
+        ), mock.patch.object(
+            public_app, "resolve_question", return_value={"question": "¿Qué día es hoy?", "clarification": ""}
+        ), mock.patch.object(public_app, "run_retrieval", return_value={"hits": [hit], "latency_seconds": 0.01}), mock.patch.object(
+            public_app, "generate_controlled_answer", return_value={"answer": "No consta en el corpus."}
+        ):
+            public_app.run_public_query("¿Qué día es hoy?", [], "test-key")
+
+        self.assertEqual(state.turns[-1]["question"], "¿Qué día es hoy?")
+        self.assertEqual(state.selected_evidence, (1, 0))
 
     def test_failure_message_identifies_phase_without_server_details(self):
         import requests

@@ -167,7 +167,6 @@ def run_public_query(question: str, rows: list[dict[str, Any]], api_key: str) ->
         "retrieval_seconds": result["latency_seconds"],
     })
     st.session_state.selected_evidence = (len(history) - 1, 0) if result["hits"] else None
-    st.session_state.evidence_selector = 0
     st.session_state.pending_clarification = False
     st.session_state.failed_query = None
 
