@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import logging
 import pathlib
 import sys
@@ -42,10 +43,26 @@ h1, h2, h3 { font-family: 'Libre Baskerville', Georgia, serif; color: var(--ink)
 .quiet-note { font-size: .83rem; color: var(--muted); line-height: 1.5; }
 [data-testid="stVerticalBlockBorderWrapper"] { border-color: var(--line); background: #fffefa; }
 [data-testid="stChatMessage"] { border: 1px solid var(--line); background: #fffefa; border-radius: 8px; margin-bottom: .75rem; }
-[data-testid="stChatMessage"] p { line-height: 1.62; }
-.stButton > button { border-radius: 5px; font-weight: 600; border-color: #b6caca; }
-.stButton > button:hover { border-color: var(--accent); color: var(--accent); }
-.stButton > button[kind="primary"] { background: var(--ink); border-color: var(--ink); }
+[data-testid="stChatMessage"] p { color: var(--ink) !important; line-height: 1.62; }
+[data-testid="stChatMessage"] [data-testid="stCaptionContainer"] p { color: var(--muted) !important; }
+[data-testid="stAppViewContainer"] [data-testid="stMarkdown"] p { color: var(--ink); }
+[data-testid="stHeader"] button, [data-testid="stHeader"] svg { color: var(--ink) !important; }
+.stButton > button { border-radius: 5px; font-weight: 600; border: 1px solid #b6caca !important; background: #fffefa !important; color: var(--ink) !important; }
+.stButton > button p { color: var(--ink) !important; }
+.stButton > button:hover { border-color: var(--accent) !important; color: var(--accent) !important; }
+.stButton > button:hover p { color: var(--accent) !important; }
+.stButton > button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.stButton > button[kind="primary"] { background: var(--accent) !important; border-color: var(--accent) !important; color: #fff !important; }
+.stButton > button[kind="primary"] p { color: #fff !important; }
+[data-testid="stChatInput"] { background: #fffefa !important; border: 1px solid #b6caca; }
+[data-testid="stChatInput"] textarea { color: var(--ink) !important; background: #fffefa !important; }
+[data-testid="stChatInput"] textarea::placeholder { color: var(--muted) !important; opacity: 1; }
+[data-testid="stChatInput"] button, [data-testid="stChatInput"] svg { color: var(--accent) !important; fill: var(--accent) !important; }
+[data-testid="stExpander"] summary, [data-testid="stExpander"] p { color: var(--ink) !important; }
+[data-testid="stRadio"] label, [data-testid="stRadio"] p, [data-testid="stRadio"] span { color: var(--ink) !important; }
+[data-testid="stRadio"] input { accent-color: var(--accent); }
+.evidence-excerpt { color: var(--ink); background: #f3f7f5; border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 1rem; border-radius: 4px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.evidence-excerpt.spreadsheet { font-family: ui-monospace, Consolas, monospace; font-size: .86rem; }
 @media (max-width: 760px) { .block-container { padding: 1.1rem .9rem 3rem; } .masthead h1 { font-size: 2rem; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
 </style>
@@ -59,11 +76,23 @@ def load_cached_corpus(paths: tuple[str, ...]) -> list[dict[str, Any]]:
 
 def select_evidence(turn_index: int, hit_index: int) -> None:
     st.session_state.selected_evidence = (turn_index, hit_index)
+    st.session_state.evidence_selector = hit_index
+
+
+def select_evidence_from_dossier() -> None:
+    turn_index = st.session_state.selected_evidence[0]
+    st.session_state.selected_evidence = (turn_index, st.session_state.evidence_selector)
+
+
+def render_excerpt(value: Any, *, spreadsheet: bool = False) -> None:
+    style = "evidence-excerpt spreadsheet" if spreadsheet else "evidence-excerpt"
+    st.markdown(f'<div class="{style}">{html.escape(str(value))}</div>', unsafe_allow_html=True)
 
 
 def reset_conversation() -> None:
     st.session_state.turns = []
     st.session_state.selected_evidence = None
+    st.session_state.evidence_selector = 0
     st.session_state.pending_clarification = False
     st.session_state.failed_query = None
 
@@ -129,6 +158,7 @@ def run_public_query(question: str, rows: list[dict[str, Any]], api_key: str) ->
         "retrieval_seconds": result["latency_seconds"],
     })
     st.session_state.selected_evidence = (len(history) - 1, 0) if result["hits"] else None
+    st.session_state.evidence_selector = 0
     st.session_state.pending_clarification = False
     st.session_state.failed_query = None
 
@@ -140,11 +170,21 @@ def render_evidence_dossier() -> None:
     if selection is None or selection[0] >= len(turns) or selection[1] >= len(turns[selection[0]]["hits"]):
         with st.container(border=True):
             st.markdown("### Aún no hay una fuente seleccionada")
-            st.write("Formula una pregunta y pulsa una referencia numerada para examinar el fragmento recuperado.")
+            st.write("Las referencias aparecerán aquí tras obtener una respuesta. Podrás elegir cualquiera de ellas para examinar el fragmento recuperado.")
         return
 
     turn_index, hit_index = selection
-    hit = turns[turn_index]["hits"][hit_index]
+    hits = turns[turn_index]["hits"]
+    if st.session_state.get("evidence_selector") != hit_index:
+        st.session_state.evidence_selector = hit_index
+    st.radio(
+        "Referencias de esta respuesta",
+        options=range(len(hits)),
+        format_func=lambda index: f"[{index + 1}] {evidence_label(hits[index])}",
+        key="evidence_selector",
+        on_change=select_evidence_from_dossier,
+    )
+    hit = hits[hit_index]
     label = evidence_label(hit)
     location = label.split(" · ", 1)[-1] if " · " in label else "Localización no disponible"
     with st.container(border=True):
@@ -152,15 +192,16 @@ def render_evidence_dossier() -> None:
         st.markdown(f"### {source_name(hit)}")
         st.write(location)
         st.markdown("**Fragmento localizado**")
-        st.write(str(hit.get("text") or "No hay extracto disponible."))
+        is_spreadsheet = hit.get("sheet") is not None
+        render_excerpt(hit.get("text") or "No hay extracto disponible.", spreadsheet=is_spreadsheet)
         parent_text = hit.get("parent_text")
         if parent_text:
             with st.expander("Ver contexto padre"):
-                st.write(str(parent_text))
+                render_excerpt(parent_text, spreadsheet=is_spreadsheet)
         focused_text = hit.get("context_text")
         if focused_text and focused_text != parent_text and focused_text != hit.get("text"):
             with st.expander("Ver ventana de contexto utilizada"):
-                st.write(str(focused_text))
+                render_excerpt(focused_text, spreadsheet=is_spreadsheet)
         with st.expander("Identificadores técnicos"):
             st.code(f"doc_id: {hit.get('doc_id')}\nchunk_id: {hit.get('chunk_id')}\nparent_id: {hit.get('parent_id')}", language="text")
     st.markdown(
@@ -193,6 +234,7 @@ def render_conversation(api_key: str | None) -> str | None:
                         f"[{hit_index + 1}] {evidence_label(hit)}",
                         key=f"reference_{turn_index}_{hit_index}",
                         on_click=select_evidence, args=(turn_index, hit_index),
+                        type="primary" if st.session_state.selected_evidence == (turn_index, hit_index) else "secondary",
                         use_container_width=True,
                     )
             elif turn.get("clarification"):
@@ -213,6 +255,7 @@ def main() -> None:
     for key, default in (
         ("turns", []), ("selected_evidence", None),
         ("pending_clarification", False), ("failed_query", None),
+        ("evidence_selector", 0),
     ):
         if key not in st.session_state:
             st.session_state[key] = default

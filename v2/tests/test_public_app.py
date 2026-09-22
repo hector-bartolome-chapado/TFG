@@ -96,6 +96,8 @@ class PublicServiceTests(unittest.TestCase):
         self.assertIn("hoja Estadística", str(app))
         app.button(key="reference_0_1").click().run()
         self.assertEqual(app.session_state.selected_evidence, (0, 1))
+        app.radio(key="evidence_selector").set_value(0).run()
+        self.assertEqual(app.session_state.selected_evidence, (0, 0))
         app.button(key="new_conversation").click().run()
         self.assertEqual(app.session_state.turns, [])
         self.assertIsNone(app.session_state.selected_evidence)
